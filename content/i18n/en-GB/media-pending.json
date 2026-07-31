@@ -1,0 +1,591 @@
+{
+  "version": 1,
+  "videos": {
+    "video-7": "pg007_sec001: pg007_n0008",
+    "video-8": "pg007_sec002: pg007_n0015",
+    "video-9": "Unit One Activity 1 continuation",
+    "video-14": "pg012_sec001: pg012_n0010",
+    "video-19": "Pronoun song",
+    "video-23": "pg020_sec001: pg020_n0007",
+    "video-41": "pg029_sec002: pg029_n0010",
+    "video-13": "pg011_sec001: pg011_n0031",
+    "video-15": "pg013_sec001: pg013_n0002",
+    "video-20": "pg017_sec001: pg017_n0003",
+    "video-21": "pg018_sec001: pg018_n0005",
+    "video-24": "pg020_sec002: pg020_n0007",
+    "video-25": "pg022_sec001: pg022_n0001",
+    "video-36": "pg027_sec002: pg027_n0013",
+    "video-50": "pg035_sec002: pg035_n0017",
+    "video-51": "pg036_sec001: pg036_n0002",
+    "video-56": "pg038_sec003: pg038_n0025",
+    "video-57": "pg039_sec001: pg039_n0003",
+    "video-66": "pg044_sec002: pg044_n0015",
+    "video-68": "pg046_sec001: pg046_n0002",
+    "video-69": "pg047_sec001: pg047_n0002",
+    "video-71": "pg049_sec001: pg049_n0003",
+    "video-76": "pg052_sec002: pg052_n0008",
+    "video-81": "pg055_sec002: pg055_n0028",
+    "video-88": "pg059_sec002: pg059_n0016",
+    "video-89": "pg060_sec001: pg060_n0022",
+    "video-90": "pg061_sec001: pg061_n0005",
+    "video-91": "pg062_sec001: pg062_n0002",
+    "video-92": "pg062_sec002: pg062_n0049",
+    "video-94": "pg063_sec002: pg063_n0034",
+    "video-100": "pg067_sec001: pg067_n0002",
+    "video-101": "pg068_sec001: pg068_n0003",
+    "video-104": "pg069_sec002: pg069_n0027",
+    "video-110": "pg072_sec001: pg072_n0002",
+    "video-3": "pg003_sec001: pg003_n0011"
+  },
+  "audioTextIds": [
+    "pg007_n0015",
+    "pg007_n0016",
+    "pg007_n0020",
+    "pg008_n0012",
+    "pg008_n0031",
+    "pg011_n0031",
+    "pg012_n0010",
+    "pg012_n0011",
+    "pg012_n0017",
+    "pg012_n0018",
+    "pg013_n0002",
+    "pg013_n0004",
+    "pg017_n0003",
+    "pg017_n0014",
+    "pg018_n0005",
+    "pg020_n0007",
+    "pg021_n0027",
+    "pg022_n0001",
+    "pg023_n0002",
+    "pg023_n0004",
+    "pg027_n0013",
+    "pg027_n0031",
+    "pg029_n0010",
+    "pg029_n0011",
+    "pg035_n0017",
+    "pg036_n0002",
+    "pg038_n0008",
+    "pg038_n0025",
+    "pg039_n0003",
+    "pg044_n0015",
+    "pg044_n0017",
+    "pg044_n0028",
+    "pg046_n0002",
+    "pg047_n0002",
+    "pg049_n0003",
+    "pg052_n0008",
+    "pg055_n0028",
+    "pg059_n0016",
+    "pg060_n0022",
+    "pg061_n0005",
+    "pg062_n0002",
+    "pg062_n0049",
+    "pg063_n0034",
+    "pg067_n0002",
+    "pg067_n0072",
+    "pg068_n0003",
+    "pg068_n0028",
+    "pg069_n0027",
+    "pg072_n0002",
+    "pg019_n0010",
+    "pg035_n0022",
+    "pg038_n0031",
+    "pg012_n0024",
+    "pg007_n0008",
+    "pg007_n0004",
+    "pg007_n0032",
+    "pg007_n0033",
+    "pg003_n0011",
+    "pg046_n0003",
+    "pg047_n0003"
+  ],
+  "audioPolicy": "Regenerate an MP3 for every revised text ID before restoring its audios.json mapping.",
+  "videoDeliverables": {
+    "video-7": {
+      "filename": "video-7.mp4",
+      "description": "pg007_sec001: pg007_n0008",
+      "transcriptTextIds": [
+        "pg007_n0004",
+        "pg007_n0008"
+      ],
+      "transcript": [
+        {
+          "textId": "pg007_n0004",
+          "text": "Listening and speaking/observing and signing"
+        },
+        {
+          "textId": "pg007_n0008",
+          "text": "Listening and speaking/observing and signing skills are important for effective communication."
+        }
+      ]
+    },
+    "video-8": {
+      "filename": "video-8.mp4",
+      "description": "pg007_sec002: pg007_n0015",
+      "transcriptTextIds": [
+        "pg007_n0015",
+        "pg007_n0016"
+      ],
+      "transcript": [
+        {
+          "textId": "pg007_n0015",
+          "text": "(a) Listen to the words / observe the signed video and write the words."
+        },
+        {
+          "textId": "pg007_n0016",
+          "text": "(b) Listen to the sentences / observe the signed video and write the sentences."
+        }
+      ]
+    },
+    "video-9": {
+      "filename": "video-9.mp4",
+      "description": "Unit One Activity 1 continuation",
+      "transcriptTextIds": [],
+      "transcript": []
+    },
+    "video-14": {
+      "filename": "video-14.mp4",
+      "description": "pg012_sec001: pg012_n0010",
+      "transcriptTextIds": [
+        "pg012_n0010",
+        "pg012_n0017"
+      ],
+      "transcript": [
+        {
+          "textId": "pg012_n0010",
+          "text": "(a) Listen to the short story / observe the signed video about Bahati’s room."
+        },
+        {
+          "textId": "pg012_n0017",
+          "text": "(b) Listen to the short story / observe the signed video about The Proud Rose."
+        }
+      ]
+    },
+    "video-19": {
+      "filename": "video-19.mp4",
+      "description": "Pronoun song",
+      "transcriptTextIds": [],
+      "transcript": []
+    },
+    "video-23": {
+      "filename": "video-23.mp4",
+      "description": "pg020_sec001: pg020_n0007",
+      "transcriptTextIds": [
+        "pg020_n0007"
+      ],
+      "transcript": [
+        {
+          "textId": "pg020_n0007",
+          "text": "Listen to / observe the conversation."
+        }
+      ]
+    },
+    "video-41": {
+      "filename": "video-41.mp4",
+      "description": "pg029_sec002: pg029_n0010",
+      "transcriptTextIds": [
+        "pg029_n0010"
+      ],
+      "transcript": [
+        {
+          "textId": "pg029_n0010",
+          "text": "Listen to the dialogue / observe the signed dialogue."
+        }
+      ]
+    },
+    "video-13": {
+      "filename": "video-13.mp4",
+      "description": "pg011_sec001: pg011_n0031",
+      "transcriptTextIds": [
+        "pg011_n0031"
+      ],
+      "transcript": [
+        {
+          "textId": "pg011_n0031",
+          "text": "Say / sign where the objects in the pictures are located."
+        }
+      ]
+    },
+    "video-15": {
+      "filename": "video-15.mp4",
+      "description": "pg013_sec001: pg013_n0002",
+      "transcriptTextIds": [
+        "pg013_n0002",
+        "pg013_n0004"
+      ],
+      "transcript": [
+        {
+          "textId": "pg013_n0002",
+          "text": "Activity 7: Reading aloud / signing and answering oral questions"
+        },
+        {
+          "textId": "pg013_n0004",
+          "text": "Read aloud / sign the story A Trip to the Serengeti National Park."
+        }
+      ]
+    },
+    "video-20": {
+      "filename": "video-20.mp4",
+      "description": "pg017_sec001: pg017_n0003",
+      "transcriptTextIds": [
+        "pg017_n0003",
+        "pg017_n0014"
+      ],
+      "transcript": [
+        {
+          "textId": "pg017_n0003",
+          "text": "(b) Sing the pronoun song or observe the signed video about the pronoun song."
+        },
+        {
+          "textId": "pg017_n0014",
+          "text": "(c) Read aloud / sign the pronouns in the table below."
+        }
+      ]
+    },
+    "video-21": {
+      "filename": "video-21.mp4",
+      "description": "pg018_sec001: pg018_n0005",
+      "transcriptTextIds": [
+        "pg018_n0005"
+      ],
+      "transcript": [
+        {
+          "textId": "pg018_n0005",
+          "text": "Read / sign the sentences in the bubbles."
+        }
+      ]
+    },
+    "video-24": {
+      "filename": "video-24.mp4",
+      "description": "pg020_sec002: pg020_n0007",
+      "transcriptTextIds": [
+        "pg020_n0007"
+      ],
+      "transcript": [
+        {
+          "textId": "pg020_n0007",
+          "text": "Listen to / observe the conversation."
+        }
+      ]
+    },
+    "video-25": {
+      "filename": "video-25.mp4",
+      "description": "pg022_sec001: pg022_n0001",
+      "transcriptTextIds": [
+        "pg022_n0001"
+      ],
+      "transcript": [
+        {
+          "textId": "pg022_n0001",
+          "text": "(d) Sing / observe the signed video of the following song."
+        }
+      ]
+    },
+    "video-36": {
+      "filename": "video-36.mp4",
+      "description": "pg027_sec002: pg027_n0013",
+      "transcriptTextIds": [
+        "pg027_n0013"
+      ],
+      "transcript": [
+        {
+          "textId": "pg027_n0013",
+          "text": "(b) Construct sentences orally / sign sentences from the table."
+        }
+      ]
+    },
+    "video-50": {
+      "filename": "video-50.mp4",
+      "description": "pg035_sec002: pg035_n0017",
+      "transcriptTextIds": [
+        "pg035_n0017"
+      ],
+      "transcript": [
+        {
+          "textId": "pg035_n0017",
+          "text": "Listening and oral practice / observing and signing"
+        }
+      ]
+    },
+    "video-51": {
+      "filename": "video-51.mp4",
+      "description": "pg036_sec001: pg036_n0002",
+      "transcriptTextIds": [
+        "pg036_n0002"
+      ],
+      "transcript": [
+        {
+          "textId": "pg036_n0002",
+          "text": "(b) Study the pictures and read the sentences aloud / sign the sentences."
+        }
+      ]
+    },
+    "video-56": {
+      "filename": "video-56.mp4",
+      "description": "pg038_sec003: pg038_n0025",
+      "transcriptTextIds": [
+        "pg038_n0025"
+      ],
+      "transcript": [
+        {
+          "textId": "pg038_n0025",
+          "text": "(e) Make sentences orally / sign sentences from the table."
+        }
+      ]
+    },
+    "video-57": {
+      "filename": "video-57.mp4",
+      "description": "pg039_sec001: pg039_n0003",
+      "transcriptTextIds": [
+        "pg039_n0003"
+      ],
+      "transcript": [
+        {
+          "textId": "pg039_n0003",
+          "text": "Make sentences orally / sign sentences from the table."
+        }
+      ]
+    },
+    "video-66": {
+      "filename": "video-66.mp4",
+      "description": "pg044_sec002: pg044_n0015",
+      "transcriptTextIds": [
+        "pg044_n0015",
+        "pg044_n0017",
+        "pg044_n0028"
+      ],
+      "transcript": [
+        {
+          "textId": "pg044_n0015",
+          "text": "Listening and oral practice / observing and signing"
+        },
+        {
+          "textId": "pg044_n0017",
+          "text": "(a) Pronounce / sign the words in the box."
+        },
+        {
+          "textId": "pg044_n0028",
+          "text": "(b) Say / sign what the people in the pictures are doing."
+        }
+      ]
+    },
+    "video-68": {
+      "filename": "video-68.mp4",
+      "description": "pg046_sec001: pg046_n0002",
+      "transcriptTextIds": [
+        "pg046_n0002"
+      ],
+      "transcript": [
+        {
+          "textId": "pg046_n0002",
+          "text": "(c)"
+        }
+      ]
+    },
+    "video-69": {
+      "filename": "video-69.mp4",
+      "description": "pg047_sec001: pg047_n0002",
+      "transcriptTextIds": [
+        "pg047_n0002"
+      ],
+      "transcript": [
+        {
+          "textId": "pg047_n0002",
+          "text": "(d)"
+        }
+      ]
+    },
+    "video-71": {
+      "filename": "video-71.mp4",
+      "description": "pg049_sec001: pg049_n0003",
+      "transcriptTextIds": [
+        "pg049_n0003"
+      ],
+      "transcript": [
+        {
+          "textId": "pg049_n0003",
+          "text": "(e) Construct 15 sentences from the table below orally / in sign language."
+        }
+      ]
+    },
+    "video-76": {
+      "filename": "video-76.mp4",
+      "description": "pg052_sec002: pg052_n0008",
+      "transcriptTextIds": [
+        "pg052_n0008"
+      ],
+      "transcript": [
+        {
+          "textId": "pg052_n0008",
+          "text": "Listening and oral practice / observing and signing"
+        }
+      ]
+    },
+    "video-81": {
+      "filename": "video-81.mp4",
+      "description": "pg055_sec002: pg055_n0028",
+      "transcriptTextIds": [
+        "pg055_n0028"
+      ],
+      "transcript": [
+        {
+          "textId": "pg055_n0028",
+          "text": "Activity 3: Listening and oral practice / observing and signing"
+        }
+      ]
+    },
+    "video-88": {
+      "filename": "video-88.mp4",
+      "description": "pg059_sec002: pg059_n0016",
+      "transcriptTextIds": [
+        "pg059_n0016"
+      ],
+      "transcript": [
+        {
+          "textId": "pg059_n0016",
+          "text": "Read / sign the word below each of the following pictures."
+        }
+      ]
+    },
+    "video-89": {
+      "filename": "video-89.mp4",
+      "description": "pg060_sec001: pg060_n0022",
+      "transcriptTextIds": [
+        "pg060_n0022"
+      ],
+      "transcript": [
+        {
+          "textId": "pg060_n0022",
+          "text": "(b) Practise reading aloud / signing the following two-syllable words."
+        }
+      ]
+    },
+    "video-90": {
+      "filename": "video-90.mp4",
+      "description": "pg061_sec001: pg061_n0005",
+      "transcriptTextIds": [
+        "pg061_n0005"
+      ],
+      "transcript": [
+        {
+          "textId": "pg061_n0005",
+          "text": "Read / sign the word below each of the following pictures."
+        }
+      ]
+    },
+    "video-91": {
+      "filename": "video-91.mp4",
+      "description": "pg062_sec001: pg062_n0002",
+      "transcriptTextIds": [
+        "pg062_n0002"
+      ],
+      "transcript": [
+        {
+          "textId": "pg062_n0002",
+          "text": "(b) Practise reading aloud / signing the following multi-syllable words."
+        }
+      ]
+    },
+    "video-92": {
+      "filename": "video-92.mp4",
+      "description": "pg062_sec002: pg062_n0049",
+      "transcriptTextIds": [
+        "pg062_n0049"
+      ],
+      "transcript": [
+        {
+          "textId": "pg062_n0049",
+          "text": "(a) Read aloud / sign the following story and answer the questions that follow orally."
+        }
+      ]
+    },
+    "video-94": {
+      "filename": "video-94.mp4",
+      "description": "pg063_sec002: pg063_n0034",
+      "transcriptTextIds": [
+        "pg063_n0034"
+      ],
+      "transcript": [
+        {
+          "textId": "pg063_n0034",
+          "text": "(c) Read aloud / sign the following story and answer the questions that follow orally."
+        }
+      ]
+    },
+    "video-100": {
+      "filename": "video-100.mp4",
+      "description": "pg067_sec001: pg067_n0002",
+      "transcriptTextIds": [
+        "pg067_n0002",
+        "pg067_n0072"
+      ],
+      "transcript": [
+        {
+          "textId": "pg067_n0002",
+          "text": "(b) Read aloud / sign the following words."
+        },
+        {
+          "textId": "pg067_n0072",
+          "text": "(b) Read aloud / sign the following words."
+        }
+      ]
+    },
+    "video-101": {
+      "filename": "video-101.mp4",
+      "description": "pg068_sec001: pg068_n0003",
+      "transcriptTextIds": [
+        "pg068_n0003",
+        "pg068_n0028"
+      ],
+      "transcript": [
+        {
+          "textId": "pg068_n0003",
+          "text": "(a) Read aloud / sign the following words."
+        },
+        {
+          "textId": "pg068_n0028",
+          "text": "(a) Read aloud the following sentences / sign the words in the following sentences."
+        }
+      ]
+    },
+    "video-104": {
+      "filename": "video-104.mp4",
+      "description": "pg069_sec002: pg069_n0027",
+      "transcriptTextIds": [
+        "pg069_n0027"
+      ],
+      "transcript": [
+        {
+          "textId": "pg069_n0027",
+          "text": "(b) Recite / sign the following poem."
+        }
+      ]
+    },
+    "video-110": {
+      "filename": "video-110.mp4",
+      "description": "pg072_sec001: pg072_n0002",
+      "transcriptTextIds": [
+        "pg072_n0002"
+      ],
+      "transcript": [
+        {
+          "textId": "pg072_n0002",
+          "text": "Activity 5: Oral / sign practice"
+        }
+      ]
+    },
+    "video-3": {
+      "filename": "video-3.mp4",
+      "description": "pg003_sec001: pg003_n0011",
+      "transcriptTextIds": [
+        "pg003_n0011"
+      ],
+      "transcript": [
+        {
+          "textId": "pg003_n0011",
+          "text": "Listening and speaking/observing and signing 1"
+        }
+      ]
+    }
+  }
+}
