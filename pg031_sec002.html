@@ -2,56 +2,250 @@
 <html lang="en-GB">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>English Pupil’s Book Standard Three</title>
-    <meta name="title-id" content="pg031_sec002" />
-    <meta name="page-section-id" content="45" />
-    <link href="./content/tailwind_output.css" rel="stylesheet">
-    <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/fonts.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Pupil’s Book Standard Three</title>
+  <meta name="title-id" content="pg031_sec002" />
+  <meta name="page-section-id" content="44" />
+  <link href="./content/tailwind_output.css" rel="stylesheet">
+  <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="./assets/fonts.css" rel="stylesheet">
+  <style>
+    body {
+      background: #fff;
+    }
+
+    .song-reading-page {
+      position: relative;
+      box-sizing: border-box;
+      width: min(1174px, calc(100vw - 14px));
+      max-width: none !important;
+      min-height: 1600px;
+      margin: 4px auto;
+      padding: 75px 152px 112px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .song-reading-page::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      inset: 0 auto 0 44px;
+      width: 112px;
+      opacity: .7;
+      background: radial-gradient(ellipse at 100% 8%, #f7dde2 0 18%, transparent 19%), radial-gradient(ellipse at 0 28%, #fbe5e7 0 20%, transparent 21%), linear-gradient(90deg, #f9d7df, #fcebf0 58%, transparent);
+    }
+
+    .song-reading-page::after {
+      content: "";
+      position: absolute;
+      z-index: 5;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(#555, #555) 18px 44px/34px 1px no-repeat, linear-gradient(#555, #555) 44px 18px/1px 34px no-repeat, linear-gradient(#555, #555) calc(100% - 52px) 44px/34px 1px no-repeat, linear-gradient(#555, #555) calc(100% - 45px) 18px/1px 34px no-repeat, linear-gradient(#555, #555) 18px calc(100% - 44px)/34px 1px no-repeat, linear-gradient(#555, #555) 44px calc(100% - 52px)/1px 34px no-repeat, linear-gradient(#555, #555) calc(100% - 52px) calc(100% - 44px)/34px 1px no-repeat, linear-gradient(#555, #555) calc(100% - 45px) calc(100% - 52px)/1px 34px no-repeat;
+    }
+
+    .song-reading-page>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .song-reading-page.space-y-10>*+* {
+      margin-top: 54px;
+    }
+
+    .song-reading-page>div:first-child {
+      padding: 0;
+      border: 0;
+      background: transparent;
+      box-shadow: none;
+    }
+
+    .song-reading-page [data-id="pg031_n0018"],
+    .song-reading-page [data-id="pg031_n0028"] {
+      color: #4c5a9b;
+      font: 700 36px/1.2 "Trebuchet MS", Arial, sans-serif;
+    }
+
+    .song-reading-page>div:first-child>div:nth-child(3) {
+      padding: 45px 24px 38px;
+      border: 2px solid #ff941e;
+      border-radius: 0;
+      background: #fff6e9;
+      color: #202020;
+      font: 34px/1.4 "Trebuchet MS", Arial, sans-serif;
+      font-style: italic;
+    }
+
+    .song-reading-page [data-id="pg031_n0027"] {
+      border-radius: 14px;
+      padding: 10px 20px;
+      background: #f4c7d8;
+      color: #a52c89;
+      font: 700 34px/1.1 "Trebuchet MS", Arial, sans-serif;
+    }
+
+    .song-reading-page>div:nth-child(2)>div:last-child {
+      margin-top: 18px;
+      padding: 22px 28px;
+      border: 3px dashed #91ab35;
+      border-radius: 22px 22px 0 0;
+      background: #fffdeb;
+    }
+
+    .song-reading-page [data-id="pg031_n0029"] {
+      font: 800 36px/1.2 "Trebuchet MS", Arial, sans-serif;
+      font-style: italic;
+    }
+
+    .song-reading-page>div:nth-child(2) p {
+      font: 34px/1.34 "Trebuchet MS", Arial, sans-serif;
+      font-style: italic;
+    }
+
+    .reading-watermark {
+      position: absolute;
+      z-index: 3;
+      top: 46%;
+      left: 50%;
+      transform: translate(-50%, -50%) rotate(-45deg);
+      width: 900px;
+      color: #ffae9c;
+      font: 800 64px/1 Arial, sans-serif;
+      letter-spacing: 1px;
+      opacity: .52;
+      white-space: nowrap;
+      pointer-events: none;
+    }
+
+    .reading-page-number {
+      position: absolute;
+      z-index: 2;
+      bottom: 102px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 74px;
+      padding: 9px 13px;
+      border-radius: 50%;
+      background: #aa3c91;
+      color: #fff;
+      text-align: center;
+      font: 700 23px/1 Arial, sans-serif;
+    }
+
+    @media (max-width:800px) {
+      .song-reading-page {
+        width: 100%;
+        min-height: 100vh;
+        padding: 72px 36px 90px 76px;
+      }
+
+      .song-reading-page::before {
+        inset: 0 auto 0 14px;
+        width: 58px;
+      }
+
+      .song-reading-page [data-id="pg031_n0018"],
+      .song-reading-page [data-id="pg031_n0028"] {
+        font-size: 25px;
+      }
+
+      .song-reading-page>div:first-child>div:nth-child(3),
+      .song-reading-page>div:nth-child(2) p {
+        font-size: 22px;
+      }
+
+      .song-reading-page [data-id="pg031_n0027"] {
+        font-size: 26px;
+      }
+
+      .song-reading-page [data-id="pg031_n0029"] {
+        font-size: 27px;
+      }
+
+      .reading-watermark {
+        font-size: 34px;
+      }
+
+      .reading-page-number {
+        bottom: 30px;
+      }
+    }
+  </style>
 </head>
 
-<body class="min-h-screen flex items-center justify-center">
-    <main class="w-full">
-      <h1 class="sr-only" id="page-heading">(g) Sing the following song.</h1>
-      <div id="content" class="mx-auto w-full max-w-5xl px-6 py-8 max-lg:px-4 max-sm:px-3 opacity-0"><section data-section-type="boxed_text" data-section-id="pg031_sec002" class="mx-auto w-full space-y-10 text-left">
-  <div class="rounded-[2rem] bg-orange-50/70 px-6 py-4 max-lg:px-5 max-sm:px-3 max-sm:py-3">
-    <img src="images/pg031_im003.png" alt="Song panel about using has and have: he has a dog, I have a cat, the dog has a bone, the cat has a bowl of milk, she has a pencil, and you have a pen." data-id="pg031_im003" class="hidden max-w-full" style="max-width: 100%; height: auto;">
-    <div data-id="pg031_n0018" class="mb-3 text-[2.05rem] font-bold leading-tight text-indigo-600 max-lg:text-[1.8rem] max-sm:text-[1.15rem]">(g) Sing the following song.</div>
-    <div class="relative mx-auto max-w-[48rem] rounded-[2rem] border-[3px] border-orange-400 bg-[#fff7ef] px-8 py-10 text-[1.15rem] leading-[1.8] text-stone-800 shadow-sm max-lg:px-6 max-lg:py-8 max-lg:text-[1.05rem] max-sm:px-5 max-sm:py-7 max-sm:text-[0.96rem]">
-      <div class="absolute left-0 top-0 h-10 w-14 rounded-br-[2rem] rounded-tl-[1.7rem] bg-orange-400"></div>
-      <div class="absolute bottom-0 right-0 h-10 w-14 rounded-tl-[2rem] rounded-br-[1.7rem] bg-orange-400"></div>
-      <div class="absolute left-10 right-10 top-0 h-5 rounded-b-[1.4rem] border-x-[3px] border-b-[3px] border-orange-300 bg-orange-100 max-sm:left-8 max-sm:right-8"></div>
-      <div class="absolute bottom-0 left-10 right-10 h-5 rounded-t-[1.4rem] border-x-[3px] border-t-[3px] border-orange-300 bg-orange-100 max-sm:left-8 max-sm:right-8"></div>
-      <div data-id="pg031_n0020" class="relative z-10">He has a dog, and I have a cat.</div>
-      <div data-id="pg031_n0021" class="relative z-10 mt-3">The dog has a bone, and the cat has a bowl of milk.</div>
-      <div data-id="pg031_n0022" class="relative z-10 mt-3 mb-5">We have a dog and a cat.</div>
-      <div data-id="pg031_n0023" class="relative z-10">She has a pencil, and you have a pen.</div>
-      <div data-id="pg031_n0024" class="relative z-10 mt-3">The pencil has a rubber, and the pen has a top.</div>
-      <div data-id="pg031_n0025" class="relative z-10 mt-3">You have a pencil and a pen.</div>
-    </div>
-  </div>
+<body>
+  <main>
+    <h1 class="sr-only" id="page-heading">(g) Sing the following song.</h1>
+    <div id="content" class="opacity-0">
+      <section data-section-type="boxed_text" data-section-id="pg031_sec002"
+        class="song-reading-page space-y-10 font-sans text-left">
+        <div
+          class="relative rounded-[2rem] border-2 border-orange-300 bg-orange-50 px-8 py-6 shadow-sm max-lg:px-6 max-lg:py-5 max-sm:px-4 max-sm:py-4">
+          <img src="images/pg031_im003.png"
+            alt="Song panel about using has and have: he has a dog, I have a cat, the dog has a bone, the cat has a bowl of milk, she has a pencil, and you have a pen."
+            data-id="pg031_im003"
+            class="absolute inset-0 h-full w-full rounded-[2rem] object-cover opacity-0 pointer-events-none"
+            style="max-width: 100%; height: auto;">
+          <div data-id="pg031_n0018"
+            class="relative z-10 mb-5 text-[2.1rem] font-bold leading-tight text-indigo-600 max-lg:text-[1.8rem] max-sm:text-[1.4rem]">
+            (g) Sing the following song.</div>
+          <div
+            class="relative z-10 rounded-[1.75rem] border-2 border-orange-400 bg-[#fff7ef] px-6 py-8 text-[1.25rem] leading-[1.9] text-stone-800 max-lg:px-5 max-lg:py-6 max-lg:text-[1.1rem] max-sm:px-4 max-sm:py-5 max-sm:text-base">
+            <div class="absolute left-0 top-0 h-7 w-12 rounded-br-full rounded-tl-[1.5rem] bg-orange-400"></div>
+            <div class="absolute bottom-0 right-0 h-7 w-12 rounded-l-full rounded-br-[1.5rem] bg-orange-400"></div>
+            <div
+              class="absolute left-6 right-6 top-0 h-4 rounded-b-2xl border-x-2 border-b-2 border-orange-300 bg-orange-100 max-sm:left-4 max-sm:right-4">
+            </div>
+            <div
+              class="absolute bottom-0 left-6 right-6 h-4 rounded-t-2xl border-x-2 border-t-2 border-orange-300 bg-orange-100 max-sm:left-4 max-sm:right-4">
+            </div>
+            <div data-id="pg031_n0020" class="relative z-10">He has a dog, and I have a cat.</div>
+            <div data-id="pg031_n0021" class="relative z-10">The dog has a bone, and the cat has a bowl of milk.</div>
+            <div data-id="pg031_n0022" class="relative z-10 mb-3">We have a dog and a cat.</div>
+            <div data-id="pg031_n0023" class="relative z-10">She has a pencil, and you have a pen.</div>
+            <div data-id="pg031_n0024" class="relative z-10">The pencil has a rubber, and the pen has a top.</div>
+            <div data-id="pg031_n0025" class="relative z-10">You have a pencil and a pen.</div>
+          </div>
+        </div>
 
-  <div class="relative">
-    <img src="images/pg031_im004.png" alt="Reading practice passage titled &#x2018;Poultry farm&#x2019; about Bora, who lives with his parents in Upendo village; his parents have a poultry farm with many hens, and he has four hens." data-id="pg031_im004" class="hidden max-w-full" style="max-width: 100%; height: auto;">
-    <div data-id="pg031_n0027" class="relative z-10 inline-block rounded-2xl bg-pink-200 px-5 py-2 text-[2rem] font-bold leading-tight text-fuchsia-700 max-lg:text-[1.7rem] max-sm:text-[1.15rem]">Activity 2: Reading practice</div>
-    <div data-id="pg031_n0028" class="relative z-10 mt-3 text-[2rem] font-bold leading-tight text-indigo-600 max-lg:text-[1.7rem] max-sm:text-[1.15rem]">(a) Read the following passage.</div>
-    <div class="relative z-10 mt-5 rounded-[1.75rem] border-4 border-dashed border-lime-500 bg-[#fffdea] px-8 py-5 max-lg:px-6 max-sm:px-4">
-      <div data-id="pg031_n0029" class="mb-3 text-center text-[2rem] font-extrabold leading-tight text-stone-800 max-lg:text-[1.7rem] max-sm:text-[1.35rem]">Poultry farm</div>
-      <p class="text-[1.2rem] leading-[1.8] text-stone-800 max-lg:text-[1.05rem] max-sm:text-base">
-        <span data-id="pg031_n0031">My name is Bora.</span> <span data-id="pg031_n0032">I live with my parents in Upendo village.</span> <span data-id="pg031_n0033">My parents have a poultry farm.</span> <span data-id="pg031_n0034">They have many hens on the farm.</span> <span data-id="pg031_n0035">I have four hens</span>
-      </p>
+        <div class="relative">
+          <img src="images/pg031_im004.png"
+            alt="Reading practice passage titled &#x2018;Poultry farm&#x2019; about Bora, who lives with his parents in Upendo village; his parents have a poultry farm with many hens, and he has four hens."
+            data-id="pg031_im004" class="absolute inset-0 h-full w-full object-cover opacity-0 pointer-events-none"
+            style="max-width: 100%; height: auto;">
+          <div data-id="pg031_n0027"
+            class="relative z-10 inline-block rounded-2xl bg-pink-200 px-5 py-2 text-[2rem] font-bold leading-tight text-fuchsia-700 max-lg:text-[1.7rem] max-sm:text-[1.3rem]">
+            Activity 2: Reading practice</div>
+          <div data-id="pg031_n0028"
+            class="relative z-10 mt-3 text-[2rem] font-bold leading-tight text-indigo-600 max-lg:text-[1.7rem] max-sm:text-[1.3rem]">
+            (a) Read the following passage.</div>
+          <div
+            class="relative z-10 mt-5 rounded-[1.75rem] border-4 border-dashed border-lime-500 bg-[#fffdea] px-8 py-5 max-lg:px-6 max-sm:px-4">
+            <div data-id="pg031_n0029"
+              class="mb-3 text-center text-[2rem] font-extrabold leading-tight text-stone-800 max-lg:text-[1.7rem] max-sm:text-[1.35rem]">
+              Poultry farm</div>
+            <p class="text-[1.2rem] leading-[1.8] text-stone-800 max-lg:text-[1.05rem] max-sm:text-base">
+              <span data-id="pg031_n0031">My name is Bora.</span> <span data-id="pg031_n0032">I live with my parents in
+                Upendo village.</span> <span data-id="pg031_n0033">My parents have a poultry farm.</span> <span
+                data-id="pg031_n0034">They have many hens on the farm.</span> <span data-id="pg031_n0035">I have four
+                hens</span>
+            </p>
+            <p data-id="pg031_n0036" class="mt-4 text-[1.2rem] leading-[1.8] text-stone-800 max-lg:text-[1.05rem] max-sm:text-base">of my own. I keep them on my parents’ farm. My white hen has ten chicks. If the chicks grow, I will have a total of fourteen hens. I like helping my parents to feed them.</p>
+          </div>
+        </div>
+        <div class="reading-watermark" aria-hidden="true">FOR ONLINE READING ONLY</div>
+        <div class="reading-page-number" aria-label="Printed page 25">25</div>
+      </section>
     </div>
-  </div>
-</section></div>
-    </main>
+  </main>
 
-    <div class="relative z-50" id="interface-container"></div>
-    <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
-    <script src="./assets/scorm.js"></script>
-    <script src="./assets/base.bundle.local.js"></script>
+  <div class="relative z-50" id="interface-container"></div>
+  <div class="relative z-50" id="nav-container"></div>
+  <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/scorm.js"></script>
+  <script src="./assets/base.bundle.local.js"></script>
 </body>
 
 </html>

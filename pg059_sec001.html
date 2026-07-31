@@ -2,51 +2,137 @@
 <html lang="en-GB">
 
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>English Pupil’s Book Standard Three</title>
-    <meta name="title-id" content="pg059_sec001" />
-    <meta name="page-section-id" content="88" />
-    <link href="./content/tailwind_output.css" rel="stylesheet">
-    <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
-    <link href="./assets/fonts.css" rel="stylesheet">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>English Pupil’s Book Standard Three</title>
+  <meta name="title-id" content="pg059_sec001" />
+  <meta name="page-section-id" content="87" />
+  <link href="./content/tailwind_output.css" rel="stylesheet">
+  <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
+  <link href="./assets/fonts.css" rel="stylesheet">
+  <style>
+    body {
+      background: #fff;
+    }
+
+    .unit-seven-page {
+      position: relative;
+      box-sizing: border-box;
+      width: min(1174px, calc(100vw - 14px));
+      min-height: 1150px;
+      margin: 4px auto;
+      padding: 110px 152px 112px;
+      overflow: hidden;
+      background: #fff;
+    }
+
+    .unit-seven-page::before {
+      content: "";
+      position: absolute;
+      z-index: 0;
+      inset: 0 44px 0 auto;
+      width: 112px;
+      opacity: .7;
+      background: radial-gradient(ellipse at 0 8%, #f7dde2 0 18%, transparent 19%), radial-gradient(ellipse at 100% 28%, #fbe5e7 0 20%, transparent 21%), linear-gradient(270deg, #f9d7df, #fcebf0 58%, transparent);
+    }
+
+    .unit-seven-page::after {
+      content: "";
+      position: absolute;
+      z-index: 5;
+      inset: 0;
+      pointer-events: none;
+      background: linear-gradient(#555, #555) 18px 44px/34px 1px no-repeat, linear-gradient(#555, #555) 44px 18px/1px 34px no-repeat, linear-gradient(#555, #555) calc(100% - 52px) 44px/34px 1px no-repeat, linear-gradient(#555, #555) calc(100% - 45px) 18px/1px 34px no-repeat;
+    }
+
+    .unit-seven-page>* {
+      position: relative;
+      z-index: 1;
+    }
+
+    .unit-seven-page .unit-heading {
+      width: 100%;
+      max-width: none;
+      margin-bottom: 52px;
+      padding: 25px 32px;
+      border-radius: 0 28px 0 28px;
+      background: linear-gradient(135deg, #a23c91, #b256a0);
+      box-shadow: 8px 10px 0 rgba(162, 60, 145, .16);
+    }
+
+    .unit-seven-page [data-id="pg059_n0002"] {
+      font: 800 italic 50px/1.1 "Trebuchet MS", Arial, sans-serif;
+    }
+
+    .unit-seven-page .unit-title {
+      margin-bottom: 55px;
+    }
+
+    .unit-seven-page [data-id="pg059_n0004"] {
+      color: #a53c90;
+      font: 800 italic 48px/1.15 "Trebuchet MS", Arial, sans-serif;
+    }
+
+    .unit-seven-intro-image {
+      display: block;
+      width: 100%;
+      max-width: 841px;
+      height: auto;
+      margin: 0 auto;
+    }
+
+    @media (max-width:800px) {
+      .unit-seven-page {
+        width: 100%;
+        min-height: 100vh;
+        padding: 72px 76px 90px 36px;
+      }
+
+      .unit-seven-page::before {
+        inset: 0 14px 0 auto;
+        width: 58px;
+      }
+
+      .unit-seven-page .unit-heading {
+        margin-bottom: 34px;
+      }
+
+      .unit-seven-page [data-id="pg059_n0002"],
+      .unit-seven-page [data-id="pg059_n0004"] {
+        font-size: 31px;
+      }
+    }
+  </style>
 </head>
 
-<body class="min-h-screen flex items-center justify-center">
-    <main class="w-full">
-      <div id="content" class="container mx-auto px-6 py-10 max-lg:px-5 max-sm:px-4 opacity-0">
-  <section data-section-type="boxed_text" data-section-id="pg059_sec001" class="w-full bg-white font-sans">
-    <div class="mx-auto max-w-4xl">
-      <div class="mb-8 rounded-[2rem] bg-gradient-to-r from-fuchsia-700 to-purple-600 px-10 py-6 text-left shadow-[0_10px_0_rgba(192,132,252,0.35)] max-lg:px-8 max-lg:py-5 max-sm:px-5 max-sm:py-4">
-        <h1 data-id="pg059_n0002" class="text-center text-5xl font-extrabold tracking-wide text-white max-lg:text-4xl max-sm:text-3xl">Unit Seven</h1>
-      </div>
-
-      <div class="mb-10 text-left">
-        <h2 data-id="pg059_n0004" class="text-4xl font-extrabold text-fuchsia-600 max-lg:text-3xl max-sm:text-2xl">Reading a variety of texts</h2>
-      </div>
-
-      <div class="relative rounded-[2rem] border-2 border-sky-500 bg-amber-50 px-8 pb-8 pt-12 shadow-sm max-lg:px-6 max-lg:pb-7 max-lg:pt-10 max-sm:px-4 max-sm:pb-5 max-sm:pt-9">
-        <div class="absolute -top-5 left-4 rounded-full bg-sky-600 px-6 py-2 shadow-md max-sm:left-3 max-sm:px-4">
-          <div data-id="pg059_n0006" class="text-3xl font-extrabold text-white max-lg:text-2xl max-sm:text-xl">Introduction</div>
+<body>
+  <main class="w-full">
+    <div id="content" class="container mx-auto px-6 py-10 max-lg:px-5 max-sm:px-4 opacity-0">
+      <section data-section-type="boxed_text" data-section-id="pg059_sec001" class="unit-seven-page">
+        <div class="unit-heading text-center">
+          <h1 data-id="pg059_n0002"
+            class="text-center text-4xl font-extrabold tracking-wide text-white max-lg:text-3xl max-sm:text-2xl">Unit
+            Seven</h1>
         </div>
 
-        <p class="z-10 text-left text-3xl leading-relaxed text-neutral-800 max-lg:text-2xl max-sm:text-xl">
-          <span data-id="pg059_n0008">In English, words are pronounced as a combination of sounds.</span>
-          <span data-id="pg059_n0009">The combination of sounds pronounced as a single unit is called a syllable.</span>
-          <span data-id="pg059_n0010">In this unit, you will read words and identify their syllables.</span>
-          <span data-id="pg059_n0011">The competencies developed will enable you to hear, pronounce and place word stress and intonation appropriately.</span>
-        </p>
-      </div>
-    </div>
-  </section>
-</div>
-    </main>
+        <div class="unit-title text-center">
+          <h2 data-id="pg059_n0004"
+            class="text-[2.1rem] font-extrabold text-fuchsia-600 max-lg:text-3xl max-sm:text-[1.9rem]">Reading a variety
+            of texts</h2>
+        </div>
 
-    <div class="relative z-50" id="interface-container"></div>
-    <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
-    <script src="./assets/scorm.js"></script>
-    <script src="./assets/base.bundle.local.js"></script>
+        <img data-id="pg059_im031" src="images/pg059_im031.png"
+          alt="Introduction to Unit Seven, Reading a variety of texts." class="unit-seven-intro-image"
+          style="max-width: 100%; height: auto;">
+      </section>
+    </div>
+  </main>
+
+  <div class="relative z-50" id="interface-container"></div>
+  <div class="relative z-50" id="nav-container"></div>
+  <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/scorm.js"></script>
+  <script src="./assets/base.bundle.local.js"></script>
 </body>
 
 </html>

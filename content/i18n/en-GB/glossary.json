@@ -1,12 +1,4 @@
 {
-  "according to": {
-    "word": "according to",
-    "definition": "following something or matching something",
-    "variations": [
-      "according to"
-    ],
-    "emoji": "📋➡️"
-  },
   "action": {
     "word": "action",
     "definition": "something that a person or animal does",
@@ -16,18 +8,9 @@
     ],
     "emoji": "🏃🙌"
   },
-  "activity": {
-    "word": "activity",
-    "definition": "something that a person is doing",
-    "variations": [
-      "activity",
-      "activities"
-    ],
-    "emoji": "🏃📝"
-  },
-  "admit": {
-    "word": "admit",
-    "definition": "to take a sick person into hospital for care",
+  "admitted": {
+    "word": "admitted",
+    "definition": "taken into hospital for treatment",
     "variations": [
       "admit",
       "admits",
@@ -36,26 +19,18 @@
     ],
     "emoji": "🏥🛏️"
   },
-  "and": {
-    "word": "and",
-    "definition": "a word used to join words or sentences together",
+  "ant": {
+    "word": "ant",
+    "definition": "a very small insect that lives in groups",
     "variations": [
-      "and"
+      "ant",
+      "ants"
     ],
-    "emoji": "➕🤝"
-  },
-  "animal": {
-    "word": "animal",
-    "definition": "a living creature such as a dog, cow, or giraffe",
-    "variations": [
-      "animal",
-      "animals"
-    ],
-    "emoji": "🐾🦓"
+    "emoji": "🐜"
   },
   "antelope": {
     "word": "antelope",
-    "definition": "a fast wild animal like a deer, often with horns",
+    "definition": "a fast wild animal with long legs and horns",
     "variations": [
       "antelope",
       "antelopes"
@@ -73,54 +48,51 @@
   },
   "appropriate": {
     "word": "appropriate",
-    "definition": "right or suitable for a particular purpose",
+    "definition": "right or suitable for a situation",
     "variations": [
-      "appropriate",
-      "appropriately"
+      "appropriate"
     ],
     "emoji": "✅👍"
   },
-  "arrange": {
-    "word": "arrange",
-    "definition": "to put things in the right order",
-    "variations": [
-      "arrange",
-      "arranges",
-      "arranging",
-      "arranged"
-    ],
-    "emoji": "🔢📝"
-  },
-  "arrest": {
-    "word": "arrest",
-    "definition": "to catch someone by law because they may have done something wrong",
+  "arrested": {
+    "word": "arrested",
+    "definition": "caught by the police because of a crime or suspected crime",
     "variations": [
       "arrest",
-      "arrested",
       "arrests",
+      "arrested",
       "arresting"
     ],
     "emoji": "👮⛓️"
   },
+  "arrow": {
+    "word": "arrow",
+    "definition": "a thin pointed stick shot from a bow",
+    "variations": [
+      "arrow",
+      "arrows"
+    ],
+    "emoji": "🏹"
+  },
+  "attacker": {
+    "word": "attacker",
+    "definition": "a person or animal that tries to hurt another",
+    "variations": [
+      "attacker",
+      "attackers"
+    ],
+    "emoji": "⚠️👊"
+  },
   "attend": {
     "word": "attend",
-    "definition": "to go to or be present at a place, class, or event",
+    "definition": "to go to a place such as school or a lesson",
     "variations": [
       "attend",
       "attends",
-      "attended",
-      "attending"
+      "attending",
+      "attended"
     ],
     "emoji": "🏫🙋"
-  },
-  "ball": {
-    "word": "ball",
-    "definition": "a round object used in games and sports",
-    "variations": [
-      "ball",
-      "balls"
-    ],
-    "emoji": "⚽🏀"
   },
   "banana": {
     "word": "banana",
@@ -131,14 +103,23 @@
     ],
     "emoji": "🍌"
   },
-  "bath": {
-    "word": "bath",
-    "definition": "the act of washing the body in water",
+  "basket": {
+    "word": "basket",
+    "definition": "a container made for carrying things",
     "variations": [
-      "bath",
-      "baths"
+      "basket",
+      "baskets"
     ],
-    "emoji": "🛁🧼"
+    "emoji": "🧺"
+  },
+  "bat": {
+    "word": "bat",
+    "definition": "a small flying animal that comes out mostly at night",
+    "variations": [
+      "bat",
+      "bats"
+    ],
+    "emoji": "🦇🌙"
   },
   "beak": {
     "word": "beak",
@@ -147,46 +128,46 @@
       "beak",
       "beaks"
     ],
-    "emoji": "🐦🔺"
+    "emoji": "🐦"
   },
-  "beat": {
-    "word": "beat",
-    "definition": "to hit something again and again, often to make sound or mix something",
+  "beating": {
+    "word": "beating",
+    "definition": "hitting something again and again, often to make sound",
     "variations": [
       "beat",
       "beats",
       "beating"
     ],
-    "emoji": "🥁👋"
+    "emoji": "🥁🎶"
+  },
+  "bee": {
+    "word": "bee",
+    "definition": "a small insect that makes honey",
+    "variations": [
+      "bee",
+      "bees"
+    ],
+    "emoji": "🐝"
   },
   "belong": {
     "word": "belong",
-    "definition": "to be owned by someone or to be the right thing for a person or place",
+    "definition": "to be owned by someone",
     "variations": [
       "belong",
       "belongs",
       "belonged",
       "belonging"
     ],
-    "emoji": "🏷️👤"
+    "emoji": "👤✅"
   },
-  "belonging": {
-    "word": "belonging",
-    "definition": "something that a person owns",
+  "belongings": {
+    "word": "belongings",
+    "definition": "the things that a person owns",
     "variations": [
       "belonging",
       "belongings"
     ],
-    "emoji": "🎒🧳"
-  },
-  "bench": {
-    "word": "bench",
-    "definition": "a long seat for two or more people",
-    "variations": [
-      "bench",
-      "benches"
-    ],
-    "emoji": "🪑🏥"
+    "emoji": "🎒👕"
   },
   "bicycle": {
     "word": "bicycle",
@@ -197,6 +178,15 @@
     ],
     "emoji": "🚲"
   },
+  "bird": {
+    "word": "bird",
+    "definition": "an animal with feathers, wings and a beak",
+    "variations": [
+      "bird",
+      "birds"
+    ],
+    "emoji": "🐦🪶"
+  },
   "blackboard": {
     "word": "blackboard",
     "definition": "a dark board in a classroom that teachers write on",
@@ -204,27 +194,55 @@
       "blackboard",
       "blackboards"
     ],
-    "emoji": "⬛✏️"
+    "emoji": "⬛✍️"
+  },
+  "blind": {
+    "word": "blind",
+    "definition": "unable to see",
+    "variations": [
+      "blind",
+      "blinder",
+      "blindest"
+    ],
+    "emoji": "🙈"
   },
   "blink": {
     "word": "blink",
-    "definition": "a very short moment; also, to close and open the eyes quickly",
+    "definition": "a very quick closing and opening of the eyes",
     "variations": [
       "blink",
+      "blinks",
       "blinked",
-      "blinking",
-      "blinks"
+      "blinking"
     ],
-    "emoji": "👀⚡"
+    "emoji": "👁️"
   },
   "blouse": {
     "word": "blouse",
-    "definition": "a shirt for a woman or girl",
+    "definition": "a shirt for a girl or woman",
     "variations": [
       "blouse",
       "blouses"
     ],
     "emoji": "👚"
+  },
+  "bone": {
+    "word": "bone",
+    "definition": "the hard part inside the body of a person or animal",
+    "variations": [
+      "bone",
+      "bones"
+    ],
+    "emoji": "🦴"
+  },
+  "bowl": {
+    "word": "bowl",
+    "definition": "a round deep dish used for holding food",
+    "variations": [
+      "bowl",
+      "bowls"
+    ],
+    "emoji": "🥣"
   },
   "branch": {
     "word": "branch",
@@ -233,33 +251,74 @@
       "branch",
       "branches"
     ],
-    "emoji": "🌳🌿"
+    "emoji": "🌳"
   },
-  "bribe": {
-    "word": "bribe",
-    "definition": "money or a gift given unfairly to make someone do something",
+  "break": {
+    "word": "break",
+    "definition": "a short time to rest between work or lessons",
+    "variations": [
+      "break",
+      "breaks",
+      "lunch break",
+      "morning break"
+    ],
+    "emoji": "☕⏸️"
+  },
+  "breakfast": {
+    "word": "breakfast",
+    "definition": "the first meal of the day, eaten in the morning",
+    "variations": [
+      "breakfast",
+      "breakfasts"
+    ],
+    "emoji": "🍽️🌅"
+  },
+  "bribed": {
+    "word": "bribed",
+    "definition": "gave money or something valuable to make someone act unfairly",
     "variations": [
       "bribe",
       "bribes",
       "bribed",
       "bribing"
     ],
-    "emoji": "💰⚠️"
+    "emoji": "💵🤝⚠️"
+  },
+  "broke into": {
+    "word": "broke into",
+    "definition": "entered a place by force, usually to steal",
+    "variations": [
+      "break into",
+      "breaks into",
+      "broke into",
+      "broken into",
+      "breaking into"
+    ],
+    "emoji": "🚪⚠️"
   },
   "brush": {
     "word": "brush",
-    "definition": "to clean or make neat with a brush",
+    "definition": "to clean with a brush",
     "variations": [
       "brush",
       "brushes",
-      "brushed",
-      "brushing"
+      "brushing",
+      "brushed"
     ],
     "emoji": "🪥✨"
   },
+  "bucket": {
+    "word": "bucket",
+    "definition": "an open container used for carrying water or other things",
+    "variations": [
+      "bucket",
+      "buckets"
+    ],
+    "emoji": "🪣"
+  },
   "buffalo": {
     "word": "buffalo",
-    "definition": "a large, strong wild animal with a heavy body and horns",
+    "definition": "a large wild animal with horns",
     "variations": [
       "buffalo",
       "buffaloes",
@@ -269,29 +328,33 @@
   },
   "bull": {
     "word": "bull",
-    "definition": "an adult male cow",
+    "definition": "a male cow, usually big and strong",
     "variations": [
       "bull",
       "bulls"
     ],
-    "emoji": "🐂"
+    "emoji": "🐂🐄"
   },
   "bunch": {
     "word": "bunch",
-    "definition": "a group of things tied or growing together",
+    "definition": "a group of things joined or held together, such as bananas",
     "variations": [
       "bunch",
       "bunches"
     ],
-    "emoji": "🍌📎"
+    "emoji": "🍌🫶"
   },
-  "but": {
-    "word": "but",
-    "definition": "a word used to join two ideas that are different or opposite",
+  "burning": {
+    "word": "burning",
+    "definition": "on fire",
     "variations": [
-      "but"
+      "burn",
+      "burns",
+      "burning",
+      "burned",
+      "burnt"
     ],
-    "emoji": "↔️❗"
+    "emoji": "🔥"
   },
   "butterfly": {
     "word": "butterfly",
@@ -302,62 +365,89 @@
     ],
     "emoji": "🦋"
   },
+  "cabbage": {
+    "word": "cabbage",
+    "definition": "a round leafy vegetable",
+    "variations": [
+      "cabbage",
+      "cabbages"
+    ],
+    "emoji": "🥬"
+  },
   "cactus": {
     "word": "cactus",
-    "definition": "a plant that grows in dry places and usually has spines",
+    "definition": "a plant that grows in dry places and has thick stems and spines",
     "variations": [
       "cactus",
-      "cactuses",
-      "cacti"
+      "cacti",
+      "cactuses"
     ],
     "emoji": "🌵"
   },
   "calf": {
     "word": "calf",
-    "definition": "a young cow or a baby of some large animals",
+    "definition": "a young cow or a young animal like a giraffe",
     "variations": [
       "calf",
       "calves"
     ],
-    "emoji": "🐄👶"
+    "emoji": "🐄🦒"
   },
   "captain": {
     "word": "captain",
-    "definition": "the person who leads a team",
+    "definition": "the leader of a team",
     "variations": [
       "captain",
       "captains"
     ],
-    "emoji": "🧢🏅"
+    "emoji": "🧑‍✈️🏆"
+  },
+  "carpenter": {
+    "word": "carpenter",
+    "definition": "a person whose job is making or repairing things made of wood",
+    "variations": [
+      "carpenter",
+      "carpenters"
+    ],
+    "emoji": "🪚🪵"
+  },
+  "carrot": {
+    "word": "carrot",
+    "definition": "a long orange vegetable that grows under the ground",
+    "variations": [
+      "carrot",
+      "carrots"
+    ],
+    "emoji": "🥕"
   },
   "cartoon": {
     "word": "cartoon",
-    "definition": "a funny animated film or television programme",
+    "definition": "a funny drawing or animated film story",
     "variations": [
       "cartoon",
       "cartoons"
     ],
     "emoji": "📺😄"
   },
-  "chair": {
-    "word": "chair",
-    "definition": "a seat for one person, usually with a back",
+  "chapter": {
+    "word": "chapter",
+    "definition": "one main part of a book",
     "variations": [
-      "chair",
-      "chairs"
+      "chapter",
+      "chapters"
     ],
-    "emoji": "🪑"
+    "emoji": "📖"
   },
-  "charge": {
-    "word": "charge",
-    "definition": "to rush forward quickly, often to attack",
+  "charged": {
+    "word": "charged",
+    "definition": "ran forward quickly to attack",
     "variations": [
       "charge",
+      "charges",
       "charged",
-      "charging",
-      "charges"
+      "charging"
     ],
-    "emoji": "🏃⚡"
+    "emoji": "🦁💨"
   },
   "chick": {
     "word": "chick",
@@ -368,15 +458,6 @@
     ],
     "emoji": "🐥"
   },
-  "chore": {
-    "word": "chore",
-    "definition": "a job that is done regularly at home",
-    "variations": [
-      "chore",
-      "chores"
-    ],
-    "emoji": "🧹🏠"
-  },
   "classroom": {
     "word": "classroom",
     "definition": "a room where students learn",
@@ -386,9 +467,9 @@
     ],
     "emoji": "🏫🪑"
   },
-  "clean": {
-    "word": "clean",
-    "definition": "to make something not dirty",
+  "cleaning": {
+    "word": "cleaning",
+    "definition": "making something free from dirt",
     "variations": [
       "clean",
       "cleans",
@@ -406,42 +487,34 @@
       "combed",
       "combing"
     ],
-    "emoji": "🪮💇"
-  },
-  "combination": {
-    "word": "combination",
-    "definition": "two or more things joined together",
-    "variations": [
-      "combination",
-      "combinations"
-    ],
-    "emoji": "🧩➕"
-  },
-  "common": {
-    "word": "common",
-    "definition": "usual or found in many places",
-    "variations": [
-      "common"
-    ],
-    "emoji": "🔁🙂"
+    "emoji": "🪮"
   },
   "communication": {
     "word": "communication",
-    "definition": "the sharing of information by speaking, writing, or other ways",
+    "definition": "the act of sharing information with other people",
     "variations": [
       "communication",
       "communications"
     ],
-    "emoji": "💬📨"
+    "emoji": "💬📢"
   },
-  "competency": {
-    "word": "competency",
-    "definition": "an important skill or ability to do something well",
+  "competencies": {
+    "word": "competencies",
+    "definition": "skills and abilities needed to do something well",
     "variations": [
       "competency",
       "competencies"
     ],
-    "emoji": "💪📘"
+    "emoji": "💡✅"
+  },
+  "competency": {
+    "word": "competency",
+    "definition": "an ability or skill to do something well",
+    "variations": [
+      "competency",
+      "competencies"
+    ],
+    "emoji": "✅🎯"
   },
   "competition": {
     "word": "competition",
@@ -450,66 +523,77 @@
       "competition",
       "competitions"
     ],
-    "emoji": "🏆🎯"
+    "emoji": "🏆🏃"
   },
   "complain": {
     "word": "complain",
-    "definition": "to say that you are unhappy about something",
+    "definition": "to say that you are not happy about something",
     "variations": [
       "complain",
       "complains",
+      "complained",
       "complaining",
-      "complained"
+      "complaint"
     ],
-    "emoji": "😟💬"
+    "emoji": "😟🗣️"
   },
   "compound": {
     "word": "compound",
-    "definition": "an open area of land around a house or school",
+    "definition": "the open area around a house or school",
     "variations": [
       "compound",
       "compounds"
     ],
-    "emoji": "🏡🌍"
+    "emoji": "🏫🌳"
   },
   "connect": {
     "word": "connect",
-    "definition": "to join things or ideas together",
+    "definition": "to join ideas or things together",
     "variations": [
       "connect",
       "connects",
       "connecting",
       "connected"
     ],
-    "emoji": "🔗🤝"
+    "emoji": "🔗➡️"
   },
-  "cook": {
-    "word": "cook",
-    "definition": "to prepare food using heat",
+  "construct": {
+    "word": "construct",
+    "definition": "to make or form something, such as a sentence",
+    "variations": [
+      "construct",
+      "constructs",
+      "constructed",
+      "constructing"
+    ],
+    "emoji": "🛠️✍️"
+  },
+  "cooking": {
+    "word": "cooking",
+    "definition": "preparing food with heat",
     "variations": [
       "cook",
       "cooks",
       "cooking",
       "cooked"
     ],
-    "emoji": "🍲🔥"
+    "emoji": "🍲👩‍🍳"
   },
   "corruption": {
     "word": "corruption",
-    "definition": "dishonest or unfair behaviour, especially when someone uses power to get benefits in a wrong way",
+    "definition": "dishonest behaviour, especially when someone uses power or money in a wrong way",
     "variations": [
       "corruption",
       "corrupt"
     ],
-    "emoji": "💰⚠️"
+    "emoji": "💰⚖️🚫"
   },
   "cost": {
     "word": "cost",
     "definition": "to have a price; to need a certain amount of money to buy",
     "variations": [
       "cost",
-      "costs",
-      "costing"
+      "costs"
     ],
     "emoji": "💰🏷️"
   },
@@ -518,43 +602,33 @@
     "definition": "to break something hard so that it opens",
     "variations": [
       "crack",
+      "cracks",
       "cracked",
-      "cracking",
-      "cracks"
+      "cracking"
     ],
     "emoji": "🥚💥"
   },
   "crow": {
     "word": "crow",
-    "definition": "a black bird with a loud voice",
+    "definition": "a black bird with a loud call",
     "variations": [
       "crow",
       "crows"
     ],
-    "emoji": "🐦‍⬛"
+    "emoji": "🐦⚫"
   },
-  "cry": {
-    "word": "cry",
-    "definition": "to have tears because you are sad or in pain",
+  "daily routine": {
+    "word": "daily routine",
+    "definition": "the things a person usually does every day",
     "variations": [
-      "cry",
-      "cries",
-      "crying",
-      "cried"
+      "daily routine",
+      "daily routines"
     ],
-    "emoji": "😭😢"
+    "emoji": "📅🔁"
   },
-  "daily": {
-    "word": "daily",
-    "definition": "happening every day",
-    "variations": [
-      "daily"
-    ],
-    "emoji": "📅☀️"
-  },
-  "dance": {
-    "word": "dance",
-    "definition": "to move your body to music",
+  "dancing": {
+    "word": "dancing",
+    "definition": "moving your body to music",
     "variations": [
       "dance",
       "dances",
@@ -563,60 +637,49 @@
     ],
     "emoji": "💃🎶"
   },
-  "deep": {
-    "word": "deep",
-    "definition": "going far down from the top or surface",
-    "variations": [
-      "deep",
-      "deeper",
-      "deepest"
-    ],
-    "emoji": "🌊⬇️"
-  },
   "defence": {
     "word": "defence",
-    "definition": "protection against danger or attack",
+    "definition": "protection against attack or danger",
     "variations": [
       "defence",
-      "defences",
-      "defend",
-      "defended",
-      "defending"
+      "defences"
     ],
-    "emoji": "🛡️⚔️"
+    "emoji": "🛡️"
   },
-  "dense": {
-    "word": "dense",
-    "definition": "thick and closely packed together",
+  "delivery": {
+    "word": "delivery",
+    "definition": "the way something is spoken or presented",
     "variations": [
-      "dense",
-      "densely"
+      "delivery",
+      "deliveries"
     ],
-    "emoji": "☁️🌫️"
+    "emoji": "🗣️🎤"
   },
   "describe": {
     "word": "describe",
-    "definition": "to say or write what someone or something is like",
+    "definition": "to tell or explain what someone or something is like",
     "variations": [
       "describe",
       "describes",
       "describing",
       "described"
     ],
-    "emoji": "🗣️✍️"
+    "emoji": "💬📝"
   },
-  "dialogue": {
-    "word": "dialogue",
-    "definition": "a conversation between two or more people",
+  "differentiate": {
+    "word": "differentiate",
+    "definition": "to show or see the difference between things",
     "variations": [
-      "dialogue",
-      "dialogues"
+      "differentiate",
+      "differentiates",
+      "differentiated",
+      "differentiating"
     ],
-    "emoji": "💬🗣️"
+    "emoji": "↔️🧠"
   },
-  "dig": {
-    "word": "dig",
-    "definition": "to break or move earth with your hands or a tool",
+  "digging": {
+    "word": "digging",
+    "definition": "making a hole or turning soil with a tool",
     "variations": [
       "dig",
       "digs",
@@ -625,9 +688,9 @@
     ],
     "emoji": "⛏️🌱"
   },
-  "discharge": {
-    "word": "discharge",
-    "definition": "to allow a patient to leave hospital",
+  "discharged": {
+    "word": "discharged",
+    "definition": "allowed to leave hospital after treatment",
     "variations": [
       "discharge",
       "discharges",
@@ -638,24 +701,26 @@
   },
   "dismayed": {
     "word": "dismayed",
-    "definition": "feeling worried, disappointed, or upset",
+    "definition": "feeling worried, upset, or disappointed",
     "variations": [
+      "dismay",
       "dismayed",
-      "dismay"
+      "dismaying"
     ],
-    "emoji": "😟😞"
+    "emoji": "😟🌧️"
   },
-  "domestic": {
-    "word": "domestic",
-    "definition": "relating to the home or household",
+  "doctor": {
+    "word": "doctor",
+    "definition": "a person trained to treat sick or injured people",
     "variations": [
-      "domestic"
+      "doctor",
+      "doctors"
     ],
-    "emoji": "🏠🧺"
+    "emoji": "🩺👨‍⚕️👩‍⚕️"
   },
   "domestic chores": {
     "word": "domestic chores",
-    "definition": "jobs done at home, such as cleaning or washing",
+    "definition": "jobs you do at home, such as cleaning or washing",
     "variations": [
       "domestic chore",
       "domestic chores",
@@ -666,7 +731,7 @@
   },
   "donkey": {
     "word": "donkey",
-    "definition": "an animal like a small horse with long ears",
+    "definition": "an animal like a small horse, used for carrying things",
     "variations": [
       "donkey",
       "donkeys"
@@ -675,67 +740,129 @@
   },
   "drone": {
     "word": "drone",
-    "definition": "a small flying machine that works without a pilot inside it",
+    "definition": "a small flying machine that has no pilot inside it",
     "variations": [
       "drone",
       "drones"
     ],
-    "emoji": "🚁📷"
+    "emoji": "🚁"
   },
   "drum": {
     "word": "drum",
-    "definition": "a musical instrument that you hit to make sound",
+    "definition": "a musical instrument you hit to make sound",
     "variations": [
       "drum",
       "drums"
     ],
-    "emoji": "🥁"
+    "emoji": "🥁🎵"
+  },
+  "duck": {
+    "word": "duck",
+    "definition": "a bird that can swim and has a flat beak",
+    "variations": [
+      "duck",
+      "ducks"
+    ],
+    "emoji": "🦆"
   },
   "eagle": {
     "word": "eagle",
-    "definition": "a large bird that flies high and has very good eyesight",
+    "definition": "a large bird with strong wings and sharp eyes",
     "variations": [
       "eagle",
       "eagles"
     ],
     "emoji": "🦅"
   },
-  "ear": {
-    "word": "ear",
-    "definition": "the part of the body used for hearing",
+  "eggplant": {
+    "word": "eggplant",
+    "definition": "a purple vegetable with soft flesh inside",
     "variations": [
-      "ear",
-      "ears"
+      "eggplant",
+      "eggplants"
     ],
-    "emoji": "👂"
+    "emoji": "🍆"
+  },
+  "elephant": {
+    "word": "elephant",
+    "definition": "a very large animal with a trunk",
+    "variations": [
+      "elephant",
+      "elephants"
+    ],
+    "emoji": "🐘"
   },
   "enemy": {
     "word": "enemy",
-    "definition": "a person or thing that is against someone or something",
+    "definition": "someone or something that is against another person or thing",
     "variations": [
       "enemy",
       "enemies"
     ],
-    "emoji": "⚔️😠"
+    "emoji": "⚔️🚫"
   },
   "environment": {
     "word": "environment",
-    "definition": "the natural world around us, including land, water, air, plants and animals",
+    "definition": "the natural world around us, including land, air, water, plants and animals",
     "variations": [
       "environment",
       "environments"
     ],
     "emoji": "🌍🌿"
   },
-  "excited": {
-    "word": "excited",
-    "definition": "very happy and full of strong feeling",
+  "every day": {
+    "word": "every day",
+    "definition": "on each day; daily",
     "variations": [
-      "excited",
-      "exciting",
-      "excitement"
+      "every day"
     ],
-    "emoji": "😀🎉"
+    "emoji": "📅☀️"
+  },
+  "every morning": {
+    "word": "every morning",
+    "definition": "on each morning",
+    "variations": [
+      "every morning"
+    ],
+    "emoji": "🌅"
+  },
+  "every week": {
+    "word": "every week",
+    "definition": "once each week",
+    "variations": [
+      "every week"
+    ],
+    "emoji": "📆"
+  },
+  "examine": {
+    "word": "examine",
+    "definition": "to look at something or someone carefully to check it",
+    "variations": [
+      "examine",
+      "examines",
+      "examining",
+      "examined"
+    ],
+    "emoji": "🔍🩺"
+  },
+  "exchange": {
+    "word": "exchange",
+    "definition": "to give something and receive something in return, or to take turns",
+    "variations": [
+      "exchange",
+      "exchanges",
+      "exchanging",
+      "exchanged"
+    ],
+    "emoji": "🔄🗣️"
+  },
+  "expensive": {
+    "word": "expensive",
+    "definition": "costing a lot of money",
+    "variations": [
+      "expensive"
+    ],
+    "emoji": "💸"
   },
   "experience": {
     "word": "experience",
@@ -744,7 +871,7 @@
       "experience",
       "experiences"
     ],
-    "emoji": "✨📘"
+    "emoji": "✨🧠"
   },
   "farm": {
     "word": "farm",
@@ -753,11 +880,11 @@
       "farm",
       "farms"
     ],
-    "emoji": "🚜🌾"
+    "emoji": "🚜🐄🌾"
   },
   "farmer": {
     "word": "farmer",
-    "definition": "a person who grows crops or keeps animals on a farm",
+    "definition": "a person who grows crops or keeps animals",
     "variations": [
       "farmer",
       "farmers"
@@ -773,175 +900,238 @@
     ],
     "emoji": "⭐🧩"
   },
+  "features": {
+    "word": "features",
+    "definition": "important parts or qualities of something",
+    "variations": [
+      "feature",
+      "features"
+    ],
+    "emoji": "🔍🧩"
+  },
+  "female": {
+    "word": "female",
+    "definition": "of the sex that can lay eggs or give birth",
+    "variations": [
+      "female",
+      "females"
+    ],
+    "emoji": "♀️🐔"
+  },
   "fetch": {
     "word": "fetch",
     "definition": "to go and bring something back",
     "variations": [
       "fetch",
+      "fetches",
       "fetched",
-      "fetching",
-      "fetches"
+      "fetching"
     ],
-    "emoji": "🚶🪵"
+    "emoji": "🪵🚶"
   },
   "firewood": {
     "word": "firewood",
-    "definition": "wood collected for making a fire",
+    "definition": "wood used for making a fire",
     "variations": [
       "firewood"
     ],
     "emoji": "🪵🔥"
   },
-  "fishing rod": {
-    "word": "fishing rod",
-    "definition": "a long tool used for catching fish",
+  "fix": {
+    "word": "fix",
+    "definition": "to repair something that is broken or not working properly",
     "variations": [
-      "fishing rod",
-      "fishing rods"
+      "fix",
+      "fixes",
+      "fixing",
+      "fixed"
     ],
-    "emoji": "🎣🐟"
+    "emoji": "🔧🛠️"
   },
   "flamingo": {
     "word": "flamingo",
-    "definition": "a tall bird with long legs, usually pink in colour",
+    "definition": "a pink bird with long legs",
     "variations": [
       "flamingo",
       "flamingos"
     ],
     "emoji": "🦩"
   },
-  "flower": {
-    "word": "flower",
-    "definition": "the colourful part of a plant",
+  "foal": {
+    "word": "foal",
+    "definition": "a young horse",
     "variations": [
-      "flower",
-      "flowers"
+      "foal",
+      "foals"
     ],
-    "emoji": "🌸🌼"
+    "emoji": "🐴"
+  },
+  "football": {
+    "word": "football",
+    "definition": "a game in which players kick a ball to score goals",
+    "variations": [
+      "football"
+    ],
+    "emoji": "⚽🥅"
   },
   "forbidden": {
     "word": "forbidden",
     "definition": "not allowed",
     "variations": [
-      "forbidden",
       "forbid",
       "forbids",
+      "forbidden",
       "forbade"
     ],
     "emoji": "🚫⛔"
   },
-  "form": {
-    "word": "form",
-    "definition": "the shape of a word used in grammar",
+  "fresh": {
+    "word": "fresh",
+    "definition": "new, clean, and good to eat or use",
     "variations": [
-      "form",
-      "forms"
+      "fresh",
+      "fresher",
+      "freshest"
     ],
-    "emoji": "🔤📝"
+    "emoji": "✨🥭"
   },
   "fruit": {
     "word": "fruit",
-    "definition": "a sweet food that grows on trees or plants",
+    "definition": "food that grows on trees or plants, such as mangoes or bananas",
     "variations": [
       "fruit",
       "fruits"
     ],
-    "emoji": "🍎🍌🍍"
+    "emoji": "🍎🍌🥭"
+  },
+  "gather": {
+    "word": "gather",
+    "definition": "to come together in one place",
+    "variations": [
+      "gather",
+      "gathered",
+      "gathering",
+      "gathers"
+    ],
+    "emoji": "👥📍"
+  },
+  "Geography": {
+    "word": "Geography",
+    "definition": "the study of places, land, weather and people on Earth",
+    "variations": [
+      "Geography"
+    ],
+    "emoji": "🗺️🌍"
   },
   "giraffe": {
     "word": "giraffe",
-    "definition": "a very tall wild animal with a very long neck",
+    "definition": "a very tall animal with a long neck",
     "variations": [
       "giraffe",
       "giraffes"
     ],
     "emoji": "🦒"
   },
-  "grab": {
-    "word": "grab",
-    "definition": "to take or catch something quickly with your hand",
+  "goose": {
+    "word": "goose",
+    "definition": "a large water bird with a long neck",
     "variations": [
-      "grab",
-      "grabbed",
-      "grabbing",
-      "grabs"
+      "goose",
+      "geese"
     ],
-    "emoji": "✋⚡"
+    "emoji": "🪿"
+  },
+  "grandmother": {
+    "word": "grandmother",
+    "definition": "the mother of your mother or father",
+    "variations": [
+      "grandmother",
+      "grandmothers"
+    ],
+    "emoji": "👵❤️"
   },
   "grasshopper": {
     "word": "grasshopper",
-    "definition": "an insect with long back legs used for jumping",
+    "definition": "an insect with long back legs for jumping",
     "variations": [
       "grasshopper",
       "grasshoppers"
     ],
     "emoji": "🦗"
   },
-  "grow": {
-    "word": "grow",
-    "definition": "to become bigger, or to live and develop like a plant",
+  "group": {
+    "word": "group",
+    "definition": "a number of people or things together",
     "variations": [
-      "grow",
-      "grows",
-      "growing",
-      "grew"
+      "group",
+      "groups"
     ],
-    "emoji": "🌱📈"
+    "emoji": "👥"
   },
-  "hammer": {
-    "word": "hammer",
-    "definition": "a tool used for hitting nails into wood or other things",
+  "hare": {
+    "word": "hare",
+    "definition": "an animal like a rabbit, but usually bigger with longer ears",
     "variations": [
-      "hammer",
-      "hammers"
+      "hare",
+      "hares"
     ],
-    "emoji": "🔨"
+    "emoji": "🐇"
   },
-  "have": {
-    "word": "have",
-    "definition": "to own, hold, or contain something",
+  "healthy": {
+    "word": "healthy",
+    "definition": "well and not ill",
     "variations": [
-      "have",
-      "has",
-      "had",
-      "having"
+      "healthy",
+      "healthier",
+      "healthiest"
     ],
-    "emoji": "✋📦"
-  },
-  "head": {
-    "word": "head",
-    "definition": "the top part of the body with the eyes, nose, mouth, and ears",
-    "variations": [
-      "head",
-      "heads"
-    ],
-    "emoji": "🙂"
+    "emoji": "💪😊🍎"
   },
   "hen": {
     "word": "hen",
-    "definition": "an adult female chicken",
+    "definition": "a female chicken",
     "variations": [
       "hen",
       "hens"
     ],
     "emoji": "🐔"
   },
-  "homework": {
-    "word": "homework",
-    "definition": "school work that pupils do at home",
+  "hind leg": {
+    "word": "hind leg",
+    "definition": "a back leg of an animal",
     "variations": [
-      "homework"
+      "hind leg",
+      "hind legs"
     ],
-    "emoji": "✏️📖"
+    "emoji": "🦵🐾"
   },
   "hospital": {
     "word": "hospital",
-    "definition": "a place where sick or injured people are treated",
+    "definition": "a place where sick or injured people go to get treatment",
     "variations": [
       "hospital",
       "hospitals"
     ],
     "emoji": "🏥🩺"
+  },
+  "hungry": {
+    "word": "hungry",
+    "definition": "needing or wanting food",
+    "variations": [
+      "hungry"
+    ],
+    "emoji": "🍽️😋"
+  },
+  "hunt": {
+    "word": "hunt",
+    "definition": "to look for and catch animals or birds",
+    "variations": [
+      "hunt",
+      "hunts",
+      "hunting",
+      "hunted"
+    ],
+    "emoji": "🏹🐦"
   },
   "idea": {
     "word": "idea",
@@ -952,74 +1142,47 @@
     ],
     "emoji": "💡🧠"
   },
-  "identify": {
-    "word": "identify",
-    "definition": "to recognise and name something correctly",
-    "variations": [
-      "identify",
-      "identifies",
-      "identified",
-      "identifying"
-    ],
-    "emoji": "🔍✅"
-  },
-  "in": {
-    "word": "in",
-    "definition": "inside something",
-    "variations": [
-      "in"
-    ],
-    "emoji": "📥🏠"
-  },
   "incident": {
     "word": "incident",
-    "definition": "an event, especially one that is unusual or important",
+    "definition": "an event or something that happened, especially an unusual one",
     "variations": [
       "incident",
       "incidents"
     ],
-    "emoji": "⚠️📌"
-  },
-  "information": {
-    "word": "information",
-    "definition": "facts or details that tell you something",
-    "variations": [
-      "information"
-    ],
-    "emoji": "ℹ️📘"
+    "emoji": "⚠️"
   },
   "injury": {
     "word": "injury",
-    "definition": "harm done to the body",
+    "definition": "harm or damage done to the body",
     "variations": [
       "injury",
-      "injuries",
-      "injure",
-      "injured"
+      "injuries"
     ],
-    "emoji": "🤕🩹"
+    "emoji": "🤕"
   },
   "insect": {
     "word": "insect",
-    "definition": "a very small animal with छह legs, such as an ant or a bee",
+    "definition": "a very small animal with six legs, such as an ant or a butterfly",
     "variations": [
       "insect",
       "insects"
     ],
-    "emoji": "🐜🐝"
+    "emoji": "🐜🦋"
   },
   "interview": {
     "word": "interview",
     "definition": "a meeting where one person asks questions and another answers them",
     "variations": [
       "interview",
-      "interviews"
+      "interviews",
+      "interviewed",
+      "interviewing"
     ],
-    "emoji": "🎤💬"
+    "emoji": "🎤🗣️"
   },
   "intonation": {
     "word": "intonation",
-    "definition": "the way the voice rises and falls when speaking",
+    "definition": "the rise and fall of the voice when speaking",
     "variations": [
       "intonation",
       "intonations"
@@ -1028,43 +1191,33 @@
   },
   "justice": {
     "word": "justice",
-    "definition": "fair treatment according to what is right and lawful",
+    "definition": "fair treatment and doing what is right according to the law",
     "variations": [
-      "justice",
-      "just"
+      "justice"
     ],
-    "emoji": "⚖️✅"
-  },
-  "key": {
-    "word": "key",
-    "definition": "a small metal object used to open or lock something",
-    "variations": [
-      "key",
-      "keys"
-    ],
-    "emoji": "🔑"
+    "emoji": "⚖️"
   },
   "kitchen": {
     "word": "kitchen",
-    "definition": "the room where food is cooked",
+    "definition": "a room where food is cooked",
     "variations": [
       "kitchen",
       "kitchens"
     ],
-    "emoji": "🍲🏠"
+    "emoji": "🍳🏠"
   },
-  "leg": {
-    "word": "leg",
-    "definition": "one of the body parts used for standing and walking",
+  "laptop": {
+    "word": "laptop",
+    "definition": "a small portable computer",
     "variations": [
-      "leg",
-      "legs"
+      "laptop",
+      "laptops"
     ],
-    "emoji": "🦵"
+    "emoji": "💻"
   },
   "lemon": {
     "word": "lemon",
-    "definition": "a yellow fruit with sour juice",
+    "definition": "a yellow fruit with a sour taste",
     "variations": [
       "lemon",
       "lemons"
@@ -1073,16 +1226,25 @@
   },
   "lesson": {
     "word": "lesson",
-    "definition": "a time when you learn something in class",
+    "definition": "a time when students learn about a subject",
     "variations": [
       "lesson",
       "lessons"
     ],
     "emoji": "📚🏫"
   },
+  "lion": {
+    "word": "lion",
+    "definition": "a large wild cat with a powerful body",
+    "variations": [
+      "lion",
+      "lions"
+    ],
+    "emoji": "🦁"
+  },
   "listen": {
     "word": "listen",
-    "definition": "to pay attention to sound so that you hear and understand it",
+    "definition": "to pay attention to sounds or to what someone is saying",
     "variations": [
       "listen",
       "listens",
@@ -1091,34 +1253,34 @@
     ],
     "emoji": "👂🎧"
   },
-  "location": {
-    "word": "location",
-    "definition": "the place where someone or something is",
-    "variations": [
-      "location",
-      "locations"
-    ],
-    "emoji": "📍🗺️"
-  },
   "mango": {
     "word": "mango",
-    "definition": "a sweet tropical fruit with soft yellow or orange flesh",
+    "definition": "a sweet yellow or orange fruit",
     "variations": [
       "mango",
       "mangoes"
     ],
     "emoji": "🥭"
   },
+  "millipede": {
+    "word": "millipede",
+    "definition": "a small animal with a long body and many legs",
+    "variations": [
+      "millipede",
+      "millipedes"
+    ],
+    "emoji": "🐛🦵"
+  },
   "misplace": {
     "word": "misplace",
-    "definition": "to put something in the wrong place and not be able to find it",
+    "definition": "to put something in the wrong place and not find it easily",
     "variations": [
       "misplace",
-      "misplaced",
       "misplaces",
+      "misplaced",
       "misplacing"
     ],
-    "emoji": "📚❓"
+    "emoji": "🔍📚"
   },
   "moment": {
     "word": "moment",
@@ -1131,16 +1293,16 @@
   },
   "monkey": {
     "word": "monkey",
-    "definition": "an animal that can climb trees and often has a long tail",
+    "definition": "an animal that can climb trees and has a long tail",
     "variations": [
       "monkey",
       "monkeys"
     ],
     "emoji": "🐒"
   },
-  "mop": {
-    "word": "mop",
-    "definition": "to clean a floor with a mop",
+  "mopping": {
+    "word": "mopping",
+    "definition": "cleaning a floor with a mop",
     "variations": [
       "mop",
       "mops",
@@ -1149,16 +1311,26 @@
     ],
     "emoji": "🪣🧽"
   },
+  "mounted": {
+    "word": "mounted",
+    "definition": "fixed something onto another thing",
+    "variations": [
+      "mount",
+      "mounts",
+      "mounted",
+      "mounting"
+    ],
+    "emoji": "🔧📷"
+  },
   "multi-syllable": {
     "word": "multi-syllable",
-    "definition": "having more than one syllable",
+    "definition": "having more than one syllable or beat when spoken",
     "variations": [
       "multi-syllable",
       "multi-syllable words",
-      "multisyllable",
       "multisyllabic"
     ],
-    "emoji": "🔤🔊"
+    "emoji": "🗣️🔤"
   },
   "name": {
     "word": "name",
@@ -1169,28 +1341,27 @@
       "naming",
       "named"
     ],
-    "emoji": "🏷️💬"
+    "emoji": "🏷️🗣️"
   },
-  "narrate": {
-    "word": "narrate",
-    "definition": "to tell a story or describe events",
+  "narrated": {
+    "word": "narrated",
+    "definition": "told a story or described what happened",
     "variations": [
       "narrate",
-      "narrated",
-      "narrating",
       "narrates",
-      "narration"
+      "narrated",
+      "narrating"
     ],
-    "emoji": "📖🗣️"
+    "emoji": "🗣️📖"
   },
   "national park": {
     "word": "national park",
-    "definition": "a large protected area of land where wild animals and plants are kept safe",
+    "definition": "a large protected area where animals and plants live safely",
     "variations": [
       "national park",
       "national parks"
     ],
-    "emoji": "🏞️🦁"
+    "emoji": "🏞️🦓"
   },
   "neck": {
     "word": "neck",
@@ -1199,7 +1370,7 @@
       "neck",
       "necks"
     ],
-    "emoji": "🦒"
+    "emoji": "🦒🧍"
   },
   "neighbour": {
     "word": "neighbour",
@@ -1210,14 +1381,24 @@
     ],
     "emoji": "🏠👋"
   },
-  "noun": {
-    "word": "noun",
-    "definition": "a word for a person, place, animal or thing",
+  "netball": {
+    "word": "netball",
+    "definition": "a team game played with a ball and a hoop",
     "variations": [
-      "noun",
-      "nouns"
+      "netball"
     ],
-    "emoji": "📘🔤"
+    "emoji": "🏐⛹️"
+  },
+  "noticed": {
+    "word": "noticed",
+    "definition": "saw, heard, or became aware of something",
+    "variations": [
+      "notice",
+      "notices",
+      "noticed",
+      "noticing"
+    ],
+    "emoji": "👀💡"
   },
   "object": {
     "word": "object",
@@ -1226,35 +1407,28 @@
       "object",
       "objects"
     ],
-    "emoji": "📦🔹"
-  },
-  "often": {
-    "word": "often",
-    "definition": "many times or regularly",
-    "variations": [
-      "often"
-    ],
-    "emoji": "🔁🕒"
-  },
-  "on": {
-    "word": "on",
-    "definition": "in a position above something and touching it",
-    "variations": [
-      "on"
-    ],
-    "emoji": "⬆️📦"
+    "emoji": "📦🧸"
   },
   "ongoing": {
     "word": "ongoing",
-    "definition": "still happening now; not finished",
+    "definition": "still happening; continuing now",
     "variations": [
       "ongoing"
     ],
-    "emoji": "▶️⏳"
+    "emoji": "🔄⏳"
   },
-  "open": {
-    "word": "open",
-    "definition": "to move something so it is not closed",
+  "onion": {
+    "word": "onion",
+    "definition": "a round vegetable with many layers and a strong smell",
+    "variations": [
+      "onion",
+      "onions"
+    ],
+    "emoji": "🧅"
+  },
+  "opening": {
+    "word": "opening",
+    "definition": "moving something so it is not closed",
     "variations": [
       "open",
       "opens",
@@ -1262,23 +1436,6 @@
       "opened"
     ],
     "emoji": "🚪📖"
-  },
-  "oral": {
-    "word": "oral",
-    "definition": "spoken, not written",
-    "variations": [
-      "oral",
-      "orally"
-    ],
-    "emoji": "🗣️👄"
-  },
-  "orally": {
-    "word": "orally",
-    "definition": "by speaking, not by writing",
-    "variations": [
-      "orally"
-    ],
-    "emoji": "🗣️👄"
   },
   "orange": {
     "word": "orange",
@@ -1291,16 +1448,25 @@
   },
   "ostrich": {
     "word": "ostrich",
-    "definition": "a very large bird that cannot fly and has long legs",
+    "definition": "a very large bird that cannot fly",
     "variations": [
       "ostrich",
       "ostriches"
     ],
-    "emoji": "🐦"
+    "emoji": "🪶🐦"
+  },
+  "owl": {
+    "word": "owl",
+    "definition": "a bird that usually hunts at night",
+    "variations": [
+      "owl",
+      "owls"
+    ],
+    "emoji": "🦉"
   },
   "papaya": {
     "word": "papaya",
-    "definition": "a soft tropical fruit with sweet orange flesh",
+    "definition": "a large soft fruit with orange flesh and black seeds",
     "variations": [
       "papaya",
       "papayas"
@@ -1309,12 +1475,13 @@
   },
   "parade": {
     "word": "parade",
-    "definition": "a formal line or gathering of people, often at school or in public",
+    "definition": "a group of people moving or standing together in an organised way",
     "variations": [
       "parade",
-      "parades"
+      "parades",
+      "closing parade"
     ],
-    "emoji": "🚶🏫"
+    "emoji": "🎺🚶"
   },
   "participate": {
     "word": "participate",
@@ -1322,39 +1489,39 @@
     "variations": [
       "participate",
       "participates",
-      "participated",
-      "participating"
+      "participating",
+      "participated"
     ],
-    "emoji": "🙋🎯"
+    "emoji": "🤝⚽"
   },
-  "patient": {
-    "word": "patient",
-    "definition": "a person who is receiving medical care",
+  "passage": {
+    "word": "passage",
+    "definition": "a short piece of writing to read",
+    "variations": [
+      "passage",
+      "passages"
+    ],
+    "emoji": "📖📝"
+  },
+  "patients": {
+    "word": "patients",
+    "definition": "people who are receiving medical care or treatment",
     "variations": [
       "patient",
       "patients"
     ],
-    "emoji": "🤒🏥"
+    "emoji": "🏥🩺"
   },
   "peck": {
     "word": "peck",
-    "definition": "to hit or pick at something with a bird’s beak",
+    "definition": "to hit or pick with a bird’s beak",
     "variations": [
       "peck",
+      "pecks",
       "pecked",
-      "pecking",
-      "pecks"
+      "pecking"
     ],
-    "emoji": "🐔👄"
-  },
-  "pen": {
-    "word": "pen",
-    "definition": "a tool used for writing with ink",
-    "variations": [
-      "pen",
-      "pens"
-    ],
-    "emoji": "🖊️✍️"
+    "emoji": "🐔👉"
   },
   "pencil": {
     "word": "pencil",
@@ -1363,11 +1530,11 @@
       "pencil",
       "pencils"
     ],
-    "emoji": "✏️📏"
+    "emoji": "✏️"
   },
   "period": {
     "word": "period",
-    "definition": "a set time for a lesson at school",
+    "definition": "a set time for one lesson at school",
     "variations": [
       "period",
       "periods"
@@ -1381,64 +1548,85 @@
       "personal pronoun",
       "personal pronouns"
     ],
-    "emoji": "🔤👤"
+    "emoji": "📝👤"
   },
   "pick": {
     "word": "pick",
-    "definition": "to take something, especially fruit or flowers, from where it is growing",
+    "definition": "to take something from where it is growing or lying",
     "variations": [
       "pick",
       "picks",
       "picking",
       "picked"
     ],
-    "emoji": "✋🥭"
+    "emoji": "🖐️🥭"
   },
   "pineapple": {
     "word": "pineapple",
-    "definition": "a large tropical fruit with a rough skin and sweet yellow inside",
+    "definition": "a large tropical fruit with rough skin and sweet yellow flesh",
     "variations": [
       "pineapple",
       "pineapples"
     ],
     "emoji": "🍍"
   },
+  "pinned": {
+    "word": "pinned",
+    "definition": "fixed or placed something firmly in one place",
+    "variations": [
+      "pin",
+      "pins",
+      "pinned",
+      "pinning"
+    ],
+    "emoji": "📌"
+  },
   "plait": {
     "word": "plait",
-    "definition": "to twist or weave hair into long parts",
+    "definition": "to twist or weave hair into strands",
     "variations": [
       "plait",
       "plaits",
       "plaited",
       "plaiting"
     ],
-    "emoji": "💇🪮"
+    "emoji": "🧑‍🦱"
   },
   "plant": {
     "word": "plant",
-    "definition": "a living thing that grows in the ground, often with leaves and roots",
+    "definition": "a living thing that grows in soil, like a flower or tree",
     "variations": [
       "plant",
       "plants"
     ],
-    "emoji": "🌿🪴"
+    "emoji": "🌱🪴"
   },
   "playground": {
     "word": "playground",
-    "definition": "an outdoor place where children play or do sports",
+    "definition": "an outdoor place where children play or do activities",
     "variations": [
       "playground",
       "playgrounds"
     ],
-    "emoji": "🛝⚽"
+    "emoji": "🏫⚽🛝"
   },
   "plural": {
     "word": "plural",
     "definition": "meaning more than one person, animal or thing",
     "variations": [
-      "plural"
+      "plural",
+      "plurals"
     ],
-    "emoji": "🔢👥"
+    "emoji": "🔢➕"
+  },
+  "policeman": {
+    "word": "policeman",
+    "definition": "a male police officer",
+    "variations": [
+      "policeman",
+      "policemen"
+    ],
+    "emoji": "👮🚓"
   },
   "possess": {
     "word": "possess",
@@ -1449,65 +1637,38 @@
       "possessed",
       "possessing"
     ],
-    "emoji": "🤝📘"
+    "emoji": "✋📘"
   },
   "possession": {
     "word": "possession",
-    "definition": "the state of having or owning something",
+    "definition": "something that belongs to someone, or the state of owning something",
     "variations": [
       "possession",
       "possessions"
     ],
-    "emoji": "👜📦"
+    "emoji": "👜🙋"
   },
-  "pot": {
-    "word": "pot",
-    "definition": "a deep container used for cooking or holding things",
+  "poultry farm": {
+    "word": "poultry farm",
+    "definition": "a place where people keep chickens and other birds for eggs or meat",
     "variations": [
-      "pot",
-      "pots"
-    ],
-    "emoji": "🍲🫙"
-  },
-  "poultry": {
-    "word": "poultry",
-    "definition": "birds such as chickens kept for eggs or meat",
-    "variations": [
-      "poultry"
+      "poultry farm",
+      "poultry farms"
     ],
     "emoji": "🐔🥚"
   },
-  "practise": {
-    "word": "practise",
-    "definition": "to do something again and again so you get better at it",
-    "variations": [
-      "practise",
-      "practises",
-      "practised",
-      "practising"
-    ],
-    "emoji": "✍️🔁"
-  },
-  "predator": {
-    "word": "predator",
-    "definition": "an animal that hunts and eats other animals",
+  "predators": {
+    "word": "predators",
+    "definition": "animals that hunt and eat other animals",
     "variations": [
       "predator",
       "predators"
     ],
-    "emoji": "🦊🐍🦅"
+    "emoji": "🦅🦊🐍"
   },
-  "present": {
-    "word": "present",
-    "definition": "happening now",
-    "variations": [
-      "present"
-    ],
-    "emoji": "📍⏰"
-  },
-  "pretend": {
-    "word": "pretend",
-    "definition": "to act as if something is true when it is not",
+  "pretended": {
+    "word": "pretended",
+    "definition": "acted as if something was true when it was not",
     "variations": [
       "pretend",
       "pretends",
@@ -1518,45 +1679,52 @@
   },
   "pronoun": {
     "word": "pronoun",
-    "definition": "a word used in place of a noun",
+    "definition": "a word used instead of a noun, such as he, she, or they",
     "variations": [
       "pronoun",
       "pronouns"
     ],
-    "emoji": "🔠📝"
+    "emoji": "🔤💬"
   },
   "pronounce": {
     "word": "pronounce",
-    "definition": "to say a word or sound in a particular way",
+    "definition": "to say a word correctly",
     "variations": [
       "pronounce",
-      "pronounced",
       "pronounces",
       "pronouncing",
-      "pronunciation"
+      "pronounced"
     ],
     "emoji": "🗣️🔊"
   },
   "pronunciation": {
     "word": "pronunciation",
-    "definition": "the way a word is spoken",
+    "definition": "the way a word is said",
     "variations": [
       "pronunciation",
-      "pronounce",
-      "pronounced",
-      "pronouncing"
+      "pronunciations"
     ],
-    "emoji": "🗣️🔤"
+    "emoji": "🗣️🔊"
   },
   "proud": {
     "word": "proud",
-    "definition": "feeling very pleased with yourself or something you have",
+    "definition": "feeling very pleased with yourself, sometimes too much",
     "variations": [
       "proud",
       "prouder",
-      "proudest"
+      "proudest",
+      "pride"
     ],
-    "emoji": "😌🏆"
+    "emoji": "😌🌹"
+  },
+  "pumpkin": {
+    "word": "pumpkin",
+    "definition": "a large round vegetable with hard skin and soft flesh inside",
+    "variations": [
+      "pumpkin",
+      "pumpkins"
+    ],
+    "emoji": "🎃🥬"
   },
   "pupil": {
     "word": "pupil",
@@ -1565,29 +1733,61 @@
       "pupil",
       "pupils"
     ],
-    "emoji": "🧒📚"
-  },
-  "question": {
-    "word": "question",
-    "definition": "a sentence you ask to get information",
-    "variations": [
-      "question",
-      "questions"
-    ],
-    "emoji": "❓🗣️"
+    "emoji": "🧒📘"
   },
   "queue": {
     "word": "queue",
     "definition": "a line of people waiting for something",
     "variations": [
       "queue",
-      "queues"
+      "queues",
+      "queued",
+      "queuing"
     ],
-    "emoji": "🚶🕒"
+    "emoji": "🧍🧍‍♀️➡️"
+  },
+  "rabbit": {
+    "word": "rabbit",
+    "definition": "a small animal with long ears and strong back legs",
+    "variations": [
+      "rabbit",
+      "rabbits"
+    ],
+    "emoji": "🐇"
+  },
+  "rat": {
+    "word": "rat",
+    "definition": "a small animal with a long tail, like a large mouse",
+    "variations": [
+      "rat",
+      "rats"
+    ],
+    "emoji": "🐀"
+  },
+  "razor-blade": {
+    "word": "razor-blade",
+    "definition": "a very sharp thin piece of metal used for shaving or cutting",
+    "variations": [
+      "razor-blade",
+      "razor-blades",
+      "razor blade",
+      "razor blades"
+    ],
+    "emoji": "🪒⚠️"
   },
   "read": {
     "word": "read",
-    "definition": "to look at words and understand them",
+    "definition": "to look at and understand written words",
+    "variations": [
+      "read",
+      "reads",
+      "reading"
+    ],
+    "emoji": "📖👀"
+  },
+  "reading": {
+    "word": "reading",
+    "definition": "looking at words and understanding them",
     "variations": [
       "read",
       "reads",
@@ -1597,30 +1797,28 @@
   },
   "recite": {
     "word": "recite",
-    "definition": "to say something aloud from memory or from a text",
+    "definition": "to say something aloud from memory or with practice",
     "variations": [
       "recite",
+      "recites",
       "recited",
-      "reciting",
-      "recites"
+      "reciting"
     ],
-    "emoji": "📖🗣️"
+    "emoji": "🗣️📖"
   },
   "regularly": {
     "word": "regularly",
-    "definition": "happening again and again in the usual way or at the usual time",
+    "definition": "again and again, following a usual pattern",
     "variations": [
       "regularly"
     ],
-    "emoji": "📆🔄"
+    "emoji": "⏰🔁"
   },
   "remote": {
     "word": "remote",
     "definition": "far away from towns or other places",
     "variations": [
-      "remote",
-      "remoter",
-      "remotest"
+      "remote"
     ],
     "emoji": "🏞️📍"
   },
@@ -1637,40 +1835,39 @@
   },
   "report": {
     "word": "report",
-    "definition": "to tell or write what you have seen, heard or done",
+    "definition": "to tell or write what you have seen or learned",
     "variations": [
       "report",
+      "reports",
       "reported",
-      "reporting",
-      "reports"
+      "reporting"
     ],
-    "emoji": "📝📢"
+    "emoji": "📝🗣️"
   },
-  "rest": {
-    "word": "rest",
-    "definition": "a time to relax or stop working",
+  "rich": {
+    "word": "rich",
+    "definition": "having a lot of money or valuable things",
     "variations": [
-      "rest",
-      "rests",
-      "rested",
-      "resting"
+      "rich",
+      "richer",
+      "richest"
     ],
-    "emoji": "😌🛏️"
+    "emoji": "💰🏠"
   },
-  "ride": {
-    "word": "ride",
-    "definition": "to travel on a bicycle or another vehicle",
+  "riding": {
+    "word": "riding",
+    "definition": "travelling on something like a bicycle",
     "variations": [
       "ride",
       "rides",
-      "rode",
-      "riding"
+      "riding",
+      "rode"
     ],
-    "emoji": "🚲🛣️"
+    "emoji": "🚲🌟"
   },
   "ripe": {
     "word": "ripe",
-    "definition": "ready to eat because it has fully grown",
+    "definition": "ready to eat because it has fully grown and become sweet or soft",
     "variations": [
       "ripe",
       "riper",
@@ -1678,37 +1875,18 @@
     ],
     "emoji": "🍌🥭"
   },
-  "room": {
-    "word": "room",
-    "definition": "a part of a building with walls, a floor, and a ceiling",
-    "variations": [
-      "room",
-      "rooms"
-    ],
-    "emoji": "🚪🏠"
-  },
   "rope": {
     "word": "rope",
-    "definition": "a thick strong string used for tying things or for play",
+    "definition": "a thick strong cord made by twisting fibres together",
     "variations": [
       "rope",
       "ropes"
     ],
     "emoji": "🪢"
   },
-  "rope skipping": {
-    "word": "rope skipping",
-    "definition": "the activity of jumping over a rope that swings around you",
-    "variations": [
-      "rope skipping",
-      "skip rope",
-      "skipping rope"
-    ],
-    "emoji": "🪢🤸"
-  },
   "rose": {
     "word": "rose",
-    "definition": "a flower that is often sweet-smelling and has soft petals",
+    "definition": "a flower with a sweet smell and often with thorns",
     "variations": [
       "rose",
       "roses"
@@ -1717,12 +1895,12 @@
   },
   "routine": {
     "word": "routine",
-    "definition": "something that you do regularly in the same way or at the same time",
+    "definition": "something you do regularly, often in the same way each day",
     "variations": [
       "routine",
       "routines"
     ],
-    "emoji": "🔁📅"
+    "emoji": "⏰📅"
   },
   "ruler": {
     "word": "ruler",
@@ -1733,9 +1911,9 @@
     ],
     "emoji": "📏"
   },
-  "run": {
-    "word": "run",
-    "definition": "to move quickly on your feet",
+  "running": {
+    "word": "running",
+    "definition": "moving very fast on your feet",
     "variations": [
       "run",
       "runs",
@@ -1744,102 +1922,84 @@
     ],
     "emoji": "🏃💨"
   },
-  "school bag": {
-    "word": "school bag",
-    "definition": "a bag used by a pupil to carry books and school things",
+  "sailor": {
+    "word": "sailor",
+    "definition": "a person who works on or travels by boat or ship",
     "variations": [
-      "school bag",
-      "school bags"
+      "sailor",
+      "sailors"
     ],
-    "emoji": "🎒📚"
+    "emoji": "⛵🧑‍✈️"
   },
-  "score": {
-    "word": "score",
-    "definition": "to get points or goals in a game",
+  "scissors": {
+    "word": "scissors",
+    "definition": "a tool with two sharp blades used for cutting",
     "variations": [
-      "score",
-      "scores",
-      "scored",
-      "scoring"
+      "scissors"
     ],
-    "emoji": "🥅📊"
+    "emoji": "✂️"
+  },
+  "scorer": {
+    "word": "scorer",
+    "definition": "a person who gets points or goals in a game",
+    "variations": [
+      "scorer",
+      "scorers"
+    ],
+    "emoji": "⚽🥅"
+  },
+  "searching": {
+    "word": "searching",
+    "definition": "looking carefully for someone or something",
+    "variations": [
+      "search",
+      "searches",
+      "searched",
+      "searching"
+    ],
+    "emoji": "🔍"
   },
   "sentence": {
     "word": "sentence",
-    "definition": "a group of words that gives a complete meaning",
+    "definition": "a group of words that makes a complete meaning",
     "variations": [
       "sentence",
       "sentences"
     ],
     "emoji": "✏️📄"
   },
-  "Serengeti": {
-    "word": "Serengeti",
-    "definition": "a famous large national park and wild area in Tanzania",
-    "variations": [
-      "Serengeti"
-    ],
-    "emoji": "🦓🌍"
-  },
-  "shell": {
-    "word": "shell",
-    "definition": "the hard outer covering of an egg or some animals",
+  "shells": {
+    "word": "shells",
+    "definition": "hard outer coverings of eggs, nuts, or some animals",
     "variations": [
       "shell",
       "shells"
     ],
     "emoji": "🥚🐚"
   },
-  "shilling": {
-    "word": "shilling",
-    "definition": "a unit of money used in some countries in East Africa",
-    "variations": [
-      "shilling",
-      "shillings"
-    ],
-    "emoji": "💵🪙"
-  },
-  "shiver": {
-    "word": "shiver",
-    "definition": "to shake a little because of fear or cold",
+  "shivered": {
+    "word": "shivered",
+    "definition": "shook because of fear or cold",
     "variations": [
       "shiver",
+      "shivers",
       "shivered",
-      "shivering",
-      "shivers"
+      "shivering"
     ],
     "emoji": "🥶😨"
   },
-  "shoe": {
-    "word": "shoe",
-    "definition": "something worn on the foot",
-    "variations": [
-      "shoe",
-      "shoes"
-    ],
-    "emoji": "👞👟"
-  },
-  "shore": {
-    "word": "shore",
-    "definition": "the land at the edge of a sea, lake, or river",
-    "variations": [
-      "shore",
-      "shores"
-    ],
-    "emoji": "🏖️🌊"
-  },
   "siblings": {
     "word": "siblings",
-    "definition": "brothers and sisters in the same family",
+    "definition": "brothers and sisters",
     "variations": [
       "sibling",
       "siblings"
     ],
-    "emoji": "👫👨‍👩‍👧"
+    "emoji": "👫"
   },
-  "sing": {
-    "word": "sing",
-    "definition": "to make music with your voice",
+  "singing": {
+    "word": "singing",
+    "definition": "making music with your voice",
     "variations": [
       "sing",
       "sings",
@@ -1847,7 +2007,7 @@
       "sang",
       "sung"
     ],
-    "emoji": "🎤🎶"
+    "emoji": "🎤🎵"
   },
   "singular": {
     "word": "singular",
@@ -1857,47 +2017,38 @@
     ],
     "emoji": "1️⃣"
   },
-  "situation": {
-    "word": "situation",
-    "definition": "the set of things happening at a particular time or place",
-    "variations": [
-      "situation",
-      "situations"
-    ],
-    "emoji": "📍🤔"
-  },
   "skin": {
     "word": "skin",
-    "definition": "the outer covering of a person’s or animal’s body",
+    "definition": "the outer covering of a person or animal's body",
     "variations": [
       "skin",
       "skins"
     ],
     "emoji": "🧍🐾"
   },
-  "snarl": {
-    "word": "snarl",
-    "definition": "to make an angry, rough sound, usually like an animal",
+  "smoke": {
+    "word": "smoke",
+    "definition": "the grey or black gas that rises when something burns",
+    "variations": [
+      "smoke",
+      "smokes"
+    ],
+    "emoji": "🔥💨"
+  },
+  "snarled": {
+    "word": "snarled",
+    "definition": "made a fierce angry sound, like an angry dog or lion",
     "variations": [
       "snarl",
+      "snarls",
       "snarled",
-      "snarling",
-      "snarls"
+      "snarling"
     ],
-    "emoji": "🦁😡"
-  },
-  "sound": {
-    "word": "sound",
-    "definition": "something you hear, or the way a letter or word is spoken",
-    "variations": [
-      "sound",
-      "sounds"
-    ],
-    "emoji": "🔉👂"
+    "emoji": "🦁😠"
   },
   "speak": {
     "word": "speak",
-    "definition": "to say words using your voice",
+    "definition": "to say words with your voice",
     "variations": [
       "speak",
       "speaks",
@@ -1906,132 +2057,113 @@
     ],
     "emoji": "🗣️💬"
   },
-  "speech": {
-    "word": "speech",
-    "definition": "the act of speaking",
+  "spectacles": {
+    "word": "spectacles",
+    "definition": "glasses that people wear to help them see",
     "variations": [
-      "speech",
-      "speeches"
+      "spectacle",
+      "spectacles"
     ],
-    "emoji": "🗣️💬"
+    "emoji": "👓"
   },
-  "spoken": {
-    "word": "spoken",
-    "definition": "said by voice, not written",
+  "spider": {
+    "word": "spider",
+    "definition": "a small animal with eight legs that makes webs",
     "variations": [
-      "spoken"
+      "spider",
+      "spiders"
     ],
-    "emoji": "🗣️🎤"
+    "emoji": "🕷️🕸️"
   },
-  "spoon": {
-    "word": "spoon",
-    "definition": "a tool used for eating, serving, or stirring food",
+  "sports day": {
+    "word": "sports day",
+    "definition": "a school day when pupils play games and take part in sports",
     "variations": [
-      "spoon",
-      "spoons"
+      "sports day",
+      "sports days"
     ],
-    "emoji": "🥄"
-  },
-  "sport": {
-    "word": "sport",
-    "definition": "a game or physical activity with rules",
-    "variations": [
-      "sport",
-      "sports"
-    ],
-    "emoji": "⚽🏃"
+    "emoji": "🏃⚽🏅"
   },
   "spot": {
     "word": "spot",
-    "definition": "a small round mark on a surface or body",
+    "definition": "a small round mark or patch of colour",
     "variations": [
       "spot",
       "spots"
     ],
-    "emoji": "🟤🔍"
-  },
-  "star": {
-    "word": "star",
-    "definition": "a bright object seen in the sky at night",
-    "variations": [
-      "star",
-      "stars"
-    ],
-    "emoji": "⭐🌟"
+    "emoji": "⚪🦒"
   },
   "stomach ache": {
     "word": "stomach ache",
-    "definition": "pain in the stomach",
+    "definition": "pain in your stomach",
     "variations": [
       "stomach ache",
       "stomach aches"
     ],
     "emoji": "🤒🫃"
   },
-  "story": {
-    "word": "story",
-    "definition": "a telling of events, real or made up",
+  "stove": {
+    "word": "stove",
+    "definition": "a piece of equipment used for cooking food",
     "variations": [
-      "story",
-      "stories"
+      "stove",
+      "stoves"
     ],
-    "emoji": "📖✨"
+    "emoji": "🍳🔥"
   },
   "stress": {
     "word": "stress",
-    "definition": "special force given to one part of a word when speaking",
+    "definition": "the extra force given to one part of a word when speaking",
     "variations": [
       "stress",
-      "stresses",
-      "stressed"
+      "stresses"
     ],
-    "emoji": "🗣️⭐"
-  },
-  "stretch": {
-    "word": "stretch",
-    "definition": "to make something longer or to reach out as far as possible",
-    "variations": [
-      "stretch",
-      "stretched",
-      "stretching",
-      "stretches"
-    ],
-    "emoji": "↔️🙆"
+    "emoji": "🗣️🔤"
   },
   "stubborn": {
     "word": "stubborn",
-    "definition": "not willing to change your mind or listen to others easily",
+    "definition": "not willing to change your mind or listen to others",
     "variations": [
       "stubborn"
     ],
     "emoji": "😤"
   },
-  "study": {
-    "word": "study",
-    "definition": "to spend time learning about something",
+  "studying": {
+    "word": "studying",
+    "definition": "spending time learning",
     "variations": [
       "study",
       "studies",
       "studying",
       "studied"
     ],
-    "emoji": "📚📝"
+    "emoji": "📚✏️"
+  },
+  "surprised": {
+    "word": "surprised",
+    "definition": "feeling shocked because something unexpected happened",
+    "variations": [
+      "surprised",
+      "surprise",
+      "surprises",
+      "surprising"
+    ],
+    "emoji": "😮✨"
   },
   "survive": {
     "word": "survive",
-    "definition": "to stay alive or continue to live",
+    "definition": "to stay alive",
     "variations": [
       "survive",
-      "survived",
-      "surviving",
       "survives",
-      "survival"
+      "survived",
+      "surviving"
     ],
-    "emoji": "🌱💪"
+    "emoji": "💪🌿"
   },
   "sweep": {
     "word": "sweep",
-    "definition": "to clean the floor or ground using a broom",
+    "definition": "to clean the floor or ground with a broom",
     "variations": [
       "sweep",
       "sweeps",
@@ -2040,18 +2172,30 @@
     ],
     "emoji": "🧹"
   },
-  "sweets": {
-    "word": "sweets",
-    "definition": "small sugary foods like candies",
+  "sweeping": {
+    "word": "sweeping",
+    "definition": "cleaning a floor or ground with a broom",
+    "variations": [
+      "sweep",
+      "sweeps",
+      "sweeping",
+      "swept"
+    ],
+    "emoji": "🧹🏠"
+  },
+  "sweet": {
+    "word": "sweet",
+    "definition": "having a sugary taste",
     "variations": [
       "sweet",
-      "sweets"
+      "sweeter",
+      "sweetest"
     ],
-    "emoji": "🍬🍭"
+    "emoji": "🍊😋"
   },
-  "swim": {
-    "word": "swim",
-    "definition": "to move through water using your body",
+  "swimming": {
+    "word": "swimming",
+    "definition": "moving through water using your body",
     "variations": [
       "swim",
       "swims",
@@ -2062,41 +2206,32 @@
   },
   "syllable": {
     "word": "syllable",
-    "definition": "a beat or sound unit in a word",
+    "definition": "a beat or part of a word when you say it",
     "variations": [
       "syllable",
       "syllables"
     ],
-    "emoji": "🔊🗣️"
-  },
-  "T-shirt": {
-    "word": "T-shirt",
-    "definition": "a casual shirt with short sleeves",
-    "variations": [
-      "T-shirt",
-      "T-shirts"
-    ],
-    "emoji": "👕"
+    "emoji": "🔤🎵"
   },
   "tail": {
     "word": "tail",
-    "definition": "the long back part on an animal’s body",
+    "definition": "the long part at the back of an animal's body",
     "variations": [
       "tail",
       "tails"
     ],
-    "emoji": "🐒🦁"
+    "emoji": "🐒🐄"
   },
-  "teach": {
-    "word": "teach",
-    "definition": "to help someone learn",
+  "teaching": {
+    "word": "teaching",
+    "definition": "showing someone how to learn or do something",
     "variations": [
       "teach",
       "teaches",
       "teaching",
       "taught"
     ],
-    "emoji": "🧑‍🏫📚"
+    "emoji": "👩‍🏫📘"
   },
   "team": {
     "word": "team",
@@ -2105,25 +2240,34 @@
       "team",
       "teams"
     ],
-    "emoji": "👥⚽"
+    "emoji": "👥🏅"
   },
   "term": {
     "word": "term",
-    "definition": "one of the parts of the school year",
+    "definition": "one of the school time periods in a year",
     "variations": [
       "term",
       "terms"
     ],
-    "emoji": "🏫📅"
+    "emoji": "📚🏫"
   },
-  "toilet": {
-    "word": "toilet",
-    "definition": "a room or bowl used for passing waste from the body",
+  "tomato": {
+    "word": "tomato",
+    "definition": "a soft red fruit often used as a vegetable in cooking",
     "variations": [
-      "toilet",
-      "toilets"
+      "tomato",
+      "tomatoes"
     ],
-    "emoji": "🚽"
+    "emoji": "🍅"
+  },
+  "toothbrush": {
+    "word": "toothbrush",
+    "definition": "a small brush used for cleaning teeth",
+    "variations": [
+      "toothbrush",
+      "toothbrushes"
+    ],
+    "emoji": "🪥😁"
   },
   "torch": {
     "word": "torch",
@@ -2134,9 +2278,35 @@
     ],
     "emoji": "🔦"
   },
+  "tough": {
+    "word": "tough",
+    "definition": "difficult or hard to do",
+    "variations": [
+      "tough"
+    ],
+    "emoji": "💪😓"
+  },
+  "trip": {
+    "word": "trip",
+    "definition": "a journey to a place",
+    "variations": [
+      "trip",
+      "trips"
+    ],
+    "emoji": "🧳🚌"
+  },
+  "trousers": {
+    "word": "trousers",
+    "definition": "clothes that cover the legs separately from the waist to the ankles",
+    "variations": [
+      "trouser",
+      "trousers"
+    ],
+    "emoji": "👖"
+  },
   "tsetse fly": {
     "word": "tsetse fly",
-    "definition": "a biting fly found in parts of Africa",
+    "definition": "a biting fly found in Africa",
     "variations": [
       "tsetse fly",
       "tsetse flies"
@@ -2145,40 +2315,37 @@
   },
   "typical": {
     "word": "typical",
-    "definition": "usual or normal for a person or thing",
+    "definition": "usual or normal for a person, thing, or situation",
     "variations": [
-      "typical",
-      "typically"
+      "typical"
     ],
-    "emoji": "📘🔁"
+    "emoji": "📝🔄"
+  },
+  "ugali": {
+    "word": "ugali",
+    "definition": "a thick food made from maize flour and water",
+    "variations": [
+      "ugali"
+    ],
+    "emoji": "🥣🌽"
   },
   "umbrella": {
     "word": "umbrella",
-    "definition": "an object used to protect you from rain or strong sun",
+    "definition": "an object you use to protect yourself from rain or sun",
     "variations": [
       "umbrella",
       "umbrellas"
     ],
     "emoji": "☂️🌧️"
   },
-  "under": {
-    "word": "under",
-    "definition": "below something",
+  "uncle": {
+    "word": "uncle",
+    "definition": "the brother of your mother or father, or the husband of your aunt",
     "variations": [
-      "under"
+      "uncle",
+      "uncles"
     ],
-    "emoji": "⬇️🪑"
-  },
-  "undertake": {
-    "word": "undertake",
-    "definition": "to do or begin doing something",
-    "variations": [
-      "undertake",
-      "undertakes",
-      "undertaking",
-      "undertook"
-    ],
-    "emoji": "▶️🛠️"
+    "emoji": "👨🏠"
   },
   "uniform": {
     "word": "uniform",
@@ -2189,26 +2356,6 @@
     ],
     "emoji": "👕🏫"
   },
-  "use": {
-    "word": "use",
-    "definition": "to do something with a thing for a purpose",
-    "variations": [
-      "use",
-      "uses",
-      "using",
-      "used"
-    ],
-    "emoji": "🔧🛠️"
-  },
-  "vegetable": {
-    "word": "vegetable",
-    "definition": "a plant or part of a plant that people cook or eat",
-    "variations": [
-      "vegetable",
-      "vegetables"
-    ],
-    "emoji": "🥕🥬"
-  },
   "verb": {
     "word": "verb",
     "definition": "a word that shows an action or a state, like run or eat",
@@ -2216,16 +2363,54 @@
       "verb",
       "verbs"
     ],
-    "emoji": "✍️📘"
+    "emoji": "📝🏃"
+  },
+  "village": {
+    "word": "village",
+    "definition": "a small place where people live, usually smaller than a town",
+    "variations": [
+      "village",
+      "villages"
+    ],
+    "emoji": "🏡🌳"
+  },
+  "visit": {
+    "word": "visit",
+    "definition": "to go and see a person or a place for a short time",
+    "variations": [
+      "visit",
+      "visits",
+      "visiting",
+      "visited"
+    ],
+    "emoji": "🚶🏠"
+  },
+  "vocabulary": {
+    "word": "vocabulary",
+    "definition": "all the words a person knows or uses in a language",
+    "variations": [
+      "vocabulary",
+      "vocabularies"
+    ],
+    "emoji": "📚🔤"
   },
   "vowel": {
     "word": "vowel",
-    "definition": "a speech sound made without blocking the air, such as a, e, i, o, or u",
+    "definition": "a speech sound or letter like a, e, i, o, u",
     "variations": [
       "vowel",
       "vowels"
     ],
-    "emoji": "🔤📝"
+    "emoji": "🔠🗣️"
+  },
+  "vowels": {
+    "word": "vowels",
+    "definition": "speech sounds made without blocking the air, like a, e, i, o, u",
+    "variations": [
+      "vowel",
+      "vowels"
+    ],
+    "emoji": "🔤"
   },
   "wake up": {
     "word": "wake up",
@@ -2236,31 +2421,40 @@
       "waking up",
       "woke up"
     ],
-    "emoji": "⏰🌅"
+    "emoji": "🌅⏰"
   },
-  "wash": {
-    "word": "wash",
-    "definition": "to clean something with water",
+  "walking stick": {
+    "word": "walking stick",
+    "definition": "a stick used to help a person walk",
+    "variations": [
+      "walking stick",
+      "walking sticks"
+    ],
+    "emoji": "🦯"
+  },
+  "washing": {
+    "word": "washing",
+    "definition": "cleaning something with water and often soap",
     "variations": [
       "wash",
       "washes",
-      "washed",
-      "washing"
+      "washing",
+      "washed"
     ],
     "emoji": "🧼💧"
   },
   "wasp": {
     "word": "wasp",
-    "definition": "a flying insect that can sting",
+    "definition": "an insect like a bee that can sting",
     "variations": [
       "wasp",
       "wasps"
     ],
-    "emoji": "🐝"
+    "emoji": "🐝⚠️"
   },
-  "watch": {
-    "word": "watch",
-    "definition": "to look at something carefully for some time",
+  "watching": {
+    "word": "watching",
+    "definition": "looking at something carefully for some time",
     "variations": [
       "watch",
       "watches",
@@ -2269,20 +2463,20 @@
     ],
     "emoji": "👀📺"
   },
-  "water": {
-    "word": "water",
-    "definition": "to give water to plants so they can grow",
+  "watering": {
+    "word": "watering",
+    "definition": "pouring water on plants",
     "variations": [
       "water",
       "waters",
-      "watered",
-      "watering"
+      "watering",
+      "watered"
     ],
-    "emoji": "💧🌱"
+    "emoji": "💧🌷"
   },
   "watermelon": {
     "word": "watermelon",
-    "definition": "a large round fruit with green skin and sweet red inside",
+    "definition": "a large fruit with green skin and soft red inside",
     "variations": [
       "watermelon",
       "watermelons"
@@ -2298,19 +2492,37 @@
       "weighed",
       "weighing"
     ],
-    "emoji": "⚖️📏"
+    "emoji": "⚖️"
+  },
+  "wheelbarrow": {
+    "word": "wheelbarrow",
+    "definition": "a small cart with one wheel, used for carrying things",
+    "variations": [
+      "wheelbarrow",
+      "wheelbarrows"
+    ],
+    "emoji": "🛒🛞"
   },
   "wild": {
     "word": "wild",
-    "definition": "living in nature and not kept by people",
+    "definition": "a natural place where animals live freely and are not controlled by people",
     "variations": [
       "wild"
     ],
     "emoji": "🌿🦁"
   },
+  "window": {
+    "word": "window",
+    "definition": "an opening in a wall or vehicle that lets in light and air",
+    "variations": [
+      "window",
+      "windows"
+    ],
+    "emoji": "🪟"
+  },
   "woodpecker": {
     "word": "woodpecker",
-    "definition": "a bird that pecks tree trunks with its beak",
+    "definition": "a bird that hits tree trunks with its beak",
     "variations": [
       "woodpecker",
       "woodpeckers"
@@ -2324,8 +2536,18 @@
       "write",
       "writes",
       "writing",
-      "wrote"
+      "wrote",
+      "written"
     ],
     "emoji": "✍️📝"
+  },
+  "zebra": {
+    "word": "zebra",
+    "definition": "an African animal with black and white stripes",
+    "variations": [
+      "zebra",
+      "zebras"
+    ],
+    "emoji": "🦓"
   }
 }

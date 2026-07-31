@@ -10,17 +10,219 @@
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
+    <style>
+        body {
+            background: #fff;
+        }
+
+        #content {
+            width: 100%;
+            max-width: 1400px !important;
+            margin: 0 auto;
+            padding: 0 !important;
+            background: #fff;
+        }
+
+        #content>section {
+            position: relative;
+            isolation: isolate;
+            overflow: hidden;
+            min-height: 1870px;
+            max-width: none !important;
+            margin: 0 !important;
+            padding: 8% 12% 10% 15.5% !important;
+            border-radius: 0 !important;
+            background: #fff !important;
+            box-shadow: none !important;
+        }
+
+        #content>section::before {
+            content: "";
+            position: absolute;
+            z-index: 0;
+            inset: 0 0 0 auto;
+            width: 12%;
+            background: linear-gradient(90deg, rgba(252, 239, 244, 0), #fceff4 38%, #f8d9df);
+        }
+
+        #content>section::after {
+            content: "FOR ONLINE READING ONLY";
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%) rotate(-45deg);
+            color: #ffbeba;
+            font: 700 clamp(42px, 5.2vw, 76px)/1 Arial, sans-serif;
+            letter-spacing: .03em;
+            white-space: nowrap;
+            opacity: .8;
+            pointer-events: none;
+        }
+    </style>
 </head>
 
 <body class="min-h-screen flex items-center justify-center">
     <main class="w-full">
-      <h1 class="sr-only" id="page-heading">Describing uses of common objects</h1>
-      <div class="container mx-auto max-w-5xl bg-white px-10 max-lg:px-6 max-sm:px-4 pt-10 pb-12 opacity-0" id="content"><section data-section-type="activity_fill_in_the_blank" data-section-id="pg010_sec001" class="max-w-4xl mx-auto"><div class="grid grid-cols-3 max-lg:grid-cols-2 max-sm:grid-cols-1 gap-0 border border-pink-400 mb-12"><div class="border border-pink-400 bg-white p-4 max-sm:p-3 min-h-[360px] max-lg:min-h-[340px] max-sm:min-h-[300px] flex flex-col"><div class="flex justify-start mb-2"><div class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-11 w-11 flex items-center justify-center font-semibold text-xl"><span data-id="pg010_n0006">7</span></div></div><img src="images/pg010_im005.jpg" alt="A boy shooting a basketball into the hoop." data-id="pg010_im005" class="mx-auto mb-4 max-w-full h-56 max-lg:h-48 max-sm:h-40 object-contain" style="max-width: 100%; height: auto;"><p class="fitb-sentence text-center text-[22px] max-sm:text-[20px] leading-snug mt-auto font-medium text-neutral-800"><span data-id="pg010_n0007">He is [[blank:item-1]].</span></p></div><div class="border border-pink-400 bg-white p-4 max-sm:p-3 min-h-[360px] max-lg:min-h-[340px] max-sm:min-h-[300px] flex flex-col"><div class="flex justify-start mb-2"><div class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-11 w-11 flex items-center justify-center font-semibold text-xl"><span data-id="pg010_n0010">8</span></div></div><img src="images/pg010_im006.jpg" alt="A man skipping with a rope." data-id="pg010_im006" class="mx-auto mb-4 max-w-full h-56 max-lg:h-48 max-sm:h-40 object-contain" style="max-width: 100%; height: auto;"><p class="fitb-sentence text-center text-[22px] max-sm:text-[20px] leading-snug mt-auto font-medium text-neutral-800"><span data-id="pg010_n0011">He is [[blank:item-2]].</span></p></div><div class="border border-pink-400 bg-white p-4 max-sm:p-3 min-h-[360px] max-lg:min-h-[340px] max-sm:min-h-[300px] flex flex-col"><div class="flex justify-start mb-2"><div class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-11 w-11 flex items-center justify-center font-semibold text-xl"><span data-id="pg010_n0014">9</span></div></div><img src="images/pg010_im007.jpg" alt="Children playing volleyball across a net." data-id="pg010_im007" class="mx-auto mb-4 max-w-full h-56 max-lg:h-48 max-sm:h-40 object-contain" style="max-width: 100%; height: auto;"><p class="fitb-sentence text-center text-[22px] max-sm:text-[20px] leading-snug mt-auto font-medium text-neutral-800"><span data-id="pg010_n0015">They are [[blank:item-3]].</span></p></div><div class="border border-pink-400 bg-white p-4 max-sm:p-3 min-h-[360px] max-lg:min-h-[340px] max-sm:min-h-[300px] flex flex-col"><div class="flex justify-start mb-2"><div class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-11 w-11 flex items-center justify-center font-semibold text-xl"><span data-id="pg010_n0019">10</span></div></div><img src="images/pg010_im008.jpg" alt="A boy riding a skateboard." data-id="pg010_im008" class="mx-auto mb-4 max-w-full h-56 max-lg:h-48 max-sm:h-40 object-contain" style="max-width: 100%; height: auto;"><p class="fitb-sentence text-center text-[22px] max-sm:text-[20px] leading-snug mt-auto font-medium text-neutral-800"><span data-id="pg010_n0020">He is [[blank:item-4]].</span></p></div><div class="border border-pink-400 bg-white p-4 max-sm:p-3 min-h-[360px] max-lg:min-h-[340px] max-sm:min-h-[300px] flex flex-col"><div class="flex justify-start mb-2"><div class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-11 w-11 flex items-center justify-center font-semibold text-xl"><span data-id="pg010_n0023">11</span></div></div><img src="images/pg010_im010.jpg" alt="Girls playing netball on a court." data-id="pg010_im010" class="mx-auto mb-4 max-w-full h-56 max-lg:h-48 max-sm:h-40 object-contain" style="max-width: 100%; height: auto;"><p class="fitb-sentence text-center text-[22px] max-sm:text-[20px] leading-snug mt-auto font-medium text-neutral-800"><span data-id="pg010_n0024">They are [[blank:item-5]].</span></p></div><div class="border border-pink-400 bg-white p-4 max-sm:p-3 min-h-[360px] max-lg:min-h-[340px] max-sm:min-h-[300px] flex flex-col"><div class="flex justify-start mb-2"><div class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-11 w-11 flex items-center justify-center font-semibold text-xl"><span data-id="pg010_n0027">12</span></div></div><img src="images/pg010_im011.jpg" alt="A girl riding a bicycle along a village road." data-id="pg010_im011" class="mx-auto mb-4 max-w-full h-56 max-lg:h-48 max-sm:h-40 object-contain" style="max-width: 100%; height: auto;"><p class="fitb-sentence text-center text-[22px] max-sm:text-[20px] leading-snug mt-auto font-medium text-neutral-800"><span data-id="pg010_n0028">She is [[blank:item-6]].</span></p></div></div><div class="mb-5"><div class="inline-block bg-pink-200 rounded-2xl px-5 py-2 max-sm:px-4"><div class="text-[28px] max-sm:text-[22px] font-bold text-fuchsia-700 leading-tight"><span data-id="pg010_n0030">Activity 4:</span> <span data-id="pg010_n0031">Describing uses of common objects</span></div></div></div><div class="mb-6 text-left text-indigo-700"><p class="text-[24px] max-sm:text-[20px] leading-tight font-semibold"><span data-id="pg010_n0032">Say what the following things are used for.</span> <span data-id="pg010_n0033">Use the following structure.</span></p></div><div class="mb-8 pl-4 max-sm:pl-0"><div class="mb-1"><span class="font-bold text-[28px] max-sm:text-[24px] text-gray-900" data-id="pg010_n0035">Example</span></div><div class="mb-1"><span class="text-[24px] max-sm:text-[20px] text-gray-900 italic" data-id="pg010_n0036">What is the pen used for?</span></div><div><span class="text-[24px] max-sm:text-[20px] text-fuchsia-600" data-id="pg010_n0037">The pen is used for writing.</span></div></div><div class="grid grid-cols-3 max-sm:grid-cols-1 gap-0 border border-pink-400"><div class="border border-pink-400 bg-white p-4"><div class="flex justify-start mb-3"><div class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-10 w-10 flex items-center justify-center font-medium text-xl"><span data-id="pg010_n0042">1</span></div></div><img src="images/pg010_im012.jpg" alt="A blue ballpoint pen." data-id="pg010_im012" class="mx-auto mb-4 max-w-full h-20 object-contain" style="max-width: 100%; height: auto;"><div class="text-center mb-3"><span class="text-[24px] text-gray-800 italic" data-id="pg010_n0043">pen</span></div><div><textarea class="w-full p-3 border border-gray-400 rounded min-h-24 resize-none" data-aria-id="aria-1-0-0" data-activity-item="item-7" aria-label="Write what the pen is used for" tabindex="0"></textarea></div></div><div class="border border-pink-400 bg-white p-4"><div class="flex justify-start mb-3"><div class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-10 w-10 flex items-center justify-center font-medium text-xl"><span data-id="pg010_n0046">2</span></div></div><img src="images/pg010_im003.jpg" alt="A red comb." data-id="pg010_im003" class="mx-auto mb-4 max-w-full h-20 object-contain" style="max-width: 100%; height: auto;"><div class="text-center mb-3"><span class="text-[24px] text-gray-800 italic" data-id="pg010_n0047">comb</span></div><div><textarea class="w-full p-3 border border-gray-400 rounded min-h-24 resize-none" data-aria-id="aria-1-0-1" data-activity-item="item-8" aria-label="Write what the comb is used for" tabindex="0"></textarea></div></div><div class="border border-pink-400 bg-white p-4"><div class="flex justify-start mb-3"><div class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-10 w-10 flex items-center justify-center font-medium text-xl"><span data-id="pg010_n0050">3</span></div></div><img src="images/pg010_im004.jpg" alt="A wooden pencil with an eraser." data-id="pg010_im004" class="mx-auto mb-4 max-w-full h-20 object-contain" style="max-width: 100%; height: auto;"><div class="text-center mb-3"><span class="text-[24px] text-gray-800 italic" data-id="pg010_n0051">pencil</span></div><div><textarea class="w-full p-3 border border-gray-400 rounded min-h-24 resize-none" data-aria-id="aria-1-0-2" data-activity-item="item-9" aria-label="Write what the pencil is used for" tabindex="0"></textarea></div></div></div><div class="sr-only"><span data-id="pg010_n0052">FOR ONLINE READING ONLY</span></div></section></div>
+        <h1 class="sr-only" id="page-heading">Describing uses of common objects</h1>
+        <div class="container mx-auto max-w-5xl bg-white px-10 max-lg:px-6 max-sm:px-4 pt-10 pb-12 opacity-0"
+            id="content">
+            <section data-section-type="activity_fill_in_the_blank" data-section-id="pg010_sec001"
+                class="max-w-4xl mx-auto">
+
+                <div class="mb-5">
+                    <div class="inline-block bg-pink-200 rounded-2xl px-5 py-2 max-sm:px-4">
+                        <div class="text-[28px] max-sm:text-[22px] font-bold text-fuchsia-700 leading-tight"><span
+                                data-id="pg010_n0030">Activity 4:</span> <span data-id="pg010_n0031">Describing uses of
+                                common objects</span></div>
+                    </div>
+                </div>
+                <div class="mb-6 text-left text-indigo-700">
+                    <p class="text-[24px] max-sm:text-[20px] leading-tight font-semibold"><span
+                            data-id="pg010_n0032">Say what the following things are used for.</span> <span
+                            data-id="pg010_n0033">Use the following structure.</span></p>
+                </div>
+                <div class="mb-8 pl-4 max-sm:pl-0">
+                    <div class="mb-1"><span class="font-bold text-[28px] max-sm:text-[24px] text-gray-900"
+                            data-id="pg010_n0035">Example</span></div>
+                    <div class="mb-1"><span class="text-[24px] max-sm:text-[20px] text-gray-900 italic"
+                            data-id="pg010_n0036">What is the pen used for?</span></div>
+                    <div><span class="text-[24px] max-sm:text-[20px] text-fuchsia-600" data-id="pg010_n0037">The pen is
+                            used for writing.</span></div>
+                </div>
+
+                <div class="grid grid-cols-3 border-2 border-pink-300 bg-white max-sm:grid-cols-1">
+                    <div class="border border-pink-400 bg-white p-4">
+                        <div class="flex justify-start mb-3">
+                            <div
+                                class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-10 w-10 flex items-center justify-center font-medium text-xl">
+                                <span data-id="pg010_n0042">1</span>
+                            </div>
+                        </div><img src="images/pg010_im012.jpg" alt="A blue ballpoint pen." data-id="pg010_im012"
+                            class="mx-auto mb-4 max-w-full h-20 object-contain" style="max-width: 100%; height: auto;">
+                        <div class="text-center mb-3">
+                            <span class="text-[24px] text-gray-800 italic hidden" data-id="pg010_n0043">pen</span>
+                        </div>
+                        <div><textarea class="w-full p-3 border border-gray-400 rounded min-h-24 resize-none"
+                                data-aria-id="aria-1-0-0" data-activity-item="item-7"
+                                aria-label="Write what the pen is used for" tabindex="0"></textarea></div>
+                    </div>
+                    <div class="border border-pink-400 bg-white p-4">
+                        <div class="flex justify-start mb-3">
+                            <div
+                                class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-10 w-10 flex items-center justify-center font-medium text-xl">
+                                <span data-id="pg010_n0046">2</span>
+                            </div>
+                        </div><img src="images/pg010_im003.jpg" alt="A red comb." data-id="pg010_im003"
+                            class="mx-auto mb-4 max-w-full h-20 object-contain" style="max-width: 100%; height: auto;">
+                        <div class="text-center mb-3">
+                            <span class="text-[24px] text-gray-800 italic hidden" data-id="pg010_n0047">comb</span>
+                        </div>
+                        <div><textarea class="w-full p-3 border border-gray-400 rounded min-h-24 resize-none"
+                                data-aria-id="aria-1-0-1" data-activity-item="item-8"
+                                aria-label="Write what the comb is used for" tabindex="0"></textarea></div>
+                    </div>
+                    <div class="border border-pink-400 bg-white p-4">
+                        <div class="flex justify-start mb-3">
+                            <div
+                                class="bg-white border-2 border-pink-500 text-pink-600 rounded-full h-10 w-10 flex items-center justify-center font-medium text-xl">
+                                <span data-id="pg010_n0050">3</span>
+                            </div>
+                        </div><img src="images/pg010_im004.jpg" alt="A wooden pencil with an eraser."
+                            data-id="pg010_im004" class="mx-auto mb-4 max-w-full h-20 object-contain"
+                            style="max-width: 100%; height: auto;">
+                        <div class="text-center mb-3">
+                            <span class="text-[24px] text-gray-800 italic hidden" data-id="pg010_n0051">pencil</span>
+                        </div>
+                        <div>
+                            <textarea class="w-full p-3 border border-gray-400 rounded min-h-24 resize-none"
+                                data-aria-id="aria-1-0-2" data-activity-item="item-9"
+                                aria-label="Write what the pencil is used for" tabindex="0"></textarea>
+                        </div>
+                    </div>
+                    <div
+                        class="relative flex min-h-[220px] max-sm:min-h-[190px] flex-col items-center justify-between border-r border-b border-pink-400 px-6 pt-5 pb-4 max-sm:border-r-0">
+                        <span
+                            class="absolute left-3 top-3 flex h-10 w-10 items-center justify-center rounded-full border border-pink-500 text-xl text-pink-600"
+                            data-id="pg011_n0005">4</span><img src="images/pg011_im009.jpg" alt="hammer"
+                            data-id="pg011_im009" class="mt-1 max-h-24 max-w-full object-contain"
+                            style="max-width: 100%; height: auto;"><span
+                            class="mt-3 text-[28px] leading-none text-gray-800 hidden"
+                            data-id="pg011_n0006">hammer</span>
+                        <textarea class="mt-3 w-full min-h-24 resize-none rounded border border-gray-400 p-3"
+                            data-aria-id="aria-1-0-3" data-activity-item="item-10"
+                            aria-label="Write what the hammer is used for" tabindex="0"></textarea>
+                    </div>
+                    <div
+                        class="relative flex min-h-[220px] max-sm:min-h-[190px] flex-col items-center justify-between border-r border-b border-pink-400 px-6 pt-5 pb-4 max-sm:border-r-0">
+                        <span
+                            class="absolute left-3 top-3 flex h-10 w-10 items-center justify-center rounded-full border border-pink-500 text-xl text-pink-600"
+                            data-id="pg011_n0009">5</span><img src="images/pg011_im010.jpg" alt="key"
+                            data-id="pg011_im010" class="mt-4 max-h-20 max-w-full object-contain"
+                            style="max-width: 100%; height: auto;"><span
+                            class="mt-3 text-[28px] leading-none text-gray-800 hidden" data-id="pg011_n0010">key</span>
+                        <textarea class="mt-3 w-full min-h-24 resize-none rounded border border-gray-400 p-3"
+                            data-aria-id="aria-1-0-4" data-activity-item="item-11"
+                            aria-label="Write what the key is used for" tabindex="0"></textarea>
+                    </div>
+                    <div
+                        class="relative flex min-h-[220px] max-sm:min-h-[190px] flex-col items-center justify-between border-b border-pink-400 px-6 pt-5 pb-4">
+                        <span
+                            class="absolute left-3 top-3 flex h-10 w-10 items-center justify-center rounded-full border border-pink-500 text-xl text-pink-600"
+                            data-id="pg011_n0013">6</span><img src="images/pg011_im011.jpg" alt="torch"
+                            data-id="pg011_im011" class="mt-1 max-h-24 max-w-full object-contain"
+                            style="max-width: 100%; height: auto;"><span
+                            class="mt-3 text-[28px] leading-none text-gray-800 hidden"
+                            data-id="pg011_n0014">torch</span>
+                        <textarea class="mt-3 w-full min-h-24 resize-none rounded border border-gray-400 p-3"
+                            data-aria-id="aria-1-0-5" data-activity-item="item-12"
+                            aria-label="Write what the torch is used for" tabindex="0"></textarea>
+                    </div>
+                    <div
+                        class="relative flex min-h-[220px] max-sm:min-h-[190px] flex-col items-center justify-between border-r border-pink-400 px-6 pt-5 pb-4 max-sm:border-r-0 max-sm:border-b">
+                        <span
+                            class="absolute left-3 top-3 flex h-10 w-10 items-center justify-center rounded-full border border-pink-500 text-xl text-pink-600"
+                            data-id="pg011_n0018">7</span><img src="images/pg011_im012.jpg" alt="spoon"
+                            data-id="pg011_im012" class="mt-2 max-h-28 max-w-full object-contain"
+                            style="max-width: 100%; height: auto;">
+                        <span class="mt-3 text-[28px] leading-none text-gray-800 hidden"
+                            data-id="pg011_n0019">spoon</span>
+                        <textarea class="mt-3 w-full min-h-24 resize-none rounded border border-gray-400 p-3"
+                            data-aria-id="aria-1-0-6" data-activity-item="item-13"
+                            aria-label="Write what the spoon is used for" tabindex="0"></textarea>
+                    </div>
+                    <div
+                        class="relative flex min-h-[220px] max-sm:min-h-[190px] flex-col items-center justify-between border-r border-pink-400 px-6 pt-5 pb-4 max-sm:border-r-0 max-sm:border-b">
+                        <span
+                            class="absolute left-3 top-3 flex h-10 w-10 items-center justify-center rounded-full border border-pink-500 text-xl text-pink-600"
+                            data-id="pg011_n0022">8</span><img src="images/pg011_im013.jpg" alt="umbrella"
+                            data-id="pg011_im013" class="mt-1 max-h-28 max-w-full object-contain"
+                            style="max-width: 100%; height: auto;">
+                        <span class="mt-3 text-[28px] leading-none text-gray-800 hidden"
+                            data-id="pg011_n0023">umbrella</span>
+                        <textarea class="mt-3 w-full min-h-24 resize-none rounded border border-gray-400 p-3"
+                            data-aria-id="aria-1-0-7" data-activity-item="item-14"
+                            aria-label="Write what the umbrella is used for" tabindex="0"></textarea>
+                    </div>
+                    <div
+                        class="relative flex min-h-[220px] max-sm:min-h-[190px] flex-col items-center justify-between px-6 pt-5 pb-4">
+                        <span
+                            class="absolute left-3 top-3 flex h-10 w-10 items-center justify-center rounded-full border border-pink-500 text-xl text-pink-600"
+                            data-id="pg011_n0026">9</span><img src="images/pg011_im014.jpg" alt="pot"
+                            data-id="pg011_im014" class="mt-3 max-h-24 max-w-full object-contain"
+                            style="max-width: 100%; height: auto;">
+                        <span class="mt-3 text-[28px] leading-none text-gray-800 hidden"
+                            data-id="pg011_n0027">pot</span>
+                        <textarea class="mt-3 w-full min-h-24 resize-none rounded border border-gray-400 p-3"
+                            data-aria-id="aria-1-0-8" data-activity-item="item-15"
+                            aria-label="Write what the pot is used for" tabindex="0"></textarea>
+                    </div>
+                </div>
+                <div class="sr-only"><span data-id="pg010_n0052">FOR ONLINE READING ONLY</span></div>
+            </section>
+        </div>
     </main>
 
-    <script type="text/javascript">
-        window.correctAnswers = JSON.parse('{"item-1":"playing basketball","item-2":"skipping","item-3":"playing volleyball","item-4":"skateboarding","item-5":"playing netball","item-6":"riding a bicycle","item-7":"The pen is used for writing.","item-8":"The comb is used for combing hair.","item-9":"The pencil is used for writing."}');
-    </script>
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
     <script src="./assets/offline-preloader.js"></script>
