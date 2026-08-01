@@ -10,6 +10,18 @@
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
+    <style>
+      .speech-bubble { position: relative; }
+      .bubble-tail-right::after, .bubble-tail-left::after { content: ""; position: absolute; bottom: -23px; z-index: 1; border-top: 23px solid #d946ef; }
+      .bubble-tail-right::before, .bubble-tail-left::before { content: ""; position: absolute; bottom: -18px; z-index: 2; border-top: 20px solid #fff; }
+      .bubble-tail-right::after { right: 30px; border-left: 18px solid transparent; }
+      .bubble-tail-right::before { right: 32px; border-left: 14px solid transparent; }
+      .bubble-tail-left::after { left: 30px; border-right: 18px solid transparent; }
+      .bubble-tail-left::before { left: 32px; border-right: 14px solid transparent; }
+      @media (max-width: 640px) {
+        .bubble-tail-right::after, .bubble-tail-right::before, .bubble-tail-left::after, .bubble-tail-left::before { display: none; }
+      }
+    </style>
 </head>
 
 <body class="min-h-screen flex items-center justify-center">
@@ -20,12 +32,12 @@
       <h1 class="text-center text-4xl font-bold text-gray-800 max-lg:text-3xl max-sm:text-2xl"><span data-id="pg019_n0002">You</span></h1>
       <div class="relative mt-6 min-h-[520px] max-sm:min-h-0 max-sm:flex max-sm:flex-col max-sm:gap-4">
         <div class="absolute left-8 top-2 z-10 max-w-[270px] max-sm:static max-sm:max-w-full">
-          <div class="inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
+          <div class="speech-bubble bubble-tail-right inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
             <span data-id="pg019_n0004">Maria, you took my exercise book.</span>
           </div>
         </div>
         <div class="absolute right-4 top-0 z-10 max-w-[420px] max-sm:static max-sm:max-w-full">
-          <div class="inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
+          <div class="speech-bubble bubble-tail-left inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
             <div><span data-id="pg019_n0005">No! I did not take your exercise book.</span></div>
             <div><span data-id="pg019_n0006">You must have misplaced it.</span></div>
           </div>
@@ -38,13 +50,13 @@
     <div class="border-t border-fuchsia-400 px-10 pt-6 pb-10 max-lg:px-6 max-sm:px-4">
       <div class="relative min-h-[560px] max-sm:min-h-0 max-sm:flex max-sm:flex-col max-sm:gap-4">
         <div class="absolute left-2 top-0 z-10 max-w-[270px] max-sm:static max-sm:max-w-full">
-          <div class="inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
+          <div class="speech-bubble bubble-tail-right inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
             <div><span data-id="pg019_n0008">You are stubborn.</span></div>
             <div><span data-id="pg019_n0009">I don&#x2019;t like you.</span></div>
           </div>
         </div>
         <div class="absolute right-0 top-0 z-10 max-w-[390px] max-sm:static max-sm:max-w-full">
-          <div class="inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
+          <div class="speech-bubble bubble-tail-left inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
             <div><span data-id="pg019_n0010">No! We are not stubborn!</span></div>
             <div><span data-id="pg019_n0011">We are your friends.</span></div>
             <div><span data-id="pg019_n0012">We like you.</span></div>

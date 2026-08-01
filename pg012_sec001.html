@@ -34,11 +34,11 @@
                             texts</span></div>
                 </div>
                 <div class="mb-4 text-[21px] max-sm:text-[19px] leading-relaxed text-indigo-700 font-semibold"><span
-                        data-id="pg012_n0010">(a) Listen to the short story / observe the signed video about Bahati’s room.</span> <span
+                        data-id="pg012_n0010">(a) Listen to the short story/observe the signed video about Bahati’s room.</span> <span
                         data-id="pg012_n0011">Then, answer the following questions to help Bahati find her belongings.</span></div>
-                <aside class="mb-7 rounded-xl border-2 border-sky-200 bg-sky-50 px-6 py-5 text-[19px] leading-relaxed text-slate-800 max-sm:px-4 max-sm:text-[17px]">
+                <aside class="sr-only">
                     <h2 class="mb-2 text-[21px] font-bold text-sky-800">Bahati’s room</h2>
-                    <p data-id="pg012_n0024">Bahati’s room is messy. The school bag is on the bed. The shoes are under the bed. The red jacket is on the floor. The T-shirts are in the drawers. The juice bottle is on the chair. The pencil is on the sofa. The yellow blouse is in the box. The radio is on the floor. Bahati is really a careless girl.</p>
+                    <p data-id="pg012_n0024">Bahati’s room. Bahati’s room is messy. The school bag is on the bed. The shoes are under the bed. The red jacket is on the floor. The T-shirts are in the drawers. The juice bottle is on the chair. The pencil is on the Sofa. The yellow blouse is in the box. The radio is on the floor. Bahati is really a careless girl.</p>
                 </aside>
                 <div class="space-y-5 mb-10 pl-10 max-sm:pl-5">
                     <div>
@@ -83,7 +83,7 @@
                     </div>
                 </div>
                 <div class="mb-4 text-[21px] max-sm:text-[19px] leading-relaxed text-indigo-700 font-semibold"><span
-                        data-id="pg012_n0017">(b) Listen to the short story / observe the signed video about The Proud Rose.</span> <span
+                        data-id="pg012_n0017">(b) Listen to the short story/Observe the signed video about The Proud Rose.</span> <span
                         data-id="pg012_n0018">Then, answer the following questions orally.</span></div>
                 <div class="space-y-3 pl-10 max-sm:pl-5 text-[20px] max-sm:text-[19px] leading-snug text-gray-800">
                     <div><span class="text-fuchsia-700" data-id="pg012_n0019">(i) Why was the rose so proud
@@ -102,6 +102,36 @@
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
     <script src="./assets/offline-preloader.js"></script>
+    <script>
+        (function () {
+            const preloadFetch = window.fetch.bind(window);
+            window.fetch = async function (input, init) {
+                const url = typeof input === 'string' ? input : input && input.url;
+                if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/audios.json')) return preloadFetch(input, init);
+                const response = await preloadFetch(input, init);
+                const audios = await response.clone().json();
+                audios.pg012_n0024 = 'pg012_n0024.mp3';
+                return new Response(JSON.stringify(audios), { status: response.status, headers: { 'Content-Type': 'application/json' } });
+            };
+        })();
+    </script>
+    <script>
+        (function () {
+            const preloadFetch = window.fetch.bind(window);
+            window.fetch = async function (input, init) {
+                const url = typeof input === 'string' ? input : input && input.url;
+                if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init);
+                const response = await preloadFetch(input, init);
+                const texts = await response.clone().json();
+                Object.assign(texts, {
+                    pg012_n0010: '(a) Listen to the short story/observe the signed video about Bahati’s room.',
+                    pg012_n0017: '(b) Listen to the short story/Observe the signed video about The Proud Rose.',
+                    pg012_n0024: 'Bahati’s room. Bahati’s room is messy. The school bag is on the bed. The shoes are under the bed. The red jacket is on the floor. The T-shirts are in the drawers. The juice bottle is on the chair. The pencil is on the Sofa. The yellow blouse is in the box. The radio is on the floor. Bahati is really a careless girl.'
+                });
+                return new Response(JSON.stringify(texts), { status: response.status, headers: { 'Content-Type': 'application/json' } });
+            };
+        })();
+    </script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>
 </body>

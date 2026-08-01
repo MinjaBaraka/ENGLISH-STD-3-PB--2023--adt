@@ -41,8 +41,11 @@
           <span data-id="pg029_n0009">(d)</span>
         </div>
         <p class="z-10 max-w-3xl text-[1.05rem] font-semibold leading-[1.25] text-indigo-600 max-lg:text-[0.98rem] max-sm:text-[0.92rem]">
-          <span data-id="pg029_n0010">Listen to the dialogue / observe the signed dialogue.</span> <span data-id="pg029_n0011">Then, act it out in pairs.</span>
+          <span data-id="pg029_n0010">Listen to the dialogue/observe the signed dialogue.</span> <span data-id="pg029_n0011">Then, act it out in pairs.</span>
         </p>
+      </div>
+      <div class="sr-only" aria-label="Audio dialogue transcript">
+        <span data-id="pg029_n0024">Asia: Hello, Tino! Do you have a cat at home? Augustino: Yes, I do. We have also a dog called Simba. Do you have a cat? Asia: Yes, we have a cat called Snow. Augustino: Your cat has a nice name. Does it have blue eyes? Asia: Yes, it has blue eyes and soft white fur. Does your dog have a long tail? Augustino: Yes, it has a long tail. It also has strong legs. Asia: I have a ball for our cat to play with. Does Simba have toys to play with? Augustino: Yes, Simba has a red ball and a rubber bone. My brother has a rope for Simba too. Asia: Your dog has many toys! I have only one toy for our cat. Augustino: That’s okay. Asia: I agree. Augustino: Great! Bye.</span>
       </div>
 
       <div class="flex items-start gap-4 max-sm:gap-3">
@@ -80,6 +83,27 @@
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
     <script src="./assets/offline-preloader.js"></script>
+    <script>
+      (function () {
+        const preloadFetch = window.fetch.bind(window);
+        window.fetch = async function (input, init) {
+          const url = typeof input === 'string' ? input : input && input.url;
+          const cleanUrl = url && url.split('?')[0];
+          if (!cleanUrl || (!cleanUrl.endsWith('/content/i18n/en-GB/texts.json') && !cleanUrl.endsWith('/content/i18n/en-GB/audios.json'))) return preloadFetch(input, init);
+          const response = await preloadFetch(input, init);
+          const data = await response.clone().json();
+          if (cleanUrl.endsWith('/content/i18n/en-GB/texts.json')) {
+            data.pg029_n0010 = 'Listen to the dialogue/observe the signed dialogue.';
+            data.pg029_n0024 = 'Asia: Hello, Tino! Do you have a cat at home? Augustino: Yes, I do. We have also a dog called Simba. Do you have a cat? Asia: Yes, we have a cat called Snow. Augustino: Your cat has a nice name. Does it have blue eyes? Asia: Yes, it has blue eyes and soft white fur. Does your dog have a long tail? Augustino: Yes, it has a long tail. It also has strong legs. Asia: I have a ball for our cat to play with. Does Simba have toys to play with? Augustino: Yes, Simba has a red ball and a rubber bone. My brother has a rope for Simba too. Asia: Your dog has many toys! I have only one toy for our cat. Augustino: That’s okay. Asia: I agree. Augustino: Great! Bye.';
+          } else {
+            data.pg029_n0010 = 'pg029_n0010.mp3';
+            data.pg029_n0011 = 'pg029_n0011.mp3';
+            data.pg029_n0024 = 'pg029_n0024.mp3';
+          }
+          return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } });
+        };
+      })();
+    </script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>
 </body>

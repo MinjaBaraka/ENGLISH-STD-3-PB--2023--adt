@@ -28,8 +28,12 @@
     <div class="relative z-10 mx-auto max-w-4xl space-y-8 max-sm:space-y-6">
       <div class="flex items-start gap-5 text-indigo-700 max-sm:gap-3">
         <div class="shrink-0 text-[3rem] font-bold leading-none max-lg:text-[2.5rem] max-sm:text-[1.5rem]" data-id="pg017_n0002">(b)</div>
-        <div class="pt-1 text-[2.15rem] font-semibold leading-[1.2] break-words [overflow-wrap:anywhere] max-lg:text-[1.45rem] max-sm:text-[0.9rem] max-sm:leading-[1.2]" data-id="pg017_n0003">(b) Sing the pronoun song or observe the signed video about the pronoun song.</div>
+        <div class="pt-1 text-[2.15rem] font-semibold leading-[1.2] break-words [overflow-wrap:anywhere] max-lg:text-[1.45rem] max-sm:text-[0.9rem] max-sm:leading-[1.2]" data-id="pg017_n0003">Sing the pronoun song available on YouTube, or observe the signed video about the pronoun song.</div>
       </div>
+
+      <a href="https://www.youtube.com/watch?v=k_ssvwB6baM&amp;index=1" target="_blank" rel="noopener noreferrer" class="inline-flex items-center rounded-xl px-5 py-3 text-lg font-bold shadow-sm max-sm:text-sm" style="background:#dc2626; color:#ffffff; text-decoration:none;">
+        Open the pronoun song on YouTube
+      </a>
 
       <div class="space-y-4 pl-16 text-[1.45rem] leading-relaxed text-zinc-800 max-lg:pl-10 max-lg:text-[1.1rem] max-sm:pl-6 max-sm:space-y-3 max-sm:text-[0.92rem] max-sm:leading-[1.5]">
         <div class="italic" data-id="pg017_n0005">A pronoun is a word that replaces a noun x 2</div>
@@ -108,6 +112,20 @@
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
     <script src="./assets/offline-preloader.js"></script>
+    <script>
+      (function () {
+        const preloadFetch = window.fetch.bind(window);
+        window.fetch = async function (input, init) {
+          const url = typeof input === 'string' ? input : input && input.url;
+          if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init);
+          const response = await preloadFetch(input, init);
+          const texts = await response.clone().json();
+          texts.pg017_n0003 = 'Sing the pronoun song available on YouTube, or observe the signed video about the pronoun song.';
+          texts.pg017_n0003_easy_read = 'Sing the pronoun song available on YouTube, or observe the signed video about the pronoun song.';
+          return new Response(JSON.stringify(texts), { status: response.status, headers: { 'Content-Type': 'application/json' } });
+        };
+      })();
+    </script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>
 </body>

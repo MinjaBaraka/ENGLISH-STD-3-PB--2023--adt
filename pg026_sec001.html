@@ -20,7 +20,10 @@
       .unit-intro-page .mb-10:first-child > div { width:100%; border-radius:0 28px 0 28px; background:linear-gradient(135deg,#a23c91,#b256a0); box-shadow:8px 10px 0 rgba(162,60,145,.16); text-align:center; }
       .unit-intro-page h1 { font-family:"Trebuchet MS",Arial,sans-serif; }
       .unit-intro-page h2 { color:#a53c90; font-family:"Trebuchet MS",Arial,sans-serif; font-size:48px; }
-      .unit-intro-page img { display:block; width:100%; max-width:840px; margin:0 auto; border-radius:0; }
+      .introduction-panel { box-sizing:border-box; width:100%; max-width:840px; margin:0 auto; border:3px solid #318ba1; border-radius:28px; background:#fffdf1; padding:1.25rem 1.65rem 1.45rem; color:#27221f; }
+      .introduction-panel h3 { display:inline-block; margin:-2.85rem 0 1.1rem; padding:.36rem 1.35rem .42rem; border-radius:999px; background:#318ba1; color:#fff; font-family:"Trebuchet MS",Arial,sans-serif; font-size:clamp(1.35rem,3.2vw,2rem); font-weight:800; line-height:1; }
+      .introduction-panel p { margin:0; font-family:"Trebuchet MS",Arial,sans-serif; font-size:clamp(1.08rem,2.25vw,1.65rem); line-height:1.48; letter-spacing:.01em; }
+      @media (max-width:800px) { .introduction-panel { border-width:2px; border-radius:20px; padding:1rem 1.1rem 1.2rem; } .introduction-panel h3 { margin:-2.25rem 0 .9rem; padding:.3rem 1rem .35rem; } }
       @media (max-width:800px) { .unit-intro-page { width:100%; min-height:calc(100vh - 78px); padding:75px 36px 90px 76px; } .unit-intro-page::before { inset:20px auto 0 14px; width:58px; } .unit-intro-page h2 { font-size:31px; } }
     </style>
 </head>
@@ -39,9 +42,10 @@
       <h2 data-id="pg026_n0004" class="text-center text-5xl font-bold text-fuchsia-700 max-lg:text-4xl max-sm:text-[2.1rem] max-sm:leading-tight">Expressing possession</h2>
     </div>
 
-  <img data-id="pg026_im032" src="images/pg026_im032.png"
-    alt="Introduction panel explaining that the unit teaches how to show possession using &#x2018;have&#x2019; and &#x2018;has&#x2019;, with a small cartoon rabbit in the bottom-right corner."
-    class="relative z-10 mt-2 block max-w-full rounded-[1.2rem] max-sm:mt-3" style="max-width: 100%; height: auto;">
+    <section class="introduction-panel" aria-label="Introduction">
+      <h3>Introduction</h3>
+      <p data-id="pg026_n0005">Possession is a state of having something. In this unit, you will learn how to show that something belongs to you or someone using have and has. You will also talk about things other people possess or do not possess. The competencies developed will enable you to describe what you or other people possess or do not possess.</p>
+    </section>
   </section>
 </div>
     </main>
@@ -49,6 +53,19 @@
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
     <script src="./assets/offline-preloader.js"></script>
+    <script>
+      (function () {
+        const preloadFetch = window.fetch.bind(window);
+        window.fetch = async function (input, init) {
+          const url = typeof input === 'string' ? input : input && input.url;
+          if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init);
+          const response = await preloadFetch(input, init);
+          const data = await response.clone().json();
+          data.pg026_n0005 = 'Possession is a state of having something. In this unit, you will learn how to show that something belongs to you or someone using have and has. You will also talk about things other people possess or do not possess. The competencies developed will enable you to describe what you or other people possess or do not possess.';
+          return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } });
+        };
+      })();
+    </script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>
 </body>

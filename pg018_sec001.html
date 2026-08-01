@@ -54,10 +54,10 @@
               <div class="z-10 mb-4 w-full rounded-[1.4rem] border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-2xl leading-tight text-stone-800 shadow-sm max-lg:text-xl max-sm:text-lg">
                 <span data-id="pg018_n0017">We are siblings.</span> <span data-id="pg018_n0018">We like each other.</span>
               </div>
-              <img data-id="pg018_im006_seg002_v1" src="images/pg018_im006_seg002_v1.png" alt="A brother and sister stand together with a speech bubble saying, &#x201c;We are siblings. We like each other.&#x201d;" class="z-0 max-w-full h-[300px] w-auto object-contain max-lg:h-[220px] max-sm:h-[200px]" style="max-width: 100%; height: auto;">
+              <img data-id="pg018_im006_seg002_v1" src="images/pg018_im003.jpg" alt="A brother and sister stand together." class="z-0 max-w-full h-[300px] w-auto object-contain max-lg:h-[220px] max-sm:h-[200px]" style="max-width: 100%; height: auto;">
             </div>
-            <div class="flex flex-col items-center">
-              <div class="z-10 mb-4 w-full rounded-[1.4rem] border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-2xl leading-tight text-stone-800 shadow-sm max-lg:text-xl max-sm:text-lg">
+            <div class="relative flex w-full flex-col items-center pt-20 max-lg:pt-16 max-sm:pt-14">
+              <div class="absolute inset-x-0 top-0 z-10 w-full rounded-[1.4rem] border-2 border-fuchsia-500 bg-white px-4 py-3 text-center text-2xl leading-tight text-stone-800 shadow-sm max-lg:text-xl max-sm:text-lg">
                 <span data-id="pg018_n0020">We are boys.</span> <span data-id="pg018_n0021">We are friends.</span>
               </div>
               <img data-id="pg018_im005" src="images/pg018_im005.jpg" alt="Three schoolboys in uniform walk together with their arms around each other, smiling as friends." class="z-0 max-w-full h-[280px] w-auto object-contain max-lg:h-[220px] max-sm:h-[200px]" style="max-width: 100%; height: auto;">
@@ -73,6 +73,19 @@
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
     <script src="./assets/offline-preloader.js"></script>
+    <script>
+      (function () {
+        const preloadFetch = window.fetch.bind(window);
+        window.fetch = async function (input, init) {
+          const url = typeof input === 'string' ? input : input && input.url;
+          if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init);
+          const response = await preloadFetch(input, init);
+          const texts = await response.clone().json();
+          texts.pg018_im006_seg002_v1 = 'A brother and sister stand together.';
+          return new Response(JSON.stringify(texts), { status: response.status, headers: { 'Content-Type': 'application/json' } });
+        };
+      })();
+    </script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>
 </body>

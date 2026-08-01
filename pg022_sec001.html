@@ -83,7 +83,7 @@
       <div id="content" class="opacity-0">
   <section data-section-type="boxed_text" data-section-id="pg022_sec001" class="song-page">
     <div class="song-content">
-      <p class="song-instruction" data-id="pg022_n0001">(d) Sing / observe the signed video of the following song.</p>
+      <p class="song-instruction" data-id="pg022_n0001">(d) Sing the following song.</p>
       <div class="song-card">
         <span class="song-tab top" aria-hidden="true"></span><span class="song-tab bottom" aria-hidden="true"></span>
         <div class="song-body">
@@ -118,6 +118,25 @@
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
     <script src="./assets/offline-preloader.js"></script>
+    <script>
+      (function () {
+        const preloadFetch = window.fetch.bind(window);
+        window.fetch = async function (input, init) {
+          const url = typeof input === 'string' ? input : input && input.url;
+          const bareUrl = url && url.split('?')[0];
+          if (!bareUrl || (!bareUrl.endsWith('/content/i18n/en-GB/texts.json') && !bareUrl.endsWith('/content/i18n/en-GB/audios.json'))) return preloadFetch(input, init);
+          const response = await preloadFetch(input, init);
+          const data = await response.clone().json();
+          if (bareUrl.endsWith('/content/i18n/en-GB/texts.json')) {
+            data.pg022_n0001 = '(d) Sing the following song.';
+            data.pg022_n0001_easy_read = '(d) Sing the following song.';
+          } else {
+            data.pg022_n0001 = 'pg022_n0001.mp3';
+          }
+          return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } });
+        };
+      })();
+    </script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>
 </body>

@@ -29,7 +29,7 @@
           </div>
           <div class="mt-6 mb-8">
             <span class="block text-2xl font-semibold leading-snug text-indigo-700 max-lg:text-xl max-sm:text-lg" data-id="pg007_n0015">(a) Listen to the words / observe the signed video and write the words.</span>
-            <aside class="mt-3 rounded-xl border border-sky-200 bg-sky-50 px-4 py-3 text-base leading-relaxed text-slate-800 max-sm:text-sm" aria-label="Words for the listening activity">
+            <aside class="sr-only" aria-label="Words for the listening activity">
               <span class="font-semibold text-sky-800">Words:</span>
               <span data-id="pg007_n0032">dog, cat, ant, bee, pen, comb, pan, key, table, chair, classroom, swim, dance, spoon, run, write, drink, sleep, help, come and go.</span>
             </aside>
@@ -37,7 +37,7 @@
           </div>
           <div class="mb-4">
             <span class="block text-2xl font-semibold leading-snug text-indigo-700 max-lg:text-xl max-sm:text-lg" data-id="pg007_n0016">(b) Listen to the sentences / observe the signed video and write the sentences.</span>
-            <aside class="mt-3 rounded-xl border border-sky-200 bg-sky-50 px-4 py-3 text-base leading-relaxed text-slate-800 max-sm:text-sm" aria-label="Sentences for the listening activity">
+            <aside class="sr-only" aria-label="Sentences for the listening activity">
               <span class="font-semibold text-sky-800">Sentences:</span>
               <span class="block mt-1 whitespace-pre-line" data-id="pg007_n0033">1. My father has a donkey.\n2. The elephant is the largest animal.\n3. The teacher likes swimming.\n4. We go to school every morning.\n5. Haika dances well.\n6. Yesterday, I lost my keys.\n7. Bees make honey.\n8. A butterfly is an insect.\n9. Our school has large classrooms.\n10. The cat slept under the chair.</span>
             </aside>
@@ -50,6 +50,20 @@
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
     <script src="./assets/offline-preloader.js"></script>
+    <script>
+      (function () {
+        const preloadFetch = window.fetch.bind(window);
+        window.fetch = async function (input, init) {
+          const url = typeof input === 'string' ? input : input && input.url;
+          if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/audios.json')) return preloadFetch(input, init);
+          const response = await preloadFetch(input, init);
+          const audios = await response.clone().json();
+          audios.pg007_n0032 = 'pg007_n0032.mp3';
+          audios.pg007_n0033 = 'pg007_n0033.mp3';
+          return new Response(JSON.stringify(audios), { status: response.status, headers: { 'Content-Type': 'application/json' } });
+        };
+      })();
+    </script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>
 </body>

@@ -40,14 +40,14 @@
                 class="exercise-page">
                 <div class="mb-10">
                     <img src="images/pg023_im003.png"
-                        alt="Exercise (e): a three-column sentence table with subjects &#x2018;We&#x2019;, &#x2018;I&#x2019;, &#x2018;You&#x2019;, &#x2018;They&#x2019;; verbs &#x2018;like&#x2019;, &#x2018;play with&#x2019;, &#x2018;know&#x2019;, &#x2018;eat with&#x2019;, &#x2018;sing with&#x2019;; and objects &#x2018;her&#x2019;, &#x2018;him&#x2019;, &#x2018;them&#x2019;, &#x2018;it&#x2019;."
+                        alt="Exercise (e). Make sentences orally or sign sentences from the table below. First column: We, I, You, They. Second column: like, play with, know, eat with, sing with. Third column: her, him, them, it."
                         data-id="pg023_im003"
                         class="block w-full max-w-[820px] rounded-lg border border-fuchsia-300 bg-[#fff8fc] shadow-sm"
                         style="max-width: 100%; height: auto;">
                 </div>
                 <div>
                     <img src="images/pg023_im004.png"
-                        alt="Exercise (f): a three-column sentence table with subjects &#x2018;He&#x2019;, &#x2018;She&#x2019;, &#x2018;It&#x2019;; verbs &#x2018;likes&#x2019;, &#x2018;plays with&#x2019;, &#x2018;knows&#x2019;, &#x2018;eats with&#x2019;, &#x2018;sings with&#x2019;; and objects &#x2018;her&#x2019;, &#x2018;him&#x2019;, &#x2018;them&#x2019;."
+                        alt="Exercise (f). Make sentences orally or sign sentences from the table below. First column: He, She, It. Second column: likes, plays with, knows, eats with, sings with. Third column: her, him, them."
                         data-id="pg023_im004"
                         class="block w-full max-w-[820px] rounded-lg border border-fuchsia-300 bg-[#fff8fc] shadow-sm"
                         style="max-width: 100%; height: auto;">
@@ -74,9 +74,6 @@
                     class="mx-auto max-w-4xl rounded-[1.8rem] border-4 border-dashed border-lime-500 bg-amber-50 px-8 py-7 max-lg:px-6 max-lg:py-6 max-sm:px-3 max-sm:py-4 max-sm:rounded-[1.9rem]">
                     <div
                         class="relative rounded-sm border-[3px] border-dashed border-lime-600/70 bg-amber-50 px-8 py-5 max-lg:px-6 max-lg:py-4 max-sm:px-4 max-sm:py-5">
-                        <img src="images/pg023_im006.png" data-id="pg023_im006" alt="Our school sports day story box"
-                            class="absolute left-1 top-1 h-auto max-w-[34px] opacity-70 max-sm:max-w-[22px]"
-                            style="clip-path: inset(0 72% 72% 0); max-width: 100%; height: auto;">
                         <h1 class="mb-4 text-center text-[1.05rem] font-bold text-neutral-900 max-lg:text-[1rem] max-sm:text-[0.95rem]">
                             <span data-id="pg023_n0011">Our school sports day</span>
                         </h1>
@@ -103,6 +100,31 @@
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
     <script src="./assets/offline-preloader.js"></script>
+    <script>
+        (function () {
+            const preloadFetch = window.fetch.bind(window);
+            window.fetch = async function (input, init) {
+                const url = typeof input === 'string' ? input : input && input.url;
+                const cleanUrl = url && url.split('?')[0];
+                if (!cleanUrl || (!cleanUrl.endsWith('/content/i18n/en-GB/texts.json') && !cleanUrl.endsWith('/content/i18n/en-GB/audios.json'))) {
+                    return preloadFetch(input, init);
+                }
+                const response = await preloadFetch(input, init);
+                const data = await response.clone().json();
+                if (cleanUrl.endsWith('/content/i18n/en-GB/texts.json')) {
+                    data.pg023_im003 = 'Exercise (e). Make sentences orally or sign sentences from the table below. First column: We, I, You, They. Second column: like, play with, know, eat with, sing with. Third column: her, him, them, it.';
+                    data.pg023_im004 = 'Exercise (f). Make sentences orally or sign sentences from the table below. First column: He, She, It. Second column: likes, plays with, knows, eats with, sings with. Third column: her, him, them.';
+                } else {
+                    data.pg023_im003 = 'pg023_im003.mp3';
+                    data.pg023_im004 = 'pg023_im004.mp3';
+                }
+                return new Response(JSON.stringify(data), {
+                    status: response.status,
+                    headers: { 'Content-Type': 'application/json' }
+                });
+            };
+        })();
+    </script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>
 </body>

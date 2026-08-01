@@ -21,11 +21,11 @@
 
     <div class="relative z-10 max-w-5xl">
       <div class="mb-8 inline-block rounded-2xl bg-pink-200 px-5 py-2.5 max-lg:px-5 max-lg:py-2.5 max-sm:px-4 max-sm:py-2">
-        <h1 data-id="pg072_n0002" class="text-left text-[44px] font-semibold italic leading-none text-fuchsia-700 max-lg:text-[34px] max-sm:text-[24px]">Activity 5: Oral / sign practice</h1>
+        <h1 data-id="pg072_n0002" class="text-left text-[44px] font-semibold italic leading-none text-fuchsia-700 max-lg:text-[34px] max-sm:text-[24px]">Activity 5: Oral/sign practice</h1>
       </div>
 
       <p class="mb-8 text-left max-sm:mb-6">
-        <span data-id="pg072_n0003" class="text-[36px] font-semibold italic leading-tight text-indigo-700 max-lg:text-[30px] max-sm:text-[24px]">Read and act out the following dialogue.</span>
+        <span data-id="pg072_n0003" class="text-[36px] font-semibold italic leading-tight text-indigo-700 max-lg:text-[30px] max-sm:text-[24px]">Read aloud/sign the following dialogue.</span>
       </p>
 
       <div class="space-y-4 max-lg:space-y-5 max-sm:space-y-4 text-left">
@@ -101,6 +101,9 @@
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
     <script src="./assets/offline-preloader.js"></script>
+    <script>
+      (function () { const preloadFetch = window.fetch.bind(window); window.fetch = async function (input, init) { const url = typeof input === 'string' ? input : input && input.url; if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init); const response = await preloadFetch(input, init); const data = await response.clone().json(); data.pg072_n0002 = 'Activity 5: Oral/sign practice'; data.pg072_n0003 = 'Read aloud/sign the following dialogue.'; return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } }); }; })();
+    </script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>
 </body>
