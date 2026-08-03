@@ -21,6 +21,8 @@
     .page-frame .mt-12 { margin-top: 56px; }
     .page-frame .space-y-10 > * + * { margin-top: 36px; }
     .page-frame .rounded-\[2rem\] { border-radius: 22px 22px 0 0; }
+    .page-frame input[data-activity-item] { display:inline-block; width:7.5ch; min-width:7.5ch; margin:0 .2em; padding:0 .15em .08em; border:0; border-bottom:3px solid #222; border-radius:0; background:transparent; color:#172554; font:inherit; font-weight:700; text-align:center; outline-offset:4px; }
+    .page-frame input[data-activity-item]::placeholder { color:#222; opacity:1; }
     @media (max-width:800px) { .page-frame { width:100%; min-height:100vh; } .page-frame::before { inset:20px auto 20px 14px; width:58px; } .page-frame section { padding:78px 30px 96px 78px !important; } .page-frame .mt-12 { margin-top:32px; } }
   </style>
 </head>
@@ -29,7 +31,7 @@
   <main class="w-full">
     <h1 class="sr-only" id="page-heading">They</h1>
     <div id="content" class="page-frame relative mx-auto overflow-hidden bg-white opacity-0">
-      <section data-section-type="text_and_single_image" data-section-id="pg020_sec001"
+      <section data-section-type="activity_fill_in_the_blank" data-section-id="pg020_sec001"
         class="relative z-10 mx-auto w-full" style="padding:6% 14% 7% 15.5%;">
         <div class="page-watermark pointer-events-none absolute z-0 whitespace-nowrap select-none" data-id="pg020_n0022" style="color:#ffbeba;font-family:Arial,sans-serif;font-size:clamp(42px,5.2vw,76px);font-weight:700;letter-spacing:.03em;opacity:.8;">FOR ONLINE READING ONLY</div>
 
@@ -68,7 +70,7 @@
                 </div>
                 <div class="grid grid-cols-[10rem_1fr] gap-5 max-sm:grid-cols-[5rem_1fr] max-sm:gap-3">
                   <span class="font-semibold text-fuchsia-700" data-id="pg020_n0019">Luta:</span>
-                  <span class="fitb-sentence text-gray-900" data-id="pg020_n0020">I’m Luta. [[blank:item-1]] want to buy cows. Do you have any?</span>
+                  <span class="text-gray-900"><span data-id="pg020_n0020">I’m Luta.</span> <input type="text" data-activity-item="item-1" aria-label="Pronoun for Luta" placeholder="__________" autocomplete="off" spellcheck="false"> <span data-id="pg020_n0020_suffix">want to buy cows. Do you have any?</span></span>
                 </div>
               </div>
             </div>
@@ -79,9 +81,12 @@
     </div>
   </main>
 
+  <script>window.correctAnswers = {"item-1":"I"};</script>
+
   <div class="relative z-50" id="interface-container"></div>
   <div class="relative z-50" id="nav-container"></div>
   <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/version3-overrides.js"></script>
   <script>
     (function () {
       const preloadFetch = window.fetch.bind(window);
@@ -94,8 +99,14 @@
         if (bareUrl.endsWith('/content/i18n/en-GB/texts.json')) {
           data.pg020_n0007 = 'Listen to/observe the conversation.';
           data.pg020_n0007_easy_read = 'Listen to/observe the conversation.';
+          data.pg020_n0020 = 'I’m Luta.';
+          data.pg020_n0020_suffix = 'want to buy cows. Do you have any?';
+          data.pg020_n0020_easy_read = 'I am Luta.';
+          data.pg020_n0020_suffix_easy_read = 'want to buy cows. Do you have any?';
           data.pg020_n0024 = 'Baraka: Hello, Furaha. Furaha: Hello, Baraka. Baraka: How are you? Furaha: I am fine, how are you? Baraka: I am fine, thank you. Are you coming to play football with us? Furaha: Yes, I will. I like football. Do you like it too? Baraka: Yes, I do. I normally play with my friends every Saturday. Furaha: Great! Where are they? Baraka: They are on the playground. They are waiting for us. Furaha: Good! I can see Juma. He is carrying football. Baraka: Yes, he is our captain. He plays very well. Furaha: Good. I can see a girl warming up. Baraka: Yes, she is my friend Hawa. She is a good goalkeeper. Furaha: Is she on our team? Baraka: Yes, she is. We are all on the same team. Furaha: Okay. Let us go. We do not need to keep them waiting. Baraka: Good idea! We can win if we work together.';
         } else {
+          data.pg020_n0020_suffix = 'pg020_n0020_suffix.mp3';
+          data.pg020_n0020_suffix_easy_read = 'pg020_n0020_suffix_easy_read.mp3';
           data.pg020_n0024 = 'pg020_n0024.mp3';
         }
         return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } });

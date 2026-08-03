@@ -18,7 +18,8 @@
     .unit-seven-page {
       position: relative;
       box-sizing: border-box;
-      width: min(1174px, calc(100vw - 14px));
+      width: 100%;
+      max-width: 1174px;
       min-height: 1150px;
       margin: 4px auto;
       padding: 110px 152px 112px;
@@ -73,13 +74,9 @@
       font: 800 italic 48px/1.15 "Trebuchet MS", Arial, sans-serif;
     }
 
-    .unit-seven-intro-image {
-      display: block;
-      width: 100%;
-      max-width: 841px;
-      height: auto;
-      margin: 0 auto;
-    }
+    .unit-seven-intro { max-width:841px; margin:0 auto; padding:38px 44px; border:3px solid #0891b2; border-radius:28px; background:#fffdf0; color:#282828; font:italic 28px/1.52 "Trebuchet MS",Arial,sans-serif; text-align:left; }
+    .unit-seven-intro [data-id="pg059_n0038"] { display:inline-block; margin:-62px 0 22px -24px; padding:8px 24px; border-radius:24px; background:#0891b2; color:#fff; font:800 30px/1.1 "Trebuchet MS",Arial,sans-serif; font-style:normal; }
+    .unit-seven-intro [data-id="pg059_n0039"] { display:block; }
 
     @media (max-width:800px) {
       .unit-seven-page {
@@ -101,6 +98,8 @@
       .unit-seven-page [data-id="pg059_n0004"] {
         font-size: 31px;
       }
+      .unit-seven-intro { padding:28px 22px; font-size:20px; }
+      .unit-seven-intro [data-id="pg059_n0038"] { margin-left:-10px; font-size:23px; }
     }
   </style>
 </head>
@@ -121,9 +120,10 @@
             of texts</h2>
         </div>
 
-        <img data-id="pg059_im031" src="images/pg059_im031.png"
-          alt="Introduction to Unit Seven, Reading a variety of texts." class="unit-seven-intro-image"
-          style="max-width: 100%; height: auto;">
+        <div class="unit-seven-intro">
+          <span data-id="pg059_n0038">Introduction</span>
+          <span data-id="pg059_n0039">In English, words are pronounced as a combination of sounds. The combination of sounds pronounced as a single unit is called a syllable. In this unit, you will read words and identify their syllables. The competencies developed will enable you to hear, pronounce and place word stress and intonation appropriately.</span>
+        </div>
       </section>
     </div>
   </main>
@@ -131,6 +131,7 @@
   <div class="relative z-50" id="interface-container"></div>
   <div class="relative z-50" id="nav-container"></div>
   <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/version3-overrides.js"></script>
   <script src="./assets/scorm.js"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>

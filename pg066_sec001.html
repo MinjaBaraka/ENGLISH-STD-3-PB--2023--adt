@@ -12,7 +12,7 @@
   <link href="./assets/fonts.css" rel="stylesheet">
   <style>
     body { background:#fff; }
-    .unit-eight-page { position:relative; box-sizing:border-box; width:min(1174px,calc(100vw - 14px)); min-height:1150px; margin:4px auto; padding:110px 152px 112px; overflow:hidden; background:#fff; }
+    .unit-eight-page { position:relative; box-sizing:border-box; width:100%; max-width:1174px; min-height:1150px; margin:4px auto; padding:110px 152px 112px; overflow:hidden; background:#fff; }
     .unit-eight-page::before { content:""; position:absolute; z-index:0; inset:0 auto 0 44px; width:112px; opacity:.7; background:radial-gradient(ellipse at 100% 8%,#f7dde2 0 18%,transparent 19%),radial-gradient(ellipse at 0 28%,#fbe5e7 0 20%,transparent 21%),linear-gradient(90deg,#f9d7df,#fcebf0 58%,transparent); }
     .unit-eight-page::after { content:""; position:absolute; z-index:5; inset:0; pointer-events:none; background:linear-gradient(#555,#555) 18px 44px/34px 1px no-repeat,linear-gradient(#555,#555) 44px 18px/1px 34px no-repeat,linear-gradient(#555,#555) calc(100% - 52px) 44px/34px 1px no-repeat,linear-gradient(#555,#555) calc(100% - 45px) 18px/1px 34px no-repeat; }
     .unit-eight-page > * { position:relative; z-index:1; }
@@ -43,6 +43,7 @@
   <div class="relative z-50" id="interface-container"></div>
   <div class="relative z-50" id="nav-container"></div>
   <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/version3-overrides.js"></script>
   <script src="./assets/scorm.js"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>

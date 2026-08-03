@@ -12,7 +12,7 @@
   <link href="./assets/fonts.css" rel="stylesheet">
   <style>
     body { background:#fff; }
-    .unit-six-page { position:relative; box-sizing:border-box; width:min(1174px,calc(100vw - 14px)); min-height:1150px; margin:4px auto; padding:110px 152px 112px; overflow:hidden; background:#fff; }
+    .unit-six-page { position:relative; box-sizing:border-box; width:100%; max-width:1174px; min-height:1150px; margin:4px auto; padding:110px 152px 112px; overflow:hidden; background:#fff; }
     .unit-six-page::before { content:""; position:absolute; z-index:0; inset:0 auto 0 44px; width:112px; opacity:.7; background:radial-gradient(ellipse at 100% 8%,#f7dde2 0 18%,transparent 19%),radial-gradient(ellipse at 0 28%,#fbe5e7 0 20%,transparent 21%),linear-gradient(90deg,#f9d7df,#fcebf0 58%,transparent); }
     .unit-six-page::after { content:""; position:absolute; z-index:5; inset:0; pointer-events:none; background:linear-gradient(#555,#555) 18px 44px/34px 1px no-repeat,linear-gradient(#555,#555) 44px 18px/1px 34px no-repeat,linear-gradient(#555,#555) calc(100% - 52px) 44px/34px 1px no-repeat,linear-gradient(#555,#555) calc(100% - 45px) 18px/1px 34px no-repeat; }
     .unit-six-page > * { position:relative; z-index:1; }
@@ -21,8 +21,10 @@
     .unit-six-page [data-id="pg052_n0002"] { font:800 italic 50px/1.1 "Trebuchet MS",Arial,sans-serif; text-align:center; }
     .unit-six-page > .mb-8:nth-child(2) { margin-bottom:55px; text-align:center; }
     .unit-six-page [data-id="pg052_n0003"] { color:#a53c90; font:800 italic 48px/1.15 "Trebuchet MS",Arial,sans-serif; text-align:center; }
-    .unit-six-intro-image { display:block; width:100%; max-width:840px; height:auto; margin:0 auto; }
-    @media (max-width:800px) { .unit-six-page { width:100%; min-height:100vh; padding:72px 36px 90px 76px; } .unit-six-page::before { inset:0 auto 0 14px; width:58px; } .unit-six-page > .mb-8:first-child { margin-bottom:34px; } .unit-six-page [data-id="pg052_n0002"] { font-size:31px; } .unit-six-page [data-id="pg052_n0003"] { font-size:31px; } }
+    .unit-six-intro { max-width:840px; margin:0 auto; padding:38px 44px; border:3px solid #0891b2; border-radius:28px; background:#fffdf0; color:#282828; font:italic 28px/1.52 "Trebuchet MS",Arial,sans-serif; }
+    .unit-six-intro [data-id="pg052_n0022"] { display:inline-block; margin:-62px 0 22px -24px; padding:8px 24px; border-radius:24px; background:#0891b2; color:#fff; font:800 30px/1.1 "Trebuchet MS",Arial,sans-serif; font-style:normal; }
+    .unit-six-intro [data-id="pg052_n0023"] { display:block; }
+    @media (max-width:800px) { .unit-six-page { width:100%; min-height:100vh; padding:72px 36px 90px 76px; } .unit-six-page::before { inset:0 auto 0 14px; width:58px; } .unit-six-page > .mb-8:first-child { margin-bottom:34px; } .unit-six-page [data-id="pg052_n0002"] { font-size:31px; } .unit-six-page [data-id="pg052_n0003"] { font-size:31px; } .unit-six-intro { padding:28px 22px; font-size:20px; } .unit-six-intro [data-id="pg052_n0022"] { margin-left:-10px; font-size:23px; } }
   </style>
 </head>
 
@@ -46,9 +48,10 @@
             Connecting ideas using &#x2018;and&#x2019; and &#x2018;but&#x2019;</div>
         </div>
 
-        <img src="images/pg052_im031.png"
-          alt="Introduction panel explaining that conjunctions join words or sentences, focusing on using &#x2018;and&#x2019; to connect similar ideas and &#x2018;but&#x2019; to connect contrasting ideas, with a small rabbit character in the corner."
-          data-id="pg052_im031" class="unit-six-intro-image" style="max-width: 100%; height: auto;">
+        <div class="unit-six-intro">
+          <span data-id="pg052_n0022">Introduction</span>
+          <span data-id="pg052_n0023">Conjunctions are words used to join words or sentences together. In this unit, you will learn how to connect ideas using the words and and but. You will use the conjunction and to connect simple sentences of the same status. You will also use the conjunction but to connect contrasting ideas. The competencies developed will enable you to use them in various communicative situations orally/sign and in writing.</span>
+        </div>
       </section>
     </div>
   </main>
@@ -56,6 +59,7 @@
   <div class="relative z-50" id="interface-container"></div>
   <div class="relative z-50" id="nav-container"></div>
   <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/version3-overrides.js"></script>
   <script src="./assets/scorm.js"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>

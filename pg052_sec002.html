@@ -71,6 +71,8 @@
           const response = await preloadFetch(input, init);
           const data = await response.clone().json();
           data.pg052_n0008 = 'Listening and Oral practice/Observing and signing';
+          data.pg052_n0014 = 'Use and to join sentences together.';
+          data.pg052_n0014_easy_read = 'Use "and" to join the sentences.';
           return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } });
         };
       })();

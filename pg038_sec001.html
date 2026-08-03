@@ -18,7 +18,8 @@
     .classroom-song-page {
       position: relative;
       box-sizing: border-box;
-      width: min(1174px, calc(100vw - 14px));
+      width: 100%;
+      max-width: 1174px !important;
       max-width: none !important;
       min-height: 1050px;
       margin: 4px auto;
@@ -51,11 +52,8 @@
       z-index: 1;
     }
 
-    .classroom-song-page img {
-      display: block;
-      width: min(820px, 100%);
-      margin: 0 auto;
-    }
+    .classroom-song { max-width:820px; margin:0 auto; padding:48px 54px; border:2px solid #f59e0b; border-radius:28px; background:#fff8ee; }
+    .classroom-song [data-id="pg038_n0052"] { display:block; white-space:pre-line; color:#242124; font:italic 36px/1.55 "Trebuchet MS",Arial,sans-serif; text-align:left; }
 
     @media (max-width:800px) {
       .classroom-song-page {
@@ -68,6 +66,8 @@
         inset: 0 auto 0 14px;
         width: 58px;
       }
+      .classroom-song { padding:28px 22px; }
+      .classroom-song [data-id="pg038_n0052"] { font-size:23px; }
     }
   </style>
 </head>
@@ -77,9 +77,10 @@
     <h1 class="sr-only" id="page-heading">English Pupil’s Book Standard Three</h1>
     <div id="content" class="opacity-0">
       <section data-section-type="text_and_single_image" data-section-id="pg038_sec001" class="classroom-song-page">
-        <img data-id="pg038_im004" src="images/pg038_im004.png"
-          alt="Song verse about sitting in class every morning, alongside a classroom scene with a teacher at the front and pupils seated at their desks."
-          style="height:auto;">
+        <div class="classroom-song"><span data-id="pg038_n0052">This is the way we sit in class,
+sit in class, sit in class.
+This is the way we sit in class,
+every day in the morning (times two).</span></div>
       </section>
     </div>
   </main>
@@ -87,6 +88,7 @@
   <div class="relative z-50" id="interface-container"></div>
   <div class="relative z-50" id="nav-container"></div>
   <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/version3-overrides.js"></script>
   <script src="./assets/scorm.js"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>

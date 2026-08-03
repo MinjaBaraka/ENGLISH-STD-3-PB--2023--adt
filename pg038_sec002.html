@@ -10,6 +10,13 @@
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
+    <style>
+      @media (max-width:640px) {
+        #content { overflow-x:hidden; }
+        #content .flex-1 { min-width:0; }
+        #content .fitb-inline-input { width:100% !important; max-width:100% !important; margin-left:0; margin-right:0; }
+      }
+    </style>
 </head>
 
 <body class="min-h-screen flex items-center justify-center">
