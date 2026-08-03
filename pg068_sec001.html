@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>English Pupil’s Book Standard Three</title>
     <meta name="title-id" content="pg068_sec001" />
-    <meta name="page-section-id" content="101" />
+    <meta name="page-section-id" content="93" />
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
@@ -20,6 +20,7 @@
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
     <script src="./assets/offline-preloader.js"></script>
+    <script src="./assets/version3-overrides.js"></script>
     <script>
       (function () { const preloadFetch = window.fetch.bind(window); window.fetch = async function (input, init) { const url = typeof input === 'string' ? input : input && input.url; if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init); const response = await preloadFetch(input, init); const data = await response.clone().json(); data.pg068_n0003 = '(a) Read aloud/sign the following words.'; data.pg068_n0028 = '(a) Read aloud the following sentences/sign the words in the following sentences.'; return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } }); }; })();
     </script>
