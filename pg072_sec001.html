@@ -10,6 +10,14 @@
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
+    <style>
+      .dialogue-list > div { display:flex !important; align-items:baseline; }
+      .dialogue-list > div > div:first-child { flex:0 0 7rem; width:7rem !important; }
+      @media (max-width:640px) {
+        .dialogue-list > div { gap:.65rem !important; }
+        .dialogue-list > div > div:first-child { flex-basis:4.5rem; width:4.5rem !important; margin-bottom:0 !important; }
+      }
+    </style>
 </head>
 
 <body class="min-h-screen flex items-center justify-center">
@@ -28,7 +36,7 @@
         <span data-id="pg072_n0003" class="text-[36px] font-semibold italic leading-tight text-indigo-700 max-lg:text-[30px] max-sm:text-[24px]">Read aloud/sign the following dialogue.</span>
       </p>
 
-      <div class="space-y-4 max-lg:space-y-5 max-sm:space-y-4 text-left">
+      <div class="dialogue-list space-y-4 max-lg:space-y-5 max-sm:space-y-4 text-left">
         <div class="flex items-start gap-8 max-lg:gap-6 max-sm:block">
           <div data-id="pg072_n0006" class="w-28 shrink-0 text-[30px] italic leading-tight text-fuchsia-700 max-lg:w-24 max-lg:text-[28px] max-sm:w-auto max-sm:mb-1 max-sm:text-[24px]">Wazo:</div>
           <p class="flex-1 text-left leading-snug max-sm:pl-0"><span data-id="pg072_n0007" class="text-[28px] leading-snug text-zinc-800 max-lg:text-[27px] max-sm:text-[24px]">Hi, Keli!</span></p>

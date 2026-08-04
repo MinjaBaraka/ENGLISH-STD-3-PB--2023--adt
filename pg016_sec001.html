@@ -26,9 +26,16 @@
         <div class="relative z-10" style="margin-left:15.5%;margin-right:12%;padding-top:8%;">
           <div data-id="pg016_n0002" class="unit-banner">Unit Two</div>
           <div data-id="pg016_n0004" class="unit-subtitle">Using personal pronouns</div>
-            <img data-id="pg016_im032" src="images/pg016_im032.png" alt="Introduction illustration"
-              class="block w-full max-w-full object-contain"
-              style="max-width: 100%; height: auto;">
+          <section class="intro-card" aria-label="Introduction">
+            <h2 data-id="pg016_n0006" class="intro-label">Introduction</h2>
+            <div class="intro-copy">
+              <p data-id="pg016_n0008">Personal pronouns are words used in place of nouns.</p>
+              <p data-id="pg016_n0009">In this unit, you will learn about the English personal pronouns.</p>
+              <p data-id="pg016_n0010">You will use them when you are speaking and writing something in English.</p>
+              <p data-id="pg016_n0011">The competencies developed will enable you to use them orally/sign and in writing.</p>
+            </div>
+            <img src="images/pg007_im031_rabbit.png" alt="" aria-hidden="true" class="intro-rabbit">
+          </section>
         </div>
         <style>
           .unit-banner {
@@ -54,43 +61,70 @@
 
           .intro-card {
             position: relative;
-            padding: 0;
-            min-height: 0
+            overflow: hidden;
+            min-height: 420px;
+            border: 3px solid #078aa5;
+            border-radius: 30px;
+            background: #fffdf2;
+            padding: 5rem 12rem 2.2rem 2.2rem
           }
 
           .intro-label {
             position: absolute;
-            top: -.52em;
-            left: 1em;
-            border-radius: 2rem;
+            top: -1px;
+            left: 1.2rem;
+            margin: 0;
+            border-radius: 0 0 1.6rem 1.6rem;
             background: #008ca2;
             color: #fff;
-            padding: .2em .65em;
-            font-size: clamp(30px, 3.1vw, 49px);
+            padding: .38rem 1.35rem .5rem;
+            font-size: clamp(1.35rem, 2.4vw, 2rem);
             font-weight: 800;
-            font-style: italic
+            font-style: italic;
+            line-height: 1
           }
 
           .intro-copy {
-            max-width: 82%;
-            font-size: clamp(25px, 2.7vw, 42px);
-            line-height: 1.38;
+            position: relative;
+            z-index: 2;
+            max-width: none;
+            font-family: "Comic Sans MS", "Trebuchet MS", Arial, sans-serif;
+            font-size: clamp(1.05rem, 1.8vw, 1.6rem);
+            font-style: italic;
+            line-height: 1.4;
             color: #202020
           }
 
-          .intro-copy span {
-            display: inline
+          .intro-copy p {
+            margin: 0 0 .55em
+          }
+
+          .intro-copy p:last-child {
+            margin-bottom: 0
+          }
+
+          .intro-rabbit {
+            position: absolute;
+            z-index: 2;
+            right: 2.5%;
+            bottom: 3%;
+            width: 19%;
+            max-width: 220px;
+            height: auto
           }
 
           @media(max-width:640px) {
             .intro-card {
-              padding: 2.8em 1em 1em;
-              min-height: 0
+              min-height: 0;
+              border-width: 2px;
+              border-radius: 22px;
+              padding: 4.2rem 1.15rem 10.5rem
             }
 
             .intro-copy {
               max-width: none;
-              font-size: 24px
+              font-size: 1.25rem;
+              line-height: 1.55
             }
 
             .unit-banner {
@@ -98,7 +132,14 @@
             }
 
             .intro-label {
-              left: .5em
+              left: .75rem;
+              font-size: 1.5rem
+            }
+
+            .intro-rabbit {
+              right: 5%;
+              bottom: 1.5%;
+              width: 42%
             }
           }
         </style>
@@ -112,6 +153,7 @@
   <div class="relative z-50" id="interface-container"></div>
   <div class="relative z-50" id="nav-container"></div>
   <script src="./assets/offline-preloader.js"></script>
+  <script src="./assets/version3-overrides.js"></script>
   <script src="./assets/scorm.js"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>

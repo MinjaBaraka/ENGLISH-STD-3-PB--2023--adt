@@ -15,7 +15,7 @@
 <body class="min-h-screen flex items-center justify-center">
     <main class="w-full">
       <h1 class="sr-only" id="page-heading">English Pupil’s Book Standard Three</h1>
-      <div class="container mx-auto max-w-5xl bg-white px-10 max-lg:px-6 max-sm:px-4 pt-8 pb-12 opacity-0" id="content"><section data-section-type="text_and_images" data-section-id="pg044_sec002" class="max-w-5xl mx-auto">
+      <div class="container mx-auto max-w-5xl bg-white px-10 max-lg:px-6 max-sm:px-4 pt-8 pb-12 opacity-0" id="content"><section data-section-type="activity_fill_in_the_blank" data-section-id="pg044_sec002" class="max-w-5xl mx-auto">
   <div class="mb-6">
     <div class="inline-flex items-center gap-5 bg-pink-100 rounded-[2.25rem] px-6 py-4 max-sm:w-full max-sm:gap-4 max-sm:px-4 max-sm:py-3">
       <div class="bg-green-600 text-white rounded-full h-20 w-20 flex items-center justify-center text-center shrink-0 max-sm:h-16 max-sm:w-16">
@@ -49,10 +49,10 @@
     </div>
   </div>
 
-  <div class="mb-5 text-center">
-    <div class="flex items-start justify-center gap-4 max-sm:flex-col max-sm:items-center max-sm:gap-2">
+  <div class="mb-5 text-left">
+    <div class="flex items-start justify-start gap-4 max-sm:gap-3">
       <span class="text-[2.2rem] leading-none font-bold text-blue-700 shrink-0 max-lg:text-[2rem] max-sm:text-[1.9rem]" data-id="pg044_n0027">(b)</span>
-      <div class="text-center">
+      <div class="min-w-0 text-left">
         <p class="leading-tight mb-2">
           <span class="text-[1.05rem] font-semibold text-blue-700 max-lg:text-[1rem] max-sm:text-[0.9rem]" data-id="pg044_n0028">Say/sign what the people in the pictures are doing.</span>
         </p>
@@ -63,12 +63,24 @@
     </div>
   </div>
 
-  <div class="grid grid-cols-2 gap-6 max-sm:grid-cols-1 max-sm:gap-4">
-    <div class="overflow-hidden rounded-xl border border-pink-400 bg-white p-3 max-sm:p-2">
-      <img src="images/pg044_im033_seg001_v1.png" alt="Picture 1: a girl riding a bicycle, with the sentence starter ‘She is blank’." data-id="pg044_im033_seg001_v1" class="block h-auto w-full max-w-full object-contain" style="max-width:100%; height:auto; clip-path:inset(0 5% 0 0);">
+  <div class="grid grid-cols-2 overflow-hidden rounded-2xl border-2 border-pink-300 max-sm:grid-cols-1">
+    <div class="relative flex min-h-[24rem] flex-col items-center justify-between border-r-2 border-pink-300 bg-white p-6 max-sm:min-h-0 max-sm:border-b-2 max-sm:border-r-0 max-sm:p-4">
+      <div class="absolute left-4 top-4 flex h-12 w-12 items-center justify-center rounded-full border-2 border-pink-400 bg-white text-2xl font-bold text-pink-600">
+        <span data-id="pg044_n0032">1</span>
+      </div>
+      <img src="images/pg044_im009.jpg" alt="A girl riding a bicycle." data-id="pg044_im009" class="mt-8 h-[17rem] w-auto max-w-full object-contain max-sm:h-[14rem]">
+      <p class="fitb-sentence mt-4 w-full text-center text-[1.25rem] leading-relaxed max-sm:text-[1.05rem]">
+        <span data-id="pg044_n0033">She is [[blank:item-1]].</span>
+      </p>
     </div>
-    <div class="overflow-hidden rounded-xl border border-pink-400 bg-white p-3 max-sm:p-2">
-      <img src="images/pg044_im033_seg002_v1.png" alt="Picture 2: a girl reading a book, with the sentence starter ‘She is blank’." data-id="pg044_im033_seg002_v1" class="block h-auto w-full max-w-full object-contain" style="max-width:100%; height:auto;">
+    <div class="relative flex min-h-[24rem] flex-col items-center justify-between bg-white p-6 max-sm:min-h-0 max-sm:p-4">
+      <div class="absolute left-4 top-4 flex h-12 w-12 items-center justify-center rounded-full border-2 border-pink-400 bg-white text-2xl font-bold text-pink-600">
+        <span data-id="pg044_n0035">2</span>
+      </div>
+      <img src="images/pg044_im010.jpg" alt="A girl reading an English book while sitting at a desk." data-id="pg044_im010" class="mt-8 h-[17rem] w-auto max-w-full object-contain max-sm:h-[14rem]">
+      <p class="fitb-sentence mt-4 w-full text-center text-[1.25rem] leading-relaxed max-sm:text-[1.05rem]">
+        <span data-id="pg044_n0036">She is [[blank:item-2]].</span>
+      </p>
     </div>
   </div>
 </section></div>
@@ -76,6 +88,12 @@
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
+    <script>
+      window.correctAnswers = {
+        "item-1": "riding a bicycle",
+        "item-2": "reading a book"
+      };
+    </script>
     <script src="./assets/offline-preloader.js"></script>
     <script src="./assets/version3-overrides.js"></script>
     <script>

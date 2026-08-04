@@ -10,6 +10,22 @@
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
+    <style>
+      [data-section-id="pg064_sec002"] .space-y-6 > .flex {
+        display: flex !important;
+        flex-direction: row !important;
+        align-items: baseline;
+        gap: 1.25rem !important;
+      }
+      [data-section-id="pg064_sec002"] .space-y-6 > .flex > div:first-child {
+        flex: 0 0 8rem;
+        width: 8rem !important;
+      }
+      @media (max-width: 640px) {
+        [data-section-id="pg064_sec002"] .space-y-6 > .flex { gap: .65rem !important; }
+        [data-section-id="pg064_sec002"] .space-y-6 > .flex > div:first-child { flex-basis: 5rem; width: 5rem !important; }
+      }
+    </style>
 </head>
 
 <body class="min-h-screen flex items-center justify-center">

@@ -16,6 +16,13 @@
       #content > section { position: relative; isolation: isolate; overflow: hidden; min-height: 1870px; max-width: none !important; margin: 0 !important; padding: 8% 12% 10% 15.5% !important; border-radius: 0 !important; background: #fff !important; box-shadow: none !important; }
       #content > section::before { content: ""; position: absolute; z-index: 0; inset: 0 0 0 auto; width: 12%; background: linear-gradient(90deg, rgba(252,239,244,0), #fceff4 38%, #f8d9df); }
       #content > section::after { content: "FOR ONLINE READING ONLY"; position: absolute; z-index: 0; left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(-45deg); color: #ffbeba; font: 700 clamp(42px,5.2vw,76px); letter-spacing: .03em; white-space: nowrap; opacity: .8; pointer-events: none; }
+      .unit-one-intro { position:relative; overflow:hidden; border:3px solid #078aa5; border-radius:30px; background:#fffdf2; padding:3.4rem 13rem 2.5rem 2.2rem; color:#242124; }
+      .unit-one-intro h3 { display:inline-block; position:absolute; left:1.2rem; top:-1px; margin:0; border-radius:0 0 1.6rem 1.6rem; background:#078aa5; padding:.38rem 1.35rem .5rem; color:#fff; font-family:"Trebuchet MS",Arial,sans-serif; font-size:clamp(1.35rem,2.4vw,2rem); font-style:italic; font-weight:800; line-height:1; }
+      .unit-one-intro-copy { position:relative; z-index:2; font-family:"Comic Sans MS","Trebuchet MS",Arial,sans-serif; font-size:clamp(1.05rem,1.8vw,1.6rem); font-style:italic; line-height:1.35; }
+      .unit-one-intro-copy p { margin:0 0 .5em; }
+      .unit-one-intro-copy p:last-child { margin-bottom:0; }
+      .unit-one-rabbit { position:absolute; z-index:2; right:2.5%; bottom:3%; width:19%; max-width:220px; height:auto; }
+      @media(max-width:700px) { .unit-one-intro { border-width:2px; border-radius:22px; padding:3.5rem 1.15rem 10.5rem; } .unit-one-intro h3 { left:.75rem; font-size:1.5rem; } .unit-one-intro-copy { font-size:1.25rem; line-height:1.55; } .unit-one-rabbit { right:5%; bottom:1.5%; width:42%; } }
     </style>
 </head>
 
@@ -30,18 +37,15 @@
       <div class="mb-8 text-center max-sm:mb-6">
         <h2 data-id="pg007_n0004" class="text-6xl font-extrabold italic text-fuchsia-600 max-lg:text-5xl max-sm:text-3xl">Listening and speaking/observing and signing</h2>
       </div>
-    <section class="relative overflow-hidden" aria-label="Unit introduction">
-      <img data-id="pg007_im031" src="images/pg007_im031.png"
-        alt="Introduction panel with a rabbit character at the bottom right."
-        class="block h-auto w-full object-contain" style="max-width:100%;height:auto;">
-      <div class="absolute" style="z-index:1;top:14%;left:1.5%;right:1.5%;bottom:2%;background:#fffdf2;"></div>
-      <div aria-hidden="true" class="absolute" style="z-index:2;left:45%;top:45%;transform:translate(-50%,-50%) rotate(-45deg);color:rgba(255,155,150,.42);font:700 clamp(1rem,4vw,3rem)/1 Arial,sans-serif;white-space:nowrap;">FOR ONLINE READING ONLY</div>
-      <div class="absolute" style="z-index:3;top:22%;left:5%;right:24%;font-family:'Comic Sans MS','Trebuchet MS',Arial,sans-serif;font-style:italic;font-size:clamp(.92rem,1.65vw,1.6rem);line-height:1.25;color:#242124;">
+    <section class="unit-one-intro" aria-label="Introduction">
+      <h3 data-id="pg007_n0006">Introduction</h3>
+      <div aria-hidden="true" class="absolute" style="z-index:1;left:45%;top:52%;transform:translate(-50%,-50%) rotate(-45deg);color:rgba(255,155,150,.42);font:700 clamp(1rem,4vw,3rem)/1 Arial,sans-serif;white-space:nowrap;">FOR ONLINE READING ONLY</div>
+      <div class="unit-one-intro-copy">
         <p data-id="pg007_n0008" style="margin:0 0 .36em;"><strong>Listening and speaking/observing and signing skills</strong> are important for effective communication.</p>
         <p data-id="pg007_n0009" style="margin:0 0 .36em;">In this unit, you will learn to listen to /observing and communicate information orally/sign in English.</p>
         <p data-id="pg007_n0010" style="margin:0;">The competencies developed will enable you to communicate with friends, teachers, parents and other people in different situations.</p>
       </div>
-      <img src="images/pg007_im031_rabbit.png" alt="" aria-hidden="true" class="absolute" style="z-index:4;right:3.8%;bottom:7%;width:18%;height:auto;">
+      <img src="images/pg007_im031_rabbit.png" alt="" aria-hidden="true" class="unit-one-rabbit">
     </section>
     </div>
   </section>

@@ -23,7 +23,10 @@
     .page-frame .rounded-\[2rem\] { border-radius: 22px 22px 0 0; }
     .page-frame input[data-activity-item] { display:inline-block; width:7.5ch; min-width:7.5ch; margin:0 .2em; padding:0 .15em .08em; border:0; border-bottom:3px solid #222; border-radius:0; background:transparent; color:#172554; font:inherit; font-weight:700; text-align:center; outline-offset:4px; }
     .page-frame input[data-activity-item]::placeholder { color:#222; opacity:1; }
+    .dialogue-list .dialogue-line { display:flex; align-items:baseline; gap:.5em; }
+    .dialogue-list .dialogue-speaker { flex:0 0 auto; }
     @media (max-width:800px) { .page-frame { width:100%; min-height:100vh; } .page-frame::before { inset:20px auto 20px 14px; width:58px; } .page-frame section { padding:78px 30px 96px 78px !important; } .page-frame .mt-12 { margin-top:32px; } }
+    @media (max-width:640px) { .dialogue-list .dialogue-line { gap:.4em; } }
   </style>
 </head>
 
@@ -59,17 +62,17 @@
               <div class="mb-6 text-center">
                 <span class="text-4xl font-extrabold italic text-gray-900 max-lg:text-3xl max-sm:text-2xl" data-id="pg020_n0011">An interview with a farmer</span>
               </div>
-              <div class="space-y-5 text-3xl leading-[1.35] max-lg:text-2xl max-sm:text-xl">
-                <div class="grid grid-cols-[10rem_1fr] gap-5 max-sm:grid-cols-[5rem_1fr] max-sm:gap-3">
-                  <span class="font-semibold text-fuchsia-700" data-id="pg020_n0013">Luta:</span>
+              <div class="dialogue-list space-y-5 text-3xl leading-[1.35] max-lg:text-2xl max-sm:text-xl">
+                <div class="dialogue-line">
+                  <span class="dialogue-speaker font-semibold text-fuchsia-700" data-id="pg020_n0013">Luta:</span>
                   <span class="text-gray-900" data-id="pg020_n0014">Hello!</span>
                 </div>
-                <div class="grid grid-cols-[10rem_1fr] gap-5 max-sm:grid-cols-[5rem_1fr] max-sm:gap-3">
-                  <span class="font-semibold text-sky-500" data-id="pg020_n0016">Maswi:</span>
+                <div class="dialogue-line">
+                  <span class="dialogue-speaker font-semibold text-sky-500" data-id="pg020_n0016">Maswi:</span>
                   <span class="text-gray-900" data-id="pg020_n0017">Hello!</span>
                 </div>
-                <div class="grid grid-cols-[10rem_1fr] gap-5 max-sm:grid-cols-[5rem_1fr] max-sm:gap-3">
-                  <span class="font-semibold text-fuchsia-700" data-id="pg020_n0019">Luta:</span>
+                <div class="dialogue-line">
+                  <span class="dialogue-speaker font-semibold text-fuchsia-700" data-id="pg020_n0019">Luta:</span>
                   <span class="text-gray-900"><span data-id="pg020_n0020">I’m Luta.</span> <input type="text" data-activity-item="item-1" aria-label="Pronoun for Luta" placeholder="__________" autocomplete="off" spellcheck="false"> <span data-id="pg020_n0020_suffix">want to buy cows. Do you have any?</span></span>
                 </div>
               </div>

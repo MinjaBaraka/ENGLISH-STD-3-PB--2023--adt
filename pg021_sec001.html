@@ -11,6 +11,17 @@
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
     <style>
+      .dialogue-list > div {
+        display:grid !important;
+        grid-template-columns:7.4rem minmax(0,1fr) !important;
+        align-items:baseline;
+        column-gap:1.25rem;
+      }
+      @media (max-width:640px) {
+        .dialogue-list > div { grid-template-columns:5.25rem minmax(0,1fr) !important; column-gap:.5rem; }
+      }
+    </style>
+    <style>
         body { background: #fff; }
         .dialogue-page { position: relative; width: min(1174px, calc(100vw - 14px)); min-height: 1600px; margin: 4px auto; overflow: hidden; background: #fff; }
         .dialogue-page::before { content: ""; position: absolute; z-index: 0; top: 44px; right: 44px; bottom: 44px; width: 112px; opacity: .68; background: radial-gradient(ellipse at 0 8%, #f7dce2 0 18%, transparent 19%), radial-gradient(ellipse at 100% 28%, #fbe5e7 0 20%, transparent 21%), linear-gradient(90deg, transparent, #f9d8df 55%, #f6ced8); }
@@ -40,7 +51,7 @@
                         style="max-width: 100%; height: auto;"></div>
                 <div
                     class="dialogue-panel">
-                    <div class="space-y-4 max-sm:space-y-3">
+                    <div class="dialogue-list space-y-4 max-sm:space-y-3">
                         <div
                             class="grid grid-cols-[118px_1fr] max-lg:grid-cols-[106px_1fr] max-sm:grid-cols-[84px_1fr] gap-x-5 max-sm:gap-x-2 items-start">
                             <span
