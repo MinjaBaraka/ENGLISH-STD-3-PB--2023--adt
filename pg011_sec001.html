@@ -7,7 +7,12 @@
         <title>English Pupil’s Book Standard Three</title>
         <meta name="title-id" content="pg011_sec001" />
         <meta name="page-section-id" content="13" />
-        <link href="./content/tailwind_output.css" rel="stylesheet">
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+    <link href="./assets/book-guide-fixes.css?v=2" rel="stylesheet">
+    <link href="./content/tailwind_output.css" rel="stylesheet">
         <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
         <link href="./assets/fonts.css" rel="stylesheet">
         <style>
@@ -45,20 +50,7 @@
                         background: linear-gradient(90deg, rgba(252, 239, 244, 0), #fceff4 38%, #f8d9df);
                 }
 
-                #content>section::after {
-                        content: "FOR ONLINE READING ONLY";
-                        position: absolute;
-                        z-index: 0;
-                        left: 50%;
-                        top: 50%;
-                        transform: translate(-50%, -50%) rotate(-45deg);
-                        color: #ffbeba;
-                        font: 700 clamp(42px, 5.2vw, 76px)/1 Arial, sans-serif;
-                        letter-spacing: .03em;
-                        white-space: nowrap;
-                        opacity: .8;
-                        pointer-events: none;
-                }
+
         </style>
 </head>
 
@@ -66,7 +58,7 @@
         <main class="w-full">
                 <div class="container mx-auto max-w-5xl bg-white px-10 max-lg:px-8 max-sm:px-4 pt-10 pb-10 opacity-0"
                         id="content">
-                        <section data-section-type="activity_open_ended_answer" data-section-id="pg011_sec001"
+                        <section aria-label="Book page content" role="region" data-section-type="activity_open_ended_answer" data-section-id="pg011_sec001"
                                 class="mx-auto max-w-4xl text-left">
 
                                 <div class="mb-2 inline-block rounded-xl bg-pink-200 px-5 py-2">
@@ -229,8 +221,8 @@
 
         <div class="relative z-50" id="interface-container"></div>
         <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
-    <script src="./assets/version3-overrides.js"></script>
+    <script src="./assets/offline-preloader.js?v=2"></script>
+    <script src="./assets/version3-overrides.js?v=3"></script>
         <script>
                 (function () {
                         const preloadFetch = window.fetch.bind(window);

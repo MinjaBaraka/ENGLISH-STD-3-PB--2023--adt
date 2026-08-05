@@ -7,6 +7,11 @@
     <title>English Pupil’s Book Standard Three</title>
     <meta name="title-id" content="pg007_sec003" />
     <meta name="page-section-id" content="9" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+    <link href="./assets/book-guide-fixes.css?v=2" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
@@ -15,7 +20,7 @@
       #content { width: 100%; max-width: 1400px !important; margin: 0 auto; padding: 0 !important; background: #fff; }
       #content > section { position: relative; isolation: isolate; overflow: hidden; min-height: 1870px; max-width: none !important; margin: 0 !important; padding: 8% 12% 10% 15.5% !important; border-radius: 0 !important; background: #fff !important; box-shadow: none !important; }
       #content > section::before { content: ""; position: absolute; z-index: 0; inset: 0 0 0 auto; width: 12%; background: linear-gradient(90deg, rgba(252,239,244,0), #fceff4 38%, #f8d9df); }
-      #content > section::after { content: "FOR ONLINE READING ONLY"; position: absolute; z-index: 0; left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(-45deg); color: #ffbeba; font: 700 clamp(42px,5.2vw,76px)/1 Arial,sans-serif; letter-spacing: .03em; white-space: nowrap; opacity: .8; pointer-events: none; }
+
     </style>
 </head>
 
@@ -23,7 +28,7 @@
     <main class="w-full">
       <h1 class="sr-only" id="page-heading">English Pupil’s Book Standard Three</h1>
       <div id="content" class="container mx-auto px-6 py-8 max-lg:px-4 max-sm:px-3 opacity-0">
-  <section data-section-type="activity_other" data-section-id="pg007_sec003" class="w-full bg-white px-8 py-8 max-lg:px-5 max-sm:px-3">
+  <section aria-label="Book page content" role="region" data-section-type="activity_other" data-section-id="pg007_sec003" class="w-full bg-white px-8 py-8 max-lg:px-5 max-sm:px-3">
     <div class="mb-5 inline-block rounded-2xl bg-pink-200 px-5 py-2 shadow-sm max-sm:block max-sm:w-full max-sm:rounded-[1.75rem] max-sm:px-5 max-sm:py-4">
       <span data-id="pg007_n0018" class="text-3xl font-extrabold text-fuchsia-700 max-lg:text-2xl max-sm:text-[1.1rem] max-sm:leading-tight">Activity 2:</span>
       <span data-id="pg007_n0019" class="ml-2 text-3xl font-extrabold text-fuchsia-700 max-lg:text-2xl max-sm:ml-0 max-sm:block max-sm:text-[1.1rem] max-sm:leading-tight">Naming various things orally/sign</span>
@@ -77,8 +82,8 @@
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
-    <script src="./assets/version3-overrides.js"></script>
+    <script src="./assets/offline-preloader.js?v=2"></script>
+    <script src="./assets/version3-overrides.js?v=3"></script>
     <script>
       (function () {
         const preloadFetch = window.fetch.bind(window);

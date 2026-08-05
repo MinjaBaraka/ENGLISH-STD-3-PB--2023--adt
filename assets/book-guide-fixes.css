@@ -1,0 +1,70 @@
+/* Shared accessibility and responsive safeguards from the ADT conversion guide. */
+:root {
+  color-scheme: light;
+  --adt-focus: #1d4ed8;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  min-width: 320px;
+}
+
+#content {
+  box-sizing: border-box;
+  width: min(100%, 80rem);
+  margin-inline: auto !important;
+}
+
+#content img,
+#content svg,
+#content video,
+#content canvas {
+  max-width: 100%;
+  height: auto;
+}
+
+#content input,
+#content textarea,
+#content select,
+#content button {
+  font: inherit;
+}
+
+#content :focus-visible,
+#interface-container :focus-visible,
+#nav-container :focus-visible {
+  outline: 3px solid var(--adt-focus);
+  outline-offset: 3px;
+}
+
+@media (max-width: 640px) {
+  #content {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+
+  #content table {
+    max-width: 100%;
+  }
+
+  img[data-id="pg037_im004"] {
+    width: calc(100% - 3rem) !important;
+    max-width: calc(100% - 3rem) !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

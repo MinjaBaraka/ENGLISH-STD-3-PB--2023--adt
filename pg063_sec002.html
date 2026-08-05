@@ -7,6 +7,11 @@
     <title>English Pupil’s Book Standard Three</title>
     <meta name="title-id" content="pg063_sec002" />
     <meta name="page-section-id" content="86" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+    <link href="./assets/book-guide-fixes.css?v=2" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
@@ -15,7 +20,7 @@
 <body class="min-h-screen flex items-center justify-center">
     <main class="w-full">
       <div id="content" class="container mx-auto px-6 py-8 max-lg:px-4 max-sm:px-3 bg-white opacity-0">
-  <section data-section-type="boxed_text" data-section-id="pg063_sec002" class="relative mx-auto max-w-4xl">
+  <section aria-label="Book page content" role="region" data-section-type="boxed_text" data-section-id="pg063_sec002" class="relative mx-auto max-w-4xl">
     <div class="mb-4 flex items-start gap-3 max-sm:gap-2">
       <div class="shrink-0 text-[2.6rem] font-semibold leading-none text-indigo-600 max-lg:text-[2.25rem] max-sm:text-[1.9rem]"><span data-id="pg063_n0033">(c)</span></div>
       <div class="z-10 pt-1 text-left text-[1.15rem] font-semibold leading-[1.2] text-indigo-600 max-lg:text-[1.05rem] max-sm:text-[0.95rem]"><span data-id="pg063_n0034">Read aloud/sign the following story and answer the questions that follow orally/sign.</span></div>
@@ -31,8 +36,8 @@
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
-    <script src="./assets/version3-overrides.js"></script>
+    <script src="./assets/offline-preloader.js?v=2"></script>
+    <script src="./assets/version3-overrides.js?v=3"></script>
     <script>
       (function () { const preloadFetch = window.fetch.bind(window); window.fetch = async function (input, init) { const url = typeof input === 'string' ? input : input && input.url; if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init); const response = await preloadFetch(input, init); const data = await response.clone().json(); data.pg063_n0034 = 'Read aloud/sign the following story and answer the questions that follow orally/sign.'; return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } }); }; })();
     </script>

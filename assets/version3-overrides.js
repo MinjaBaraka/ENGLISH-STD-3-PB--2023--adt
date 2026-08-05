@@ -258,4 +258,28 @@
     if (cleanUrl.endsWith('/audios.json')) Object.assign(data, audioOverrides);
     return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } });
   };
+
+  function labelInteractiveBlanks(root) {
+    const scope = root && root.querySelectorAll ? root : document;
+    scope.querySelectorAll('input[data-activity-item], textarea[data-activity-item]').forEach((field) => {
+      const current = field.getAttribute('aria-label') || '';
+      if (current && !/^Blank \d+ of \d+$/i.test(current)) return;
+      const sentence = field.closest('.fitb-sentence');
+      if (!sentence) return;
+      const readable = sentence.textContent.replace(/\s+/g, ' ').trim();
+      const blankNumber = current.match(/^Blank (\d+)/i)?.[1]
+        || field.dataset.activityItem?.replace(/\D+/g, '')
+        || 'answer';
+      if (readable) field.setAttribute('aria-label', `Complete blank ${blankNumber} in the sentence: ${readable}`);
+    });
+  }
+
+  const blankLabelObserver = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => mutation.addedNodes.forEach((node) => {
+      if (node.nodeType === Node.ELEMENT_NODE) labelInteractiveBlanks(node);
+    }));
+    labelInteractiveBlanks(document);
+  });
+  blankLabelObserver.observe(document.documentElement, { childList: true, subtree: true });
+  document.addEventListener('DOMContentLoaded', () => labelInteractiveBlanks(document));
 }());

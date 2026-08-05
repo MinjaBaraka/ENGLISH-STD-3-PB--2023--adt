@@ -7,6 +7,11 @@
     <title>English Pupil’s Book Standard Three</title>
     <meta name="title-id" content="pg007_sec001" />
     <meta name="page-section-id" content="7" />
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
+    <link href="./assets/book-guide-fixes.css?v=2" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
@@ -15,7 +20,7 @@
       #content { width: 100%; max-width: 1400px !important; margin: 0 auto; padding: 0 !important; background: #fff; }
       #content > section { position: relative; isolation: isolate; overflow: hidden; min-height: 1870px; max-width: none !important; margin: 0 !important; padding: 8% 12% 10% 15.5% !important; border-radius: 0 !important; background: #fff !important; box-shadow: none !important; }
       #content > section::before { content: ""; position: absolute; z-index: 0; inset: 0 0 0 auto; width: 12%; background: linear-gradient(90deg, rgba(252,239,244,0), #fceff4 38%, #f8d9df); }
-      #content > section::after { content: "FOR ONLINE READING ONLY"; position: absolute; z-index: 0; left: 50%; top: 50%; transform: translate(-50%,-50%) rotate(-45deg); color: #ffbeba; font: 700 clamp(42px,5.2vw,76px); letter-spacing: .03em; white-space: nowrap; opacity: .8; pointer-events: none; }
+
       .unit-one-intro { position:relative; overflow:hidden; border:3px solid #078aa5; border-radius:30px; background:#fffdf2; padding:3.4rem 13rem 2.5rem 2.2rem; color:#242124; }
       .unit-one-intro h3 { display:inline-block; position:absolute; left:1.2rem; top:-1px; margin:0; border-radius:0 0 1.6rem 1.6rem; background:#078aa5; padding:.38rem 1.35rem .5rem; color:#fff; font-family:"Trebuchet MS",Arial,sans-serif; font-size:clamp(1.35rem,2.4vw,2rem); font-style:italic; font-weight:800; line-height:1; }
       .unit-one-intro-copy { position:relative; z-index:2; font-family:"Comic Sans MS","Trebuchet MS",Arial,sans-serif; font-size:clamp(1.05rem,1.8vw,1.6rem); font-style:italic; line-height:1.35; }
@@ -29,7 +34,7 @@
 <body class="min-h-screen flex items-center justify-center">
     <main class="w-full">
       <div id="content" class="container mx-auto px-6 py-8 max-lg:px-4 max-sm:px-3 opacity-0">
-  <section data-section-type="boxed_text" data-section-id="pg007_sec001" class="w-full bg-white font-sans">
+  <section aria-label="Book page content" role="region" data-section-type="boxed_text" data-section-id="pg007_sec001" class="w-full bg-white font-sans">
     <div class="mx-auto max-w-5xl">
       <div class="mb-6 rounded-[2rem] bg-gradient-to-r from-fuchsia-700 via-purple-600 to-fuchsia-600 px-8 py-5 text-left shadow-[8px_10px_0px_rgba(216,180,254,0.6)] max-lg:px-6 max-lg:py-4 max-sm:px-4 max-sm:py-3">
         <h1 data-id="pg007_n0002" class="text-5xl font-extrabold tracking-wide text-white max-lg:text-4xl max-sm:text-3xl">Unit One</h1>
@@ -37,9 +42,9 @@
       <div class="mb-8 text-center max-sm:mb-6">
         <h2 data-id="pg007_n0004" class="text-6xl font-extrabold italic text-fuchsia-600 max-lg:text-5xl max-sm:text-3xl">Listening and speaking/observing and signing</h2>
       </div>
-    <section class="unit-one-intro" aria-label="Introduction">
+    <section role="region" class="unit-one-intro" aria-label="Introduction">
       <h3 data-id="pg007_n0006">Introduction</h3>
-      <div aria-hidden="true" class="absolute" style="z-index:1;left:45%;top:52%;transform:translate(-50%,-50%) rotate(-45deg);color:rgba(255,155,150,.42);font:700 clamp(1rem,4vw,3rem)/1 Arial,sans-serif;white-space:nowrap;">FOR ONLINE READING ONLY</div>
+
       <div class="unit-one-intro-copy">
         <p data-id="pg007_n0008" style="margin:0 0 .36em;"><strong>Listening and speaking/observing and signing skills</strong> are important for effective communication.</p>
         <p data-id="pg007_n0009" style="margin:0 0 .36em;">In this unit, you will learn to listen to /observing and communicate information orally/sign in English.</p>
@@ -54,8 +59,8 @@
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js"></script>
-    <script src="./assets/version3-overrides.js"></script>
+    <script src="./assets/offline-preloader.js?v=2"></script>
+    <script src="./assets/version3-overrides.js?v=3"></script>
     <script>
       (function () {
         const preloadFetch = window.fetch.bind(window);
