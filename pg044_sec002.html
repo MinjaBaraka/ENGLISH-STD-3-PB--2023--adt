@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-    <link href="./assets/book-guide-fixes.css?v=2" rel="stylesheet">
+    <link href="./assets/book-guide-fixes.css?v=3" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
@@ -99,7 +99,7 @@
         "item-2": "reading a book"
       };
     </script>
-    <script src="./assets/offline-preloader.js?v=2"></script>
+    <script src="./assets/offline-preloader.js?v=3"></script>
     <script src="./assets/version3-overrides.js?v=3"></script>
     <script>
       (function () {
@@ -109,7 +109,7 @@
           if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init);
           const response = await preloadFetch(input, init);
           const data = await response.clone().json();
-          data.pg044_n0015 = 'Listening and Oral practice/Observing and signing';
+          data.pg044_n0015 = 'Listening and Oral practice/Observing and signing practice';
           data.pg044_n0017 = 'Pronounce /sign the words in the box.';
           data.pg044_n0028 = 'Say/sign what the people in the pictures are doing.';
           return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } });

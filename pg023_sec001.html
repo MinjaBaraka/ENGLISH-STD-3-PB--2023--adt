@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-    <link href="./assets/book-guide-fixes.css?v=2" rel="stylesheet">
+    <link href="./assets/book-guide-fixes.css?v=3" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
@@ -47,12 +47,12 @@
 
 <body>
     <main>
-        <h1 class="sr-only" id="page-heading">(e) Make sentences orally/sign from the table below.</h1>
+        <h1 class="sr-only" id="page-heading">(e) Construct sentences orally/sign sentences from the table below.</h1>
         <div id="content" class="opacity-0">
             <section aria-label="Book page content" role="region" data-section-type="activity_fill_in_the_blank" data-section-id="pg023_sec001"
                 class="exercise-page">
                 <div class="sentence-builder">
-                    <h2 data-id="pg023_n0002">(e) Make sentences orally/sign from the table below.</h2>
+                    <h2 data-id="pg023_n0002">(e) Construct sentences orally/sign sentences from the table below.</h2>
                     <table aria-label="Sentence-building table for exercise e">
                         <tbody><tr>
                             <td><span data-id="pg023_n0017">We
@@ -72,7 +72,7 @@ it</span></td>
                     </table>
                 </div>
                 <div class="sentence-builder">
-                    <h2 data-id="pg023_n0004">(f) Make sentences orally/sign from the table below.</h2>
+                    <h2 data-id="pg023_n0004">(f) Make sentences orally/sign sentences from the table below.</h2>
                     <table aria-label="Sentence-building table for exercise f">
                         <tbody><tr>
                             <td><span data-id="pg023_n0020">He
@@ -136,7 +136,7 @@ them</span></td>
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js?v=2"></script>
+    <script src="./assets/offline-preloader.js?v=3"></script>
     <script src="./assets/version3-overrides.js?v=3"></script>
     <script>
         (function () {
@@ -150,12 +150,12 @@ them</span></td>
                 const response = await preloadFetch(input, init);
                 const data = await response.clone().json();
                 if (cleanUrl.endsWith('/content/i18n/en-GB/texts.json')) {
-                    data.pg023_im003 = 'Exercise (e). Make sentences orally/sign sentences from the table below. First column: We, I, You, They. Second column: like, play with, know, eat with, sing with. Third column: her, him, them, it.';
+                    data.pg023_im003 = 'Exercise (e). Construct sentences orally/sign sentences from the table below. First column: We, I, You, They. Second column: like, play with, know, eat with, sing with. Third column: her, him, them, it.';
                     data.pg023_im004 = 'Exercise (f). Make sentences orally/sign sentences from the table below. First column: He, She, It. Second column: likes, plays with, knows, eats with, sings with. Third column: her, him, them.';
-                    data.pg023_n0002 = '(e) Make sentences orally/sign from the table below.';
-                    data.pg023_n0004 = '(f) Make sentences orally/sign from the table below.';
-                    data.pg023_n0002_easy_read = '(e) Make sentences orally/sign from the table below.';
-                    data.pg023_n0004_easy_read = '(f) Make sentences orally/sign from the table below.';
+                    data.pg023_n0002 = '(e) Construct sentences orally/sign sentences from the table below.';
+                    data.pg023_n0004 = '(f) Make sentences orally/sign sentences from the table below.';
+                    data.pg023_n0002_easy_read = '(e) Construct sentences orally/sign sentences from the table below.';
+                    data.pg023_n0004_easy_read = '(f) Make sentences orally/sign sentences from the table below.';
                     data.pg023_n0017 = 'We\nI\nYou\nThey';
                     data.pg023_n0018 = 'like\nplay with\nknow\neat with\nsing with';
                     data.pg023_n0019 = 'her\nhim\nthem\nit';

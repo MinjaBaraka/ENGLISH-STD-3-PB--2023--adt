@@ -35,6 +35,37 @@ body {
   font: inherit;
 }
 
+/* Speech bubbles keep a visible pointer at desktop and mobile widths. */
+.adt-speech-bubble {
+  position: relative;
+  overflow: visible;
+}
+
+.adt-speech-bubble::before,
+.adt-speech-bubble::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  width: 0;
+  height: 0;
+  transform: translateX(-50%);
+  pointer-events: none;
+}
+
+.adt-speech-bubble::before {
+  bottom: -20px;
+  border-right: 14px solid transparent;
+  border-left: 14px solid transparent;
+  border-top: 20px solid #e879f9;
+}
+
+.adt-speech-bubble::after {
+  bottom: -16px;
+  border-right: 11px solid transparent;
+  border-left: 11px solid transparent;
+  border-top: 16px solid #fff;
+}
+
 #content :focus-visible,
 #interface-container :focus-visible,
 #nav-container :focus-visible {
