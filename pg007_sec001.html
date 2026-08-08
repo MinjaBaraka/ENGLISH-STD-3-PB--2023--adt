@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-    <link href="./assets/book-guide-fixes.css?v=3" rel="stylesheet">
+    <link href="./assets/book-guide-fixes.css?v=11" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
@@ -47,7 +47,7 @@
 
       <div class="unit-one-intro-copy">
         <p data-id="pg007_n0008" style="margin:0 0 .36em;"><strong>Listening and speaking/observing and signing skills</strong> are important for effective communication.</p>
-        <p data-id="pg007_n0009" style="margin:0 0 .36em;">In this unit, you will learn to listen to /observing and communicate information orally/sign in English.</p>
+        <p data-id="pg007_n0009" style="margin:0 0 .36em;">In this unit, you will learn to listen to/observe signed video and communicate information orally/sign in English.</p>
         <p data-id="pg007_n0010" style="margin:0;">The competencies developed will enable you to communicate with friends, teachers, parents and other people in different situations.</p>
       </div>
       <img src="images/pg007_im031_rabbit.png" alt="" aria-hidden="true" class="unit-one-rabbit">
@@ -69,7 +69,7 @@
           if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init);
           const response = await preloadFetch(input, init);
           const texts = await response.clone().json();
-          texts.pg007_n0009 = 'In this unit, you will learn to listen to /observing and communicate information orally/sign in English.';
+          texts.pg007_n0009 = 'In this unit, you will learn to listen to/observe signed video and communicate information orally/sign in English.';
           return new Response(JSON.stringify(texts), { status: response.status, headers: { 'Content-Type': 'application/json' } });
         };
       })();

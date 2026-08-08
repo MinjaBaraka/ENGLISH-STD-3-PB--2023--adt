@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-    <link href="./assets/book-guide-fixes.css?v=3" rel="stylesheet">
+    <link href="./assets/book-guide-fixes.css?v=11" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
   <link href="./assets/fonts.css" rel="stylesheet">
@@ -39,7 +39,7 @@
             <h2 data-id="pg003_n0009" class="toc-unit-title">Unit One</h2>
             <div class="toc-row toc-topic"><span data-id="pg003_n0011" class="toc-label">Listening and speaking/observing and signing</span><span class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0011_page"
                 class="toc-number">1</span></div>
-            <div class="toc-row toc-activity"><span data-id="pg003_n0013" class="toc-label">Activity 1: Listening and
+            <div class="toc-row toc-activity"><span data-id="pg003_n0013" class="toc-label">Activity 1: Listening/observing and
                 writing</span><span class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0013_page"
                 class="toc-number">1</span></div>
             <div class="toc-row toc-activity"><span data-id="pg003_n0015" class="toc-label">Activity 2: Naming various
@@ -55,12 +55,12 @@
                 locations of objects</span><span class="toc-leader" aria-hidden="true"></span><span
                 data-id="pg003_n0021_page" class="toc-number">5</span></div>
             <div class="toc-row toc-activity"><span data-id="pg003_n0023" class="toc-label">Activity 6: Listening to
-                oral texts</span><span class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0023_page"
+                oral texts/observing signed video</span><span class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0023_page"
                 class="toc-number">6</span></div>
-            <div class="toc-row toc-activity"><span data-id="pg003_n0025" class="toc-label">Activity 7: Reading aloud
+            <div class="toc-row toc-activity"><span data-id="pg003_n0025" class="toc-label">Activity 7: Reading aloud/signing
                 and answering oral questions</span><span class="toc-leader" aria-hidden="true"></span><span
                 data-id="pg003_n0025_page" class="toc-number">7</span></div>
-            <div class="toc-row toc-activity"><span data-id="pg003_n0027" class="toc-label">Activity 8: Oral
+            <div class="toc-row toc-activity"><span data-id="pg003_n0027" class="toc-label">Activity 8: Oral/signing
                 practice</span><span class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0027_page"
                 class="toc-number">9</span></div>
           </section>
@@ -88,7 +88,7 @@
                 possession</span><span class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0043_page"
                 class="toc-number">20</span></div>
             <div class="toc-row toc-activity"><span data-id="pg003_n0045" class="toc-label">Activity 1: Listening and
-                oral practice</span><span class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0045_page"
+                oral practice/Observing and signing</span><span class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0045_page"
                 class="toc-number">20</span></div>
             <div class="toc-row toc-activity"><span data-id="pg003_n0047" class="toc-label">Activity 2: Reading
                 practice</span><span class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0047_page"
@@ -103,7 +103,7 @@
                 class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0053_page"
                 class="toc-number">29</span></div>
             <div class="toc-row toc-activity"><span data-id="pg003_n0055" class="toc-label">Activity 1: Listening and
-                oral practice</span><span class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0055_page"
+                oral practice/Observing and signing</span><span class="toc-leader" aria-hidden="true"></span><span data-id="pg003_n0055_page"
                 class="toc-number">29</span></div>
           </section>
         </div>
@@ -217,6 +217,14 @@
 
             .toc-row:after {
               border-bottom-width: 3px
+            }
+
+            .toc-row {
+              grid-template-columns: minmax(0, auto) minmax(1rem, 1fr) auto
+            }
+
+            .toc-label {
+              overflow-wrap: anywhere
             }
           }
         </style>

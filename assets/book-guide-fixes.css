@@ -41,6 +41,21 @@ body {
   overflow: visible;
 }
 
+/* Preserve the authored picture callout positions. The general bubble rule
+   above supplies the arrow anchor for inline bubbles, while pages that mark a
+   bubble as absolute must remain anchored to their illustration. */
+.adt-speech-bubble.absolute {
+  position: absolute;
+}
+
+@media (max-width: 640px) {
+  /* Mobile layouts place callouts in the normal reading flow so that every
+     statement remains legible without covering the illustration. */
+  .adt-speech-bubble.absolute {
+    position: static;
+  }
+}
+
 .adt-speech-bubble::before,
 .adt-speech-bubble::after {
   content: "";
@@ -66,6 +81,86 @@ body {
   border-top: 16px solid #fff;
 }
 
+/* Actor callouts use an explicit connector layer instead of a decorative,
+   centre-aligned speech-bubble tail. This keeps every statement attached to
+   the correct speaker at every responsive size. */
+.actor-stage {
+  position: relative;
+  width: 100%;
+  height: auto;
+  aspect-ratio: var(--actor-ratio, 5 / 3);
+  overflow: hidden;
+  background: #fff;
+}
+
+.actor-stage .actor-photo {
+  position: absolute;
+  z-index: 1;
+  object-fit: contain;
+}
+
+.actor-stage .actor-bubble {
+  position: absolute;
+  z-index: 3;
+  box-sizing: border-box;
+  width: max-content !important;
+  max-width: 40%;
+  border: 2px solid #d946ef;
+  border-radius: 1.1rem;
+  background: #fff;
+  padding: 0.55rem 0.8rem;
+  color: #292524;
+  font-size: clamp(0.78rem, 1.75vw, 1.28rem);
+  font-weight: 600;
+  line-height: 1.2;
+  box-shadow: 0 2px 5px rgb(134 25 143 / 10%);
+}
+
+.actor-stage .actor-connectors {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.actor-stage .actor-connectors path,
+.actor-stage .actor-connectors polyline,
+.actor-stage .actor-connectors line {
+  fill: none;
+  stroke: #c026d3;
+  stroke-width: 3;
+  vector-effect: non-scaling-stroke;
+}
+
+.actor-stage .actor-name {
+  position: absolute;
+  z-index: 3;
+  color: #1d4ed8;
+  font-size: clamp(0.8rem, 1.7vw, 1.25rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+@media (max-width: 640px) {
+  .actor-stage .actor-bubble {
+    padding: 0.28rem 0.38rem;
+    border-width: 1.5px;
+    border-radius: 0.65rem;
+    font-size: 0.62rem;
+    line-height: 1.1;
+  }
+
+  [data-section-id="pg053_sec001"] .actor-stage .actor-bubble {
+    padding: 0.24rem 0.3rem;
+    font-size: 0.58rem;
+    line-height: 1.05;
+    overflow-wrap: normal;
+    word-break: normal;
+  }
+}
+
 #content :focus-visible,
 #interface-container :focus-visible,
 #nav-container :focus-visible {
@@ -86,6 +181,14 @@ body {
   img[data-id="pg037_im004"] {
     width: calc(100% - 3rem) !important;
     max-width: calc(100% - 3rem) !important;
+  }
+
+  [data-section-id="pg057_sec001"] .adt-speech-bubble {
+    position: static !important;
+    inset: auto !important;
+    width: 100% !important;
+    max-width: 20rem !important;
+    margin-inline: auto;
   }
 }
 
