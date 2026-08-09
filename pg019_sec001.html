@@ -23,8 +23,53 @@
       .bubble-tail-right::before { right: 32px; border-left: 14px solid transparent; }
       .bubble-tail-left::after { left: 30px; border-right: 18px solid transparent; }
       .bubble-tail-left::before { left: 32px; border-right: 14px solid transparent; }
-      @media (max-width: 640px) {
+
+      /* Keep each dialogue scene readable between phone and tablet widths.
+         Desktop retains the textbook composition; smaller screens place the
+         two callouts in a responsive row above their shared illustration. */
+      @media (max-width: 1200px) {
+        .pronoun-scene {
+          display: grid !important;
+          grid-template-columns: repeat(2, minmax(0, 1fr));
+          align-items: start;
+          gap: 0.85rem;
+          min-height: 0 !important;
+        }
+
+        .pronoun-callout {
+          position: relative !important;
+          inset: auto !important;
+          width: 100%;
+          max-width: none !important;
+        }
+
+        .pronoun-callout .speech-bubble {
+          display: block;
+          box-sizing: border-box;
+          width: 100%;
+          padding: 0.75rem 0.9rem;
+          border-radius: 1.25rem;
+          font-size: clamp(1rem, 3.2vw, 1.35rem);
+          line-height: 1.25;
+          overflow-wrap: anywhere;
+        }
+
+        .pronoun-scene-image {
+          grid-column: 1 / -1;
+          padding-top: 0 !important;
+        }
+      }
+
+      @media (max-width: 520px) {
+        .pronoun-scene {
+          grid-template-columns: minmax(0, 1fr);
+        }
+
         .bubble-tail-right::after, .bubble-tail-right::before, .bubble-tail-left::after, .bubble-tail-left::before { display: none; }
+
+        .pronoun-callout .speech-bubble {
+          font-size: 1rem;
+        }
       }
     </style>
 </head>
@@ -35,39 +80,39 @@
   <section aria-label="Book page content" role="region" data-section-type="text_and_images" data-section-id="pg019_sec001" class="mx-auto max-w-4xl border border-fuchsia-400 bg-white">
     <div class="px-10 pt-8 pb-6 max-lg:px-6 max-sm:px-4">
       <h1 class="text-center text-4xl font-bold text-gray-800 max-lg:text-3xl max-sm:text-2xl"><span data-id="pg019_n0002">You</span></h1>
-      <div class="relative mt-6 min-h-[520px] max-sm:min-h-0 max-sm:flex max-sm:flex-col max-sm:gap-4">
-        <div class="absolute left-8 top-2 z-10 max-w-[270px] max-sm:static max-sm:max-w-full">
+      <div class="pronoun-scene relative mt-6 min-h-[520px] max-sm:min-h-0 max-sm:flex max-sm:flex-col max-sm:gap-4">
+        <div class="pronoun-callout absolute left-8 top-2 z-10 max-w-[270px] max-sm:static max-sm:max-w-full">
           <div class="speech-bubble bubble-tail-right inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
             <span data-id="pg019_n0004">Maria, you took my exercise book.</span>
           </div>
         </div>
-        <div class="absolute right-4 top-0 z-10 max-w-[420px] max-sm:static max-sm:max-w-full">
+        <div class="pronoun-callout absolute right-4 top-0 z-10 max-w-[420px] max-sm:static max-sm:max-w-full">
           <div class="speech-bubble bubble-tail-left inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
             <div><span data-id="pg019_n0005">No! I did not take your exercise book.</span></div>
             <div><span data-id="pg019_n0006">You must have misplaced it.</span></div>
           </div>
         </div>
-        <div class="flex justify-center pt-28 max-sm:pt-2">
+        <div class="pronoun-scene-image flex justify-center pt-28 max-sm:pt-2">
           <img src="images/pg019_im003.jpg" alt="A schoolboy points accusingly at a schoolgirl standing with her arms folded." data-id="pg019_im003" class="h-auto max-w-full object-contain w-[520px] max-sm:w-full" style="max-width: 100%; height: auto;">
         </div>
       </div>
     </div>
     <div class="border-t border-fuchsia-400 px-10 pt-6 pb-10 max-lg:px-6 max-sm:px-4">
-      <div class="relative min-h-[560px] max-sm:min-h-0 max-sm:flex max-sm:flex-col max-sm:gap-4">
-        <div class="absolute left-2 top-0 z-10 max-w-[270px] max-sm:static max-sm:max-w-full">
+      <div class="pronoun-scene relative min-h-[560px] max-sm:min-h-0 max-sm:flex max-sm:flex-col max-sm:gap-4">
+        <div class="pronoun-callout absolute left-2 top-0 z-10 max-w-[270px] max-sm:static max-sm:max-w-full">
           <div class="speech-bubble bubble-tail-right inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
             <div><span data-id="pg019_n0008">You are stubborn.</span></div>
             <div><span data-id="pg019_n0009">I don&#x2019;t like you.</span></div>
           </div>
         </div>
-        <div class="absolute right-0 top-0 z-10 max-w-[390px] max-sm:static max-sm:max-w-full">
+        <div class="pronoun-callout absolute right-0 top-0 z-10 max-w-[390px] max-sm:static max-sm:max-w-full">
           <div class="speech-bubble bubble-tail-left inline-block rounded-3xl border-2 border-fuchsia-500 bg-white px-4 py-3 text-left text-[28px] leading-tight text-gray-800 max-lg:text-2xl max-sm:block max-sm:text-xl">
             <div><span data-id="pg019_n0010">No! We are not stubborn!</span></div>
             <div><span data-id="pg019_n0011">We are your friends.</span></div>
             <div><span data-id="pg019_n0012">We like you.</span></div>
           </div>
         </div>
-        <div class="flex justify-center pt-28 max-sm:pt-2">
+        <div class="pronoun-scene-image flex justify-center pt-28 max-sm:pt-2">
           <img src="images/pg019_im004.jpg" alt="A schoolgirl points at three schoolboys standing together on the grass." data-id="pg019_im004" class="h-auto max-w-full object-contain w-[640px] max-sm:w-full" style="max-width: 100%; height: auto;">
         </div>
       </div>
