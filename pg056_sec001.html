@@ -40,23 +40,21 @@
     </div>
 
     <div class="relative z-10 mx-auto mt-8 w-full max-w-[760px] max-lg:mt-6 max-sm:mt-4">
-      <div class="relative mx-auto w-full pt-20 max-sm:pt-0">
-        <div class="absolute inset-x-0 top-0 z-20 max-sm:relative max-sm:mb-3 max-sm:space-y-2">
-          <div class="absolute left-[6%] top-10 max-sm:static">
-            <span data-id="pg056_n0014" class="adt-speech-bubble inline-block rounded-[1rem] border border-fuchsia-500 bg-white px-4 py-1 text-[18px] leading-tight text-neutral-800 shadow-sm max-lg:text-[16px] max-sm:text-[16px]">I like netball.</span>
-          </div>
-          <div class="absolute left-[27%] top-0 max-sm:static">
-            <span data-id="pg056_n0015" class="adt-speech-bubble inline-block rounded-[1rem] border border-fuchsia-500 bg-white px-4 py-1 text-[18px] leading-tight text-neutral-800 shadow-sm max-lg:text-[16px] max-sm:text-[16px]">I like rope skipping.</span>
-          </div>
-          <div class="absolute right-[14%] top-8 max-sm:static">
-            <span data-id="pg056_n0016" class="adt-speech-bubble inline-block rounded-[1rem] border border-fuchsia-500 bg-white px-4 py-1 text-[18px] leading-tight text-neutral-800 shadow-sm max-lg:text-[16px] max-sm:text-[16px]">I don&#x2019;t like football.</span>
-          </div>
-          <div class="absolute right-0 top-16 max-sm:static">
-            <span data-id="pg056_n0017" class="adt-speech-bubble inline-block rounded-[1rem] border border-fuchsia-500 bg-white px-4 py-1 text-[18px] leading-tight text-neutral-800 shadow-sm max-lg:text-[16px] max-sm:text-[16px]">I like football.</span>
-          </div>
-        </div>
+      <div class="actor-stage relative mx-auto w-full" style="--actor-ratio: 5 / 3.8;">
+        <div data-id="pg056_n0014" class="actor-bubble" style="left:3%; top:8%; max-width:21%;">I like netball.</div>
+        <div data-id="pg056_n0015" class="actor-bubble" style="left:29%; top:1%; max-width:25%;">I like rope skipping.</div>
+        <div data-id="pg056_n0016" class="actor-bubble" style="left:55%; top:8%; max-width:25%;">I don&#x2019;t like football.</div>
+        <div data-id="pg056_n0017" class="actor-bubble" style="right:2%; top:22%; max-width:21%;">I like football.</div>
 
-        <img data-id="pg056_im003" src="images/pg056_im003.jpg" alt="Three girls play skipping rope outdoors, with two turning the rope while the girl in the middle jumps." class="relative z-0 block max-w-full rounded-[0.35rem]" style="max-width: 100%; height: auto;">
+        <img data-id="pg056_im003" src="images/pg056_im003.jpg" alt="Three girls play skipping rope outdoors, with two turning the rope while the girl in the middle jumps." class="actor-photo rounded-[0.35rem]" style="left:4%; top:25%; width:92%; height:70%;">
+
+        <svg class="actor-connectors" viewBox="0 0 1000 760" preserveAspectRatio="none" aria-hidden="true">
+          <defs><marker id="pg056-arrow" markerWidth="9" markerHeight="9" refX="8" refY="3" orient="auto"><path d="M0,0 L0,6 L9,3 z" fill="#c026d3" stroke="none"></path></marker></defs>
+          <polyline points="145,130 195,195 275,350"></polyline>
+          <polyline points="410,85 450,185 505,370"></polyline>
+          <polyline points="660,135 625,220 540,380"></polyline>
+          <polyline points="870,190 825,250 775,360"></polyline>
+        </svg>
 
         <div class="hidden">
           <img data-id="pg056_im004_seg001_v1" src="images/pg056_im004_seg001_v1.png" alt="I like netball." class="block max-w-full" style="max-width: 100%; height: auto;">
@@ -71,13 +69,13 @@
           <img data-id="pg056_im004_seg004_v1" src="images/pg056_im004_seg004_v1.png" alt="I like football." class="block max-w-full" style="max-width: 100%; height: auto;">
         </div>
 
-        <div class="absolute bottom-[1%] left-[17%] z-20 px-2 py-1 text-[24px] text-blue-700 max-lg:text-[19px] max-sm:text-[16px]">
+        <div class="actor-name" style="left:13%; bottom:1%; width:20%;">
           <span data-id="pg056_n0018">Neema</span>
         </div>
-        <div class="absolute bottom-[3%] left-[49%] z-20 px-2 py-1 text-[24px] text-blue-700 max-lg:text-[19px] max-sm:text-[16px]">
+        <div class="actor-name" style="left:42%; bottom:1%; width:20%;">
           <span data-id="pg056_n0019">Asha</span>
         </div>
-        <div class="absolute bottom-[22%] right-[17%] z-20 px-2 py-1 text-[24px] text-blue-700 max-lg:text-[19px] max-sm:text-[16px]">
+        <div class="actor-name" style="right:8%; bottom:11%; width:18%;">
           <span data-id="pg056_n0020">Jane</span>
         </div>
 
@@ -116,6 +114,7 @@
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
+    <script src="./assets/actor-callouts.js?v=1"></script>
     <script src="./assets/offline-preloader.js?v=3"></script>
     <script src="./assets/version3-overrides.js?v=3"></script>
     <script src="./assets/scorm.js"></script>
