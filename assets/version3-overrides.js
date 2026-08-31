@@ -282,4 +282,65 @@
   });
   blankLabelObserver.observe(document.documentElement, { childList: true, subtree: true });
   document.addEventListener('DOMContentLoaded', () => labelInteractiveBlanks(document));
+
+  // Text-to-speech and sign-language video are separate learning tools.  The
+  // bundled runtime treats them as a single active-media channel, which makes
+  // it pause one player whenever the other begins.  Keep the sign-language
+  // video outside that shared channel while preserving its normal controls.
+  const isSignLanguageVideo = (node) =>
+    node instanceof HTMLVideoElement &&
+    Boolean(node.closest('#interface-container'));
+
+  // React delegates the sign-video `onPlay` callback from the interface
+  // container. Stopping this event before it reaches that container prevents
+  // the video from stopping TTS.
+  document.addEventListener('play', (event) => {
+    if (!isSignLanguageVideo(event.target)) return;
+    event.stopImmediatePropagation();
+  }, true);
+
+  function protectSignLanguageVideo(video) {
+    if (video.dataset.independentMedia === 'true') return;
+    video.dataset.independentMedia = 'true';
+
+    const nativePause = video.pause.bind(video);
+    let userRequestedPause = false;
+    const allowUserPause = () => {
+      userRequestedPause = true;
+      window.setTimeout(() => { userRequestedPause = false; }, 250);
+    };
+
+    // Native controls normally pause the video without calling this override.
+    // These guards also support browsers that call the element method for a
+    // click or keyboard pause.
+    video.addEventListener('pointerdown', allowUserPause, true);
+    video.addEventListener('keydown', (event) => {
+      if (event.code === 'Space' || event.code === 'Enter') allowUserPause();
+    }, true);
+
+    Object.defineProperty(video, 'pause', {
+      configurable: true,
+      value() {
+        if (userRequestedPause) {
+          userRequestedPause = false;
+          return nativePause();
+        }
+        // Ignore only the runtime's automatic pause caused by TTS playback.
+        return undefined;
+      },
+    });
+  }
+
+  const mediaIndependenceObserver = new MutationObserver((mutations) => {
+    mutations.forEach((mutation) => mutation.addedNodes.forEach((node) => {
+      if (!(node instanceof Element)) return;
+      if (isSignLanguageVideo(node)) protectSignLanguageVideo(node);
+      node.querySelectorAll?.('#interface-container video').forEach(protectSignLanguageVideo);
+    }));
+  });
+  mediaIndependenceObserver.observe(document.documentElement, {
+    childList: true,
+    subtree: true,
+  });
+  document.querySelectorAll('#interface-container video').forEach(protectSignLanguageVideo);
 }());
