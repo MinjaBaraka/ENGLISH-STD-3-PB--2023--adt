@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-    <link href="./assets/book-guide-fixes.css?v=20" rel="stylesheet">
+    <link href="./assets/book-guide-fixes.css?v=27" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
@@ -20,14 +20,14 @@
 <body class="min-h-screen flex items-center justify-center">
     <main class="w-full">
       <div id="content" class="container mx-auto px-8 py-8 max-lg:px-6 max-sm:px-4 opacity-0">
-<section aria-label="Book page content" role="region" data-section-type="boxed_text" data-section-id="pg068_sec001" class="mx-auto max-w-5xl rounded-[2rem] bg-gradient-to-b from-pink-50 via-white to-purple-50 p-10 shadow-lg ring-1 ring-pink-100 max-lg:p-6 max-sm:p-4">
+<section aria-label="Book page content" role="region" data-section-type="boxed_text" data-section-id="pg068_sec001" class="mx-auto max-w-5xl rounded-[2rem] bg-gradient-to-b from-pink-50 via-white to-purple-50 p-10 max-lg:p-6 max-sm:p-4">
 <div class="mb-6 rounded-[1.6rem] bg-gradient-to-r from-fuchsia-200 to-pink-100 px-8 py-5 max-sm:px-4 max-sm:py-4">
 <h1 data-id="pg068_n0002" class="text-left text-4xl font-bold tracking-tight text-fuchsia-700 max-lg:text-3xl max-sm:text-2xl max-sm:leading-tight">Activity 3: Reading words with short and long vowels</h1>
 </div>
 <p class="mb-5 text-left text-3xl font-semibold text-indigo-700 max-lg:text-2xl max-sm:text-xl max-sm:leading-tight">
 <span data-id="pg068_n0003">(a) Read aloud/sign the following words.</span>
 </p>
-<div class="mb-8 overflow-x-auto rounded-[1.8rem] border-2 border-pink-300 bg-white shadow-sm">
+<div class="mb-8 overflow-x-auto rounded-[1.8rem] border-2 border-pink-300 bg-white">
 <table class="w-full min-w-[680px] table-fixed border-collapse text-left" aria-label="Words with long and short vowels">
 <thead><tr class="bg-pink-100">
 <th class="border border-pink-300 px-6 py-4 text-2xl font-bold text-fuchsia-700" data-id="pg068_n0030">Words with long vowels</th>
@@ -85,10 +85,10 @@
 </div>
     <div class="relative z-50" id="nav-container">
 </div>
-    <script src="./assets/offline-preloader.js?v=15">
+    <script src="./assets/offline-preloader.js?v=32">
 </script>
-    <script src="./assets/readability.js?v=3"></script>
-    <script src="./assets/version3-overrides.js?v=5">
+    <script src="./assets/readability.js?v=8"></script>
+    <script src="./assets/version3-overrides.js?v=12">
 </script>
     <script>
       (function () { const preloadFetch = window.fetch.bind(window); window.fetch = async function (input, init) { const url = typeof input === 'string' ? input : input && input.url; const cleanUrl = url && url.split('?')[0]; if (!cleanUrl || (!cleanUrl.endsWith('/content/i18n/en-GB/texts.json') && !cleanUrl.endsWith('/content/i18n/en-GB/audios.json'))) return preloadFetch(input, init); const response = await preloadFetch(input, init); const data = await response.clone().json(); if (cleanUrl.endsWith('/texts.json')) { data.pg068_n0003 = '(a) Read aloud/sign the following words.'; data.pg068_n0028 = '(a) Read aloud the following sentences/sign the words in the following sentences.'; data.pg068_n0005 = 'feel, fool, pull, pool, port, bore, most, part, dark, arm, bird, girl, hear, heal, speak'; data.pg068_n0030 = 'Words with long vowels'; data.pg068_n0031 = 'Words with short vowels'; data.pg068_n0032 = 'ship, lip, put, pot, mop, bed, cat, hat, bet, get, span, cut, swim, sell, milk'; ['pg068_n0005', 'pg068_n0030', 'pg068_n0031', 'pg068_n0032'].forEach(function (id) { data[id + '_easy_read'] = data[id]; }); } else { ['pg068_n0005', 'pg068_n0030', 'pg068_n0031', 'pg068_n0032'].forEach(function (id) { data[id] = id + '.mp3'; data[id + '_easy_read'] = id + '_easy_read.mp3'; }); } return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } }); }; })();

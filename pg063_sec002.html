@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-    <link href="./assets/book-guide-fixes.css?v=20" rel="stylesheet">
+    <link href="./assets/book-guide-fixes.css?v=27" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
@@ -23,10 +23,10 @@
   <section aria-label="Book page content" role="region" data-section-type="boxed_text" data-section-id="pg063_sec002" class="relative mx-auto max-w-4xl">
     <div class="mb-4 flex items-start gap-3 max-sm:gap-2">
       <div class="shrink-0 text-[2.6rem] font-semibold leading-none text-indigo-600 max-lg:text-[2.25rem] max-sm:text-[1.9rem]"><span data-id="pg063_n0033">(c)</span></div>
-      <div class="z-10 pt-1 text-left text-[1.15rem] font-semibold leading-[1.2] text-indigo-600 max-lg:text-[1.05rem] max-sm:text-[0.95rem]"><span data-id="pg063_n0034">Read aloud/sign the following story and answer the questions that follow orally/sign.</span></div>
+      <div class="z-10 pt-1 text-left text-[1.15rem] font-semibold leading-[1.2] text-indigo-600 max-lg:text-[1.05rem] max-sm:text-[0.95rem]"><span data-id="pg063_n0034">Read aloud/sign the following story and answer the questions that follow orally or using sign language.</span></div>
     </div>
 
-    <div class="mx-auto max-w-3xl rounded-[1.75rem] border-[3px] border-dashed border-lime-500 bg-yellow-50 px-8 py-5 max-lg:max-w-none max-lg:px-6 max-lg:py-4 max-sm:px-5 max-sm:py-4 shadow-sm">
+    <div class="mx-auto max-w-3xl rounded-[1.75rem] border-[3px] border-dashed border-lime-500 bg-yellow-50 px-8 py-5 max-lg:max-w-none max-lg:px-6 max-lg:py-4 max-sm:px-5 max-sm:py-4">
       <h1 class="z-10 mb-3 text-center text-[1.9rem] font-bold leading-tight text-zinc-800 max-lg:text-[1.7rem] max-sm:text-[1.3rem]"><span data-id="pg063_n0037">Two friends went fishing</span></h1>
       <p class="z-10 text-left text-[1rem] leading-[1.45] text-zinc-800 max-lg:text-[0.98rem] max-sm:text-[0.92rem]"><span data-id="pg063_n0039">One day, Monde and his friend Tutu went fishing at the river.</span> <span data-id="pg063_n0040">Each had a fishing rod.</span> <span data-id="pg063_n0041">Monde caught a very big fish.</span> <span data-id="pg063_n0042">He screamed, &#x201c;Tutuuu! Tutuuu! Come!</span></p>
     </div>
@@ -36,11 +36,11 @@
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js?v=15"></script>
-    <script src="./assets/readability.js?v=3"></script>
-    <script src="./assets/version3-overrides.js?v=5"></script>
+    <script src="./assets/offline-preloader.js?v=32"></script>
+    <script src="./assets/readability.js?v=8"></script>
+    <script src="./assets/version3-overrides.js?v=12"></script>
     <script>
-      (function () { const preloadFetch = window.fetch.bind(window); window.fetch = async function (input, init) { const url = typeof input === 'string' ? input : input && input.url; if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init); const response = await preloadFetch(input, init); const data = await response.clone().json(); data.pg063_n0034 = 'Read aloud/sign the following story and answer the questions that follow orally/sign.'; return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } }); }; })();
+      (function () { const preloadFetch = window.fetch.bind(window); window.fetch = async function (input, init) { const url = typeof input === 'string' ? input : input && input.url; if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init); const response = await preloadFetch(input, init); const data = await response.clone().json(); data.pg063_n0034 = 'Read aloud/sign the following story and answer the questions that follow orally or using sign language.'; return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } }); }; })();
     </script>
     <script src="./assets/scorm.js"></script>
     <script src="./assets/base.bundle.local.js"></script>

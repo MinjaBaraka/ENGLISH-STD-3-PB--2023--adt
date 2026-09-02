@@ -71,9 +71,165 @@ body > #content {
   min-height: 0 !important;
 }
 
-/* Readable text scaling is applied to each text-bearing element by
-   assets/readability.js. It uses the page's computed font sizes so fixed-size
-   textbook text grows without changing page or navigation geometry. */
+/*
+ * PDF-grounded book typography.
+ *
+ * The source book repeats a stable hierarchy: 24pt unit headings, 18pt
+ * activities/body/instructions, 15.7–16pt captions, 14pt picture labels and
+ * 12pt page numbers. These screen tokens preserve that hierarchy while
+ * remaining readable at normal ADT viewing distance. Every value is fixed at
+ * its breakpoint; page-local Tailwind/clamp declarations cannot randomise it.
+ */
+:root {
+  --adt-type-unit-title: 44px;
+  --adt-type-unit-subtitle: 40px;
+  --adt-type-subheading: 36px;
+  --adt-type-activity: 32px;
+  --adt-type-activity-label: 20px;
+  --adt-type-body: 28px;
+  --adt-type-instruction: 28px;
+  --adt-type-caption: 22px;
+  --adt-type-label: 20px;
+  --adt-type-table: 22px;
+  --adt-type-page-number: 16px;
+  --adt-type-toc-heading: 22px;
+  --adt-type-toc-entry: 20px;
+  --adt-type-frontmatter: 24px;
+  --adt-type-frontmatter-label: 22px;
+}
+
+#content [data-adt-typography="unit-title"] {
+  font-size: var(--adt-type-unit-title) !important;
+  line-height: 1.08 !important;
+}
+
+#content [data-adt-typography="unit-subtitle"] {
+  font-size: var(--adt-type-unit-subtitle) !important;
+  line-height: 1.14 !important;
+}
+
+#content [data-adt-typography="subheading"] {
+  font-size: var(--adt-type-subheading) !important;
+  line-height: 1.2 !important;
+}
+
+#content [data-adt-typography="activity-title"] {
+  font-size: var(--adt-type-activity) !important;
+  line-height: 1.22 !important;
+}
+
+#content [data-adt-typography="activity-label"] {
+  font-size: var(--adt-type-activity-label) !important;
+  line-height: 1.18 !important;
+}
+
+#content [data-adt-typography="instruction"] {
+  font-size: var(--adt-type-instruction) !important;
+  line-height: 1.42 !important;
+}
+
+#content [data-adt-typography="body"] {
+  font-size: var(--adt-type-body) !important;
+  line-height: 1.45 !important;
+}
+
+#content [data-adt-typography="caption"] {
+  font-size: var(--adt-type-caption) !important;
+  line-height: 1.34 !important;
+}
+
+#content [data-adt-typography="label"] {
+  font-size: var(--adt-type-label) !important;
+  line-height: 1.25 !important;
+}
+
+#content [data-adt-typography="table"] {
+  font-size: var(--adt-type-table) !important;
+  line-height: 1.38 !important;
+}
+
+#content [data-adt-typography="page-number"] {
+  font-size: var(--adt-type-page-number) !important;
+  line-height: 1.2 !important;
+}
+
+#content [data-adt-typography="toc-heading"] {
+  font-size: var(--adt-type-toc-heading) !important;
+  line-height: 1.25 !important;
+}
+
+#content [data-adt-typography="toc-entry"] {
+  font-size: var(--adt-type-toc-entry) !important;
+  line-height: 1.38 !important;
+}
+
+#content [data-adt-typography="frontmatter"] {
+  font-size: var(--adt-type-frontmatter) !important;
+  line-height: 1.48 !important;
+}
+
+#content [data-adt-typography="frontmatter-label"] {
+  font-size: var(--adt-type-frontmatter-label) !important;
+  line-height: 1.38 !important;
+}
+
+@media (max-width: 1024px) {
+  :root {
+    --adt-type-unit-title: 38px;
+    --adt-type-unit-subtitle: 34px;
+    --adt-type-subheading: 32px;
+    --adt-type-activity: 28px;
+    --adt-type-activity-label: 18px;
+    --adt-type-body: 26px;
+    --adt-type-instruction: 26px;
+    --adt-type-caption: 20px;
+    --adt-type-label: 18px;
+    --adt-type-table: 20px;
+    --adt-type-page-number: 16px;
+    --adt-type-toc-heading: 20px;
+    --adt-type-toc-entry: 18px;
+    --adt-type-frontmatter: 22px;
+    --adt-type-frontmatter-label: 20px;
+  }
+}
+
+@media (max-width: 640px) {
+  :root {
+    --adt-type-unit-title: 30px;
+    --adt-type-unit-subtitle: 28px;
+    --adt-type-subheading: 26px;
+    --adt-type-activity: 24px;
+    --adt-type-activity-label: 16px;
+    --adt-type-body: 20px;
+    --adt-type-instruction: 20px;
+    --adt-type-caption: 18px;
+    --adt-type-label: 16px;
+    --adt-type-table: 18px;
+    --adt-type-page-number: 16px;
+    --adt-type-toc-heading: 18px;
+    --adt-type-toc-entry: 16px;
+    --adt-type-frontmatter: 18px;
+    --adt-type-frontmatter-label: 18px;
+  }
+}
+
+/*
+ * Keep textbook pages flat, as in the source PDF. Generated cards, headings,
+ * images and panels must not acquire decorative shadows. Reader navigation
+ * and accessibility UI live outside #content and are not affected by this
+ * rule. Keyboard focus remains visible through the outline rule below.
+ */
+#content,
+#content *,
+#content *::before,
+#content *::after {
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+#content [class*="drop-shadow"] {
+  filter: none !important;
+}
 
 /* PDF-source figures are deliberately kept as intact images. They remain
    unframed so only reader marks on the printed words are visible. */

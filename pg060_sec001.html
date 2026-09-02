@@ -11,7 +11,7 @@
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-    <link href="./assets/book-guide-fixes.css?v=20" rel="stylesheet">
+    <link href="./assets/book-guide-fixes.css?v=27" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
@@ -97,9 +97,9 @@
 
     <div class="relative z-50" id="interface-container"></div>
     <div class="relative z-50" id="nav-container"></div>
-    <script src="./assets/offline-preloader.js?v=15"></script>
-    <script src="./assets/readability.js?v=3"></script>
-    <script src="./assets/version3-overrides.js?v=5"></script>
+    <script src="./assets/offline-preloader.js?v=32"></script>
+    <script src="./assets/readability.js?v=8"></script>
+    <script src="./assets/version3-overrides.js?v=12"></script>
     <script>
       (function () { const preloadFetch = window.fetch.bind(window); window.fetch = async function (input, init) { const url = typeof input === 'string' ? input : input && input.url; if (!url || !url.split('?')[0].endsWith('/content/i18n/en-GB/texts.json')) return preloadFetch(input, init); const response = await preloadFetch(input, init); const data = await response.clone().json(); data.pg060_n0022 = '(b) Practise reading aloud/signing the following two-syllable words.'; return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } }); }; })();
     </script>
