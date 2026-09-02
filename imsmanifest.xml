@@ -26,6 +26,8 @@
               adlcp:scormtype="sco"
               href="index.html">
       <file href="index.html"/>
+      <file href="images/cover.png"/>
+      <file href="cover.html"/>
       <file href="pg002_sec001.html"/>
       <file href="pg003_sec001.html"/>
       <file href="pg004_sec001.html"/>
@@ -126,6 +128,18 @@
       <file href="pg071_sec001.html"/>
       <file href="pg071_sec002.html"/>
       <file href="pg072_sec001.html"/>
+      <file href="back-cover.html"/>
+      <file href="images/back-cover.png"/>
+      <file href="images/pg016_pronouns_poster_source.png"/>
+      <file href="images/pg018_pronoun_panels_source.png"/>
+      <file href="images/pg019_you_dialogues_source.png"/>
+      <file href="images/pg036_daily_routines_dialogues_source.png"/>
+      <file href="images/pg052_and_language_callouts_source.png"/>
+      <file href="images/pg053_rope_skipping_callouts_source.png"/>
+      <file href="images/pg054_dorika_and_callouts_source.png"/>
+      <file href="images/pg055_but_callouts_source.png"/>
+      <file href="images/pg056_rope_skipping_but_callouts_source.png"/>
+      <file href="images/pg057_dorika_but_callouts_source.png"/>
     </resource>
   </resources>
 

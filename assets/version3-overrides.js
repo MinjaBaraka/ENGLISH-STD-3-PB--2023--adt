@@ -343,4 +343,123 @@
     subtree: true,
   });
   document.querySelectorAll('#interface-container video').forEach(protectSignLanguageVideo);
+
+  // Text in PDF-source screenshots is represented by a semantic transcript
+  // in the figure caption. The ADT runtime highlights that transcript with
+  // `bg-yellow-300` word spans, but the caption is intentionally screen-reader
+  // only. Mirror the same active word onto the matching raster-text marker so
+  // the standard yellow highlight is visible without adding duplicate
+  // `data-id` elements (which would make TTS read the text twice).
+  const sourceMarkMeasureCanvas = document.createElement('canvas');
+  const sourceMarkMeasureContext = sourceMarkMeasureCanvas.getContext('2d');
+  if (sourceMarkMeasureContext) {
+    sourceMarkMeasureContext.font = '32px "Comic Sans MS", "Chalkboard SE", "Atkinson Hyperlegible", sans-serif';
+  }
+
+  const measureSourceWord = (word) => {
+    if (sourceMarkMeasureContext) {
+      return Math.max(1, sourceMarkMeasureContext.measureText(word).width);
+    }
+    return Math.max(1, Array.from(word).length);
+  };
+
+  function clearSourceMark(mark) {
+    mark.classList.remove('is-tts-active');
+    mark.style.removeProperty('--tts-mark-left');
+    mark.style.removeProperty('--tts-mark-width');
+  }
+
+  function activateSourceLine(mark) {
+    mark.style.removeProperty('--tts-mark-left');
+    mark.style.removeProperty('--tts-mark-width');
+    mark.classList.add('is-tts-active');
+  }
+
+  function activateSourceWord(mark, activeIndex, transcript) {
+    const from = Number.parseInt(mark.dataset.wordFrom || '', 10);
+    const to = Number.parseInt(mark.dataset.wordTo || '', 10);
+    if (!Number.isFinite(from) || !Number.isFinite(to) || activeIndex < from || activeIndex > to) return false;
+
+    const wordElements = Array.from(transcript.querySelectorAll('[data-word-index]'))
+      .map((element) => ({
+        element,
+        index: Number.parseInt(element.getAttribute('data-word-index') || '', 10),
+      }))
+      .filter(({ index }) => Number.isFinite(index) && index >= from && index <= to)
+      .sort((left, right) => left.index - right.index);
+    const activePosition = wordElements.findIndex(({ index }) => index === activeIndex);
+    if (activePosition < 0) return false;
+
+    const weights = wordElements.map(({ element }) => measureSourceWord(element.textContent || ''));
+    const gap = measureSourceWord(' ');
+    const total = weights.reduce((sum, weight) => sum + weight, 0)
+      + gap * Math.max(0, weights.length - 1);
+    const before = weights.slice(0, activePosition).reduce((sum, weight) => sum + weight, 0)
+      + gap * activePosition;
+    const baseLeft = Number.parseFloat(mark.style.getPropertyValue('--mark-left'));
+    const baseWidth = Number.parseFloat(mark.style.getPropertyValue('--mark-width'));
+    if (!Number.isFinite(total) || total <= 0 || !Number.isFinite(baseLeft) || !Number.isFinite(baseWidth)) {
+      activateSourceLine(mark);
+      return true;
+    }
+
+    const padding = Math.min(0.28, baseWidth * 0.02);
+    const activeLeft = baseLeft + baseWidth * (before / total) - padding;
+    const activeWidth = baseWidth * (weights[activePosition] / total) + padding * 2;
+    mark.style.setProperty('--tts-mark-left', `${Math.max(baseLeft, activeLeft)}%`);
+    mark.style.setProperty('--tts-mark-width', `${Math.min(
+      baseLeft + baseWidth - Math.max(baseLeft, activeLeft),
+      activeWidth,
+    )}%`);
+    mark.classList.add('is-tts-active');
+    return true;
+  }
+
+  function syncSourceFigureTts(figure) {
+    const stage = figure.querySelector('.adt-source-stage');
+    const caption = figure.querySelector('figcaption');
+    if (!stage || !caption) return;
+    const marks = Array.from(stage.querySelectorAll('.adt-reader-mark[data-tts-id]'));
+    marks.forEach(clearSourceMark);
+
+    const activeWord = caption.querySelector('[data-id] [data-word-index].bg-yellow-300');
+    if (activeWord) {
+      const transcript = activeWord.closest('[data-id]');
+      const id = transcript?.getAttribute('data-id');
+      const activeIndex = Number.parseInt(activeWord.getAttribute('data-word-index') || '', 10);
+      if (id && Number.isFinite(activeIndex)) {
+        const matching = marks.filter((mark) => mark.dataset.ttsId === id);
+        const activated = matching.some((mark) => activateSourceWord(mark, activeIndex, transcript));
+        // Easy Read can change word counts. Keep the current sentence visible
+        // as a fallback when its spoken wording no longer maps to print.
+        if (!activated) matching.forEach(activateSourceLine);
+      }
+      return;
+    }
+
+    const activeBlock = caption.querySelector('[data-id].tts-active-block');
+    if (activeBlock) {
+      const id = activeBlock.getAttribute('data-id');
+      marks.filter((mark) => mark.dataset.ttsId === id).forEach(activateSourceLine);
+    }
+  }
+
+  function initialiseSourceFigureTts() {
+    document.querySelectorAll('figure.adt-source-highlight').forEach((figure) => {
+      const caption = figure.querySelector('figcaption');
+      if (!caption || figure.dataset.ttsHighlightReady === 'true') return;
+      figure.dataset.ttsHighlightReady = 'true';
+      const observer = new MutationObserver(() => syncSourceFigureTts(figure));
+      observer.observe(caption, {
+        attributes: true,
+        attributeFilter: ['class'],
+        childList: true,
+        subtree: true,
+      });
+      syncSourceFigureTts(figure);
+    });
+  }
+
+  initialiseSourceFigureTts();
+  document.addEventListener('DOMContentLoaded', initialiseSourceFigureTts, { once: true });
 }());

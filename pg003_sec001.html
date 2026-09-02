@@ -6,12 +6,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>English Pupil’s Book Standard Three</title>
   <meta name="title-id" content="pg003_sec001" />
-  <meta name="page-section-id" content="3" />
+  <meta name="page-section-id" content="4" />
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-    <link href="./assets/book-guide-fixes.css?v=11" rel="stylesheet">
+    <link href="./assets/book-guide-fixes.css?v=20" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
   <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
   <link href="./assets/fonts.css" rel="stylesheet">
@@ -109,8 +109,10 @@
         </div>
         <style>
           .toc-content {
-            margin-left: 15.5%;
-            margin-right: 12%;
+            /* Keep the contents column close to the printed-page proportions.
+               The previous side margins made the reading column unnecessarily narrow. */
+            margin-left: 9%;
+            margin-right: 7%;
             padding-top: 8.4%;
             font-size: clamp(20px, 1.83vw, 29px);
             line-height: 1.38
@@ -141,7 +143,7 @@
 
           .toc-row {
             display: grid;
-            grid-template-columns: auto minmax(2rem, 1fr) auto;
+            grid-template-columns: minmax(0, 1fr) minmax(2rem, 1fr) 2rem;
             align-items: baseline;
             column-gap: .38em;
             min-height: 1.42em
@@ -160,7 +162,7 @@
           }
 
           .toc-number {
-            min-width: 1.7em;
+            min-width: 2rem;
             text-align: right;
             padding-left: .12em;
             background: white
@@ -181,6 +183,11 @@
           .toc-activity {
             padding-left: 1.15em;
             color: #202020
+          }
+
+          .toc-label {
+            min-width: 0;
+            overflow-wrap: normal;
           }
 
           .toc-activity .toc-label:first-letter {}
@@ -206,8 +213,8 @@
 
           @media(max-width:640px) {
             .toc-content {
-              margin-left: 8%;
-              margin-right: 7%;
+              margin-left: 6%;
+              margin-right: 5%;
               font-size: 18px
             }
 
@@ -228,16 +235,14 @@
             }
           }
         </style>
-        <div aria-hidden="true" class="absolute flex items-center justify-center rounded-full text-white"
-          style="bottom:3.75rem;left:50%;width:52px;height:52px;transform:translateX(-50%);background:#a93a96;font-size:25px;line-height:1">
-          iii</div>
       </section>
     </div>
   </main>
   <div class="relative z-50" id="interface-container"></div>
   <div class="relative z-50" id="nav-container"></div>
-  <script src="./assets/offline-preloader.js?v=4"></script>
-  <script src="./assets/version3-overrides.js?v=30260803"></script>
+  <script src="./assets/offline-preloader.js?v=15"></script>
+    <script src="./assets/readability.js?v=3"></script>
+  <script src="./assets/version3-overrides.js?v=5"></script>
   <script src="./assets/scorm.js"></script>
   <script src="./assets/base.bundle.local.js"></script>
 </body>

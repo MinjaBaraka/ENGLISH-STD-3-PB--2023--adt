@@ -6,12 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>English Pupil’s Book Standard Three</title>
     <meta name="title-id" content="pg068_sec001" />
-    <meta name="page-section-id" content="93" />
+    <meta name="page-section-id" content="94" />
     <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon_io/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon_io/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon_io/favicon-16x16.png">
     <link rel="manifest" href="./assets/favicon_io/site.webmanifest">
-    <link href="./assets/book-guide-fixes.css?v=11" rel="stylesheet">
+    <link href="./assets/book-guide-fixes.css?v=20" rel="stylesheet">
     <link href="./content/tailwind_output.css" rel="stylesheet">
     <link href="./assets/libs/fontawesome/css/all.min.css" rel="stylesheet">
     <link href="./assets/fonts.css" rel="stylesheet">
@@ -85,9 +85,10 @@
 </div>
     <div class="relative z-50" id="nav-container">
 </div>
-    <script src="./assets/offline-preloader.js?v=4">
+    <script src="./assets/offline-preloader.js?v=15">
 </script>
-    <script src="./assets/version3-overrides.js?v=3">
+    <script src="./assets/readability.js?v=3"></script>
+    <script src="./assets/version3-overrides.js?v=5">
 </script>
     <script>
       (function () { const preloadFetch = window.fetch.bind(window); window.fetch = async function (input, init) { const url = typeof input === 'string' ? input : input && input.url; const cleanUrl = url && url.split('?')[0]; if (!cleanUrl || (!cleanUrl.endsWith('/content/i18n/en-GB/texts.json') && !cleanUrl.endsWith('/content/i18n/en-GB/audios.json'))) return preloadFetch(input, init); const response = await preloadFetch(input, init); const data = await response.clone().json(); if (cleanUrl.endsWith('/texts.json')) { data.pg068_n0003 = '(a) Read aloud/sign the following words.'; data.pg068_n0028 = '(a) Read aloud the following sentences/sign the words in the following sentences.'; data.pg068_n0005 = 'feel, fool, pull, pool, port, bore, most, part, dark, arm, bird, girl, hear, heal, speak'; data.pg068_n0030 = 'Words with long vowels'; data.pg068_n0031 = 'Words with short vowels'; data.pg068_n0032 = 'ship, lip, put, pot, mop, bed, cat, hat, bet, get, span, cut, swim, sell, milk'; ['pg068_n0005', 'pg068_n0030', 'pg068_n0031', 'pg068_n0032'].forEach(function (id) { data[id + '_easy_read'] = data[id]; }); } else { ['pg068_n0005', 'pg068_n0030', 'pg068_n0031', 'pg068_n0032'].forEach(function (id) { data[id] = id + '.mp3'; data[id + '_easy_read'] = id + '_easy_read.mp3'; }); } return new Response(JSON.stringify(data), { status: response.status, headers: { 'Content-Type': 'application/json' } }); }; })();

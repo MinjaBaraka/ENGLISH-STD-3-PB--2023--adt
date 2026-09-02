@@ -35,6 +35,92 @@ body {
   font: inherit;
 }
 
+:root {
+  --adt-dock-clearance: calc(4rem + env(safe-area-inset-bottom, 0px));
+}
+
+/*
+ * Pages are read as responsive documents, not fixed-height print canvases.
+ * This removes the empty lower sheet area while reserving just enough room
+ * for the single fixed ADT reader dock.
+ */
+body {
+  display: block !important;
+  min-height: 0 !important;
+}
+
+body > main {
+  width: 100%;
+  padding-bottom: var(--adt-dock-clearance) !important;
+}
+
+body > #content {
+  margin-bottom: var(--adt-dock-clearance);
+}
+
+#content {
+  min-height: 0 !important;
+}
+
+#content [data-section-id] {
+  min-height: 0 !important;
+}
+
+/* This preliminary page is the sole nested fixed-height print canvas. */
+[data-section-id="pg006_sec001"] > .relative.z-10 {
+  min-height: 0 !important;
+}
+
+/* Readable text scaling is applied to each text-bearing element by
+   assets/readability.js. It uses the page's computed font sizes so fixed-size
+   textbook text grows without changing page or navigation geometry. */
+
+/* PDF-source figures are deliberately kept as intact images. They remain
+   unframed so only reader marks on the printed words are visible. */
+.adt-source-highlight {
+  box-sizing: border-box;
+  display: block;
+  position: relative;
+  isolation: isolate;
+}
+
+.adt-source-stage {
+  position: relative;
+  z-index: 0;
+}
+
+.adt-source-highlight > img,
+.adt-source-stage > img {
+  position: relative;
+  z-index: 0;
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Screenshot text follows the native ADT read-aloud state. Marks are hidden
+   at rest and appear only while the matching transcript word is active. */
+.adt-reader-mark {
+  position: absolute;
+  z-index: 1;
+  left: var(--tts-mark-left, var(--mark-left));
+  top: var(--mark-top);
+  width: var(--tts-mark-width, var(--mark-width));
+  height: var(--mark-height);
+  border-radius: 0.22em;
+  background: #fde047;
+  opacity: 0;
+  visibility: hidden;
+  mix-blend-mode: multiply;
+  pointer-events: none;
+  transition: left 100ms ease, width 100ms ease, opacity 80ms ease;
+}
+
+.adt-reader-mark.is-tts-active {
+  opacity: 1;
+  visibility: visible;
+}
+
 /* Speech bubbles keep a visible pointer at desktop and mobile widths. */
 .adt-speech-bubble {
   position: relative;
